@@ -1,6 +1,6 @@
 # Warmup Questions
 
-1.  What is the url of this repository?
+1.  What is the clone url of this repository?
     >   answer
 
 2.  What is the output of the ``cal`` command?

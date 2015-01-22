@@ -98,9 +98,9 @@
 ## Tortoise Git
 
 3. clone copy of vision lab repository
-4. modify in github
+4. answer the first question in github
 5. pull
-6. modify on gedit
+6. answer the second question in github
 5. commit
 6. push
 

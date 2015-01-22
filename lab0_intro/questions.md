@@ -1,4 +1,14 @@
-# Questions from lab0
+# Warmup Questions
+
+1.  What is the url of this repository?
+    >   answer
+
+2.  What is the output of the ``cal`` command?
+    >   answer
+    >   answer line 2
+    >   answer line 3
+
+# Homework Questions
 
 1.  What is the ``grep``command?
     >   answer

@@ -91,10 +91,14 @@
    - author: repositories, activity
 
 2. vision lab repository
+3. fork vision lab repository
 
 ## Tortoise Git
 
-3. clone git game: https://github.com/hgarc014/git-game
-4. modify
+3. clone copy of vision lab repository
+4. modify in github
+5. pull
+6. modify on gedit
 5. commit
-6. 
+6. push
+

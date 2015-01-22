@@ -41,10 +41,13 @@
 10.  What does the ``diff`` command do?
     >   answer
 
-11. Create a script for finding duplicate images based on their content (tip: hash or checksum)
+11.  How many users exist in ``guitaca``?
+    >   answer
+
+12. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
 
-12. How many unique images are in the guitaca ``sipi_images`` folder?
+13. How many unique images are in the ``sipi_images`` folder?
     >   answer
     

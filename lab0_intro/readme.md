@@ -98,9 +98,17 @@
 ## Tortoise Git
 
 3. clone copy of vision lab repository
+4. open the ``questions.md`` file
 4. answer the first question in github
 5. pull
-6. answer the second question in github
+6. answer the second question gedit
 5. commit
 6. push
+7. verify changes in github
+
+## Homework
+
+Answer the rest of the questions in ``questions.md``
+
+
 

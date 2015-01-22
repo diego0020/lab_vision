@@ -45,8 +45,39 @@
    scp vision@guitaca:/home/vision/sipi_images/<file> .
    ```
 2.  decompress images (use ``tar``, check the man)
-3.  use  ``imagemagick`` to find all grayscale images
-4.  create a script to copy all grayscale images to a different folder
+3.  use  ``imagemagick`` to find all *grayscale* images
+    
+    ```bash
+    find . -name "*.tiff" -exec identify {} \; | grep -i gray | wc -l
+    ```
+    
+4.  create a script to copy all *color* images to a different folder
+       
+      ```bash
+      #!/bin/bash
+      
+      cd ~
+      rm -r color_images 2>/dev/null
+      mkdir color_images
+      images=$(find sipi_images -name *.tiff)
+      
+      for im in ${images[*]}
+      do
+         identify $im | grep -q -i gray
+         if [ $? -eq 0 ]
+         then
+            echo $im is gray
+         else
+            echo $im is color
+            cp $im color_images
+         fi
+      done
+      
+      
+      ```
+      -  make executable
+      -  run
+      
 5.  find all images with size larger than 500k
     how many are there? (use ``wc``)
    

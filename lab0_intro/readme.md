@@ -3,6 +3,7 @@
 ## Linux
 
 1. Tour the interface
+2. ubuntu flavors https://wiki.ubuntu.com/UbuntuFlavors
 2. Tour the file system through the terminal
    -  ls
    -  cd

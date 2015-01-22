@@ -25,6 +25,13 @@
    -  use find
    -  2> /dev/null
 
+3  Display better with
+   
+   ```bash
+   cat /etc/passwd | tr ':' '\t'
+   ```
+
+
 ## get images
 
 1. connect to guitaca

@@ -85,7 +85,7 @@
 ## Compiling
 
 4. Install git (from terminal)
-5. package ``g++`
+5. package ``g++`` and ``autoconf``
 5. clone open syobon
 6. 
    ```bash

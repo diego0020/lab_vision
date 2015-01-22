@@ -21,7 +21,7 @@
    -  man find
    -  which find
 
-2. Find the ```password```file
+2. Find the ```passwd```file
    -  use find
    -  2> /dev/null
 

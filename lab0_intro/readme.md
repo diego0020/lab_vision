@@ -26,9 +26,7 @@
    ```
    use apt-cache, less, grep
 7. compile game
-8. 
+8. test
 
-# Examine source
+## GitHub
 
-
-## Git

@@ -1,2 +1,5 @@
-# lab_vision
-Files for the vision laboratory
+# Computer vision lab
+
+This repository will contain guides and scripts required during the lab.
+
+

@@ -45,7 +45,7 @@
    scp vision@guitaca:/home/vision/sipi_images/<file> .
    ```
 2.  decompress images (use ``tar``, check the man)
-3.  use  ```imagemagick`` to find all grayscale images
+3.  use  ``imagemagick`` to find all grayscale images
 4.  create a script to copy all grayscale images to a different folder
 5.  find all images with size larger than 500k
     how many are there? (use ``wc``)

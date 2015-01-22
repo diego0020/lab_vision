@@ -4,9 +4,10 @@
     >   answer
 
 2.  What is the output of the ``cal`` command?
-    >   answer
-    >   answer line 2
-    >   answer line 3
+
+        multi
+        line
+        answer
 
 # Homework Questions
 

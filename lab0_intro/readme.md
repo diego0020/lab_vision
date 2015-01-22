@@ -25,7 +25,7 @@
    -  use find
    -  2> /dev/null
 
-3  Display better with
+3. Display better with
    
    ```bash
    cat /etc/passwd | tr ':' '\t'

@@ -44,11 +44,11 @@
    #copy 
    scp vision@guitaca:/home/vision/sipi_images/<file> .
    ```
-2.  decompress images
+2.  decompress images (use ``tar``, check the man)
 3.  use  ```tiffinfo`` to find all color images
 4.  create a script to copy all color images to a different folder
 5.  find all images with size larger than 500k
-    how many are there? (tip use ``wc``)
+    how many are there? (use ``wc``)
    
 
 ## Compiling

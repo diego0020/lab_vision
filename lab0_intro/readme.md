@@ -11,6 +11,9 @@
    -  echo
    -  nano
    -  find
+   -  find --help
+   -  man find
+   -  which find
 4. Install git (from terminal)
 5. clone open syobon
    ```basg

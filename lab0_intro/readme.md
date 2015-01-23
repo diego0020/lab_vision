@@ -138,7 +138,11 @@
 2. vision lab repository
 3. fork vision lab repository
 
-## Tortoise Git
+## SmartGit
+
+2. Install smart git http://www.syntevo.com/smartgit/download
+   
+   choose debian package
 
 3. clone copy of vision lab repository
 4. open the ``questions.md`` file

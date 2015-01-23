@@ -97,7 +97,7 @@
 6. install dependencies (SDL version 1.2), use grep, less with apt-cache
    
    ```bash
-   sudo apt-get install libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl2-ttf-dev libfontconfig1-dev
+   sudo apt-get install libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libfontconfig1-dev
    ```
 7. Create configure file
 

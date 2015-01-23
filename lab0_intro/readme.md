@@ -120,6 +120,7 @@
    make
    sudo make install
    ```
+   > ``cmake`` is replacing configure
    
 8. test
 

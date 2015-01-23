@@ -125,6 +125,7 @@
 
    ```bash
    syobon -window
+   #If he is jumping like crazy press all 4 arrow keys sequentially
    ```
 
 ## GitHub

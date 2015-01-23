@@ -143,7 +143,6 @@
 2. Install smart git http://www.syntevo.com/smartgit/download
    
    choose debian package
-
 3. clone copy of vision lab repository
 4. open the ``questions.md`` file
 4. answer the first question in github

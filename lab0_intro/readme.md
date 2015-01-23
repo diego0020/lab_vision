@@ -7,9 +7,9 @@
 
 ## Linux
 
-1. Tour the interface
-2. ubuntu flavors https://wiki.ubuntu.com/UbuntuFlavors
-2. Tour the file system through the terminal
+1. The graphical interface
+2. Ubuntu flavors https://wiki.ubuntu.com/UbuntuFlavors
+2. The file system through the terminal
    -  ls
    -  cd
    -  cat
@@ -32,7 +32,7 @@
    ```
 
 
-## get images
+## Image database
 
 1. connect to guitaca
 

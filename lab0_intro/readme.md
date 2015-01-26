@@ -95,10 +95,12 @@
 6. read install
 7. activate universe repository
 6. install dependencies (SDL version 1.2), use grep, less with apt-cache
-   
+   > Use synaptic
    ```bash
    sudo apt-get install libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libfontconfig1-dev
    ```
+   
+   
 7. Create configure file
 
    ```bash
@@ -107,11 +109,6 @@
    autoconf
    ```
    
-   use 
-   -  apt-cache, 
-   -  head, 
-   -  less, 
-   -  grep
    
 7. compile game
 

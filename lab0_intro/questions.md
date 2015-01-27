@@ -57,6 +57,9 @@
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
 
-16. How many unique images are in the ``sipi_images`` folder?
+16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
+    >   answer
+
+17. How many unique images are in the ``sipi_images`` folder?
     >   answer
     

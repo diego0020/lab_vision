@@ -2,8 +2,8 @@
 
 ## Before
 
-1. Install ubuntu linux on virtual machine
-2. Install vbox guest additions
+1. Boot from a live cd
+2. Configure keyboard and siftware repository
 
 ## Linux
 
@@ -44,6 +44,7 @@
    #copy 
    scp vision@guitaca:/home/vision/sipi_images/<file> .
    ```
+   
 2.  decompress images (use ``tar``, check the man)
 3.  use  ``imagemagick`` to find all *grayscale* images
     
@@ -73,8 +74,8 @@
          fi
       done
       
-      
       ```
+      
       -  make executable
       -  run
       

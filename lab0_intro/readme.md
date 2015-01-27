@@ -3,7 +3,7 @@
 ## Before
 
 1. Boot from a live cd
-2. Configure keyboard and siftware repository
+2. Configure keyboard and software repository
 
 ## Linux
 
@@ -13,6 +13,9 @@
    -  ls
    -  cd
    -  cat
+   -  mv
+   -  cp
+   -  rm
    -  touch
    -  echo
    -  nano
@@ -75,9 +78,9 @@
       done
       
       ```
-      
-      -  make executable
-      -  run
+      -  save it for example as ``find_duplicates.sh``
+      -  make executable (``chmod u+x``)
+      -  run (``./find_duplicates.sh``)
       
 5.  find all images with size larger than 500k
     how many are there? (use ``wc``)
@@ -95,8 +98,9 @@
    
 6. read install
 7. activate universe repository
-6. install dependencies (SDL version 1.2), use grep, less with apt-cache
-   > Use synaptic
+6. install dependencies (SDL version 1.2)
+   > Note: to search packages use ``apt-cache search ```
+
    ```bash
    sudo apt-get install libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libfontconfig1-dev
    ```
@@ -118,7 +122,7 @@
    make
    sudo make install
    ```
-   > ``cmake`` is replacing configure
+   > Note in newer projects ``cmake`` is replacing configure
    
 8. test
 

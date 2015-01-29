@@ -5,11 +5,12 @@
   - LaTeX
   - Compiling
   - Style files
+  - Latex and Git
   
 ## Images
 
   - Adding images
-  - Referencing images
+  - Image formats
   
 ##  Code
 
@@ -18,4 +19,9 @@
 ##  Bibliography
 
   - Bibliography managers
+    -   JabRef
+    -   Mendeley
+    -   Zotero
+    -   kbibtex
+    
   - BibTex

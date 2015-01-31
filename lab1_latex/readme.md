@@ -15,6 +15,8 @@
 ##  Code
 
   - Adding code
+  - Minted, requires python-pygments
+  - Listings
 
 ##  Bibliography
 

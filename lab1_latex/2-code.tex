@@ -1,12 +1,16 @@
 \documentclass[10pt,twocolumn,letterpaper]{article}
 
+
+\usepackage{minted}
 \usepackage{cvpr}
 \usepackage{times}
 \usepackage{epsfig}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{minted}
+\usepackage{xcolor}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
 
 % Include other packages here, before hyperref.
 
@@ -71,20 +75,37 @@ should read this new version.
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget vestibulum neque. Mauris eget est sagittis, pretium diam nec, lacinia mauris. In vitae nibh et sem dictum sagittis eget vel diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam non dapibus lectus, sed interdum risus. Integer id consectetur justo. Vestibulum volutpat lacus a porttitor tincidunt. Phasellus magna turpis, lacinia mattis semper a, tristique non tortor. Duis rhoncus est sollicitudin sapien dapibus, vitae lobortis diam molestie. Suspendisse eu porta leo, vitae interdum arcu. Suspendisse lobortis suscipit lacus sed blandit.
+Some c code
 
-Fusce a congue tellus. Suspendisse elit eros, sodales molestie aliquam ac, condimentum non neque. Integer vestibulum fringilla maximus. Proin at eros hendrerit, lobortis dui quis, faucibus lectus. Donec lobortis pellentesque mauris, at malesuada nisl sollicitudin vel. Vestibulum lacus erat, tempus vitae justo et, accumsan porta risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse tincidunt, nulla a facilisis gravida, metus erat finibus massa, sit amet tempus ligula nunc at massa. Sed auctor elit ut metus consequat varius. Etiam a consequat ligula.
 
-\begin{minted}{c}
+\begin{minted}[bgcolor=bg]{c}
 int main() {
 printf("hello, world");
 return 0;
 }
 \end{minted}
 
-Fusce auctor magna vitae pellentesque maximus. Donec volutpat massa ut eros aliquet rhoncus. Etiam at magna neque. Vestibulum eleifend nunc id lorem volutpat, ac pretium odio mattis. Etiam maximus eget odio vitae faucibus. Sed facilisis sed metus tincidunt hendrerit. Curabitur ex dui, condimentum eget odio vel, pulvinar iaculis elit. Aenean tincidunt dolor et ex tempor semper. Vivamus dictum lacus est. Cras euismod urna at sapien rutrum consectetur vitae quis velit. Nam vitae porttitor mauris. Cras condimentum, augue eu scelerisque vulputate, velit urna malesuada ligula, condimentum placerat leo enim nec augue. Donec gravida cursus quam, ac tincidunt eros pellentesque sed. Morbi ut facilisis sapien.
+
+Matlab code from an external file
+
+\inputminted[bgcolor=bg]{matlab}{code.m}
+
+Some inline matlab \mintinline{matlab}{identity = eye(4)}.  Fusce auctor magna vitae pellentesque maximus. Donec volutpat massa ut eros aliquet rhoncus. Etiam at magna neque. Vestibulum eleifend nunc id lorem volutpat, ac pretium odio mattis. Etiam maximus eget odio vitae faucibus. Sed facilisis sed metus tincidunt hendrerit. Curabitur ex dui, condimentum eget odio vel, pulvinar iaculis elit. Aenean tincidunt dolor et ex tempor semper. Vivamus dictum lacus est. Cras euismod urna at sapien rutrum consectetur vitae quis velit. Nam vitae porttitor mauris. Cras condimentum, augue eu scelerisque vulputate, velit urna malesuada ligula, condimentum placerat leo enim nec augue. Donec gravida cursus quam, ac tincidunt eros pellentesque sed. Morbi ut facilisis sapien.
+
+\begin{listing}[xleftmargin=25.0ex,tp]
+ \centering
+\begin{minipage}{0.8\linewidth}
 
 
+\begin{minted}[bgcolor=bg,linenos]{bash}
+#!/bin/bash
+grep --help | tail -n5 
+echo $?
+\end{minted}
+\end{minipage}
+\caption{Example of floating listing.}
+\label{lst:example}
+\end{listing}
 
 Vestibulum a mattis urna. Integer semper mauris eu pretium dictum. Maecenas et vestibulum velit. Nunc auctor imperdiet risus ut consequat. Duis mattis ornare orci. Integer sed euismod nisi, nec convallis enim. Morbi sed sem porta, commodo lorem at, ornare enim. Duis at magna quis ipsum ultrices bibendum in eu leo. Phasellus at urna aliquet, tristique mi at, ultricies enim.
 

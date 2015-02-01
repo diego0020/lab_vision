@@ -15,8 +15,13 @@
 ##  Code
 
   - Adding code
-  - Minted, requires python-pygments
-  - Listings
+  - Minted
+      - requires python-pygments
+      - requires *-shell-scape* flag
+      - new version requires 
+	```bash
+	sudo apt-get install texlive-humanities
+	```
 
 ##  Bibliography
 

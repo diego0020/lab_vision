@@ -26,10 +26,10 @@
 5.  Where is the file ``xxxxxx``
     >   answer
 
-6.  How many files with ``gnu`` in its name are in ``dir``
+6.  How many files with ``gnu`` in its name are in ``/usr/src``
     >   answer
 
-7.  How many files contain ``gpl`` inside in ``dir``
+7.  How many files contain ``gpl`` inside in ``/usr/src``
     >   answer
 
 8.  What does the ``cut`` command do?

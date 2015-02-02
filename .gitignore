@@ -29,6 +29,7 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+*.tex.backup
 
 ## Auxiliary and intermediate files from other packages:
 
@@ -85,6 +86,7 @@
 
 # minted
 *.pyg
+*_minted-*
 
 # morewrites
 *.mw

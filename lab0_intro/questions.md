@@ -7,9 +7,6 @@
 
 Cal imprime el calendario del mes actual
 
-        multi
-        line
-        answer
 
 # Homework Questions
 
@@ -30,7 +27,8 @@ Cal imprime el calendario del mes actual
     >   answer
 
 6.  How many files with ``gnu`` in its name are in ``dir``
-    >   answer
+    >   
+
 
 7.  How many files contain ``gpl`` inside in ``dir``
     >   answer
@@ -45,7 +43,7 @@ Cal imprime el calendario del mes actual
     >   answer
 
 11.  How many users exist in *Guitaca*?
-    >   answer
+    >   48
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
     >   answer9
@@ -64,5 +62,5 @@ Cal imprime el calendario del mes actual
     >   answer
 
 17. How many unique images are in the ``sipi_images`` folder?
-    >   answer
+    >   answer  
     

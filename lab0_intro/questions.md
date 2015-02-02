@@ -5,6 +5,8 @@
 
 2.  What is the output of the ``cal`` command?
 
+Cal imprime el calendario del mes actual
+
         multi
         line
         answer
@@ -12,16 +14,17 @@
 # Homework Questions
 
 1.  What is the ``grep``command?
-    >   answer
+    >   Es un buscador de palabras y expresiones dentro de uno o varios archivos 
 
 2.  What is a *makefile*?
-    >   answer
+    >   Son formatos especiales de archivos que junto con make utility, pueden construir y manejar proyectos compilando todo lo que se hace.
 
 3.  What is *git*?
-    >   answer
+    >   Sistema de control de versión, permite guardar cambios y recuperar versiones anteriores
 
 4.  What does the ``-prune`` option of ``find`` do? Give an example
-    >   answer
+    >    -prune es una opción de find que además de buscar  archivos que coincidan, hace que find no busque en los subdirectorios. Si el comando contiene -prune, se asume por defecto -print.
+
 
 5.  Where is the file ``xxxxxx``
     >   answer
@@ -33,7 +36,7 @@
     >   answer
 
 8.  What does the ``cut`` command do?
-    >   answer
+    >   Es un comando usado para la extracción de segmentos (o porciones) de las líneas de texto, provenientes de un archivo 
 
 9.  What does the ``wget`` command do?
     >   answer
@@ -45,7 +48,7 @@
     >   answer
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   answer
+    >   answer9
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
     >   answer

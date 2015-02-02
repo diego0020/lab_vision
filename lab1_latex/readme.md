@@ -1,11 +1,12 @@
 # Lab 1: Intro to LaTeX
 
+Slides: http://goo.gl/xJ3SBu
+
+
 ## Introduction
 
-  - LaTeX
-  - Compiling
-  - Style files
   - Latex and Git
+  - Kile
   
 ## Images
 

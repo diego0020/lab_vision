@@ -18,7 +18,7 @@ Slides: http://goo.gl/xJ3SBu
   - Adding code
   - Minted
       - requires python-pygments
-      - requires *-shell-scape* flag
+      - requires *-shell-escape* flag
       - new version requires 
 	```bash
 	sudo apt-get install texlive-humanities

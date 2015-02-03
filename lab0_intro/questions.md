@@ -65,14 +65,16 @@ sort -k 2 -t':' prueba.txt
 Respuesta: 41
 
 14.  What is the name of the linux distribution running on *Guitaca*?
-    >   answer
+    >   cat /etc/issue
+    Fedora release 20 (Heisenbug) 
+Kernel \r on an \m (\l\
 
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
 
-16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
-    >   answer
+16.What is the meaning of ``#! /bin/bash`` at the start of scripts?
+    >es una conveción para que el Shell sepa que interpretador correr.
 
 17. How many unique images are in the ``sipi_images`` folder?
     >   answer  

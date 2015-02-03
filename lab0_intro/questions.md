@@ -1,7 +1,9 @@
 # Warmup Questions
 
 1.  What is the clone url of this repository?
-    >   https://github.com/fjcedanos/lab_vision/blob/master/lab0_intro/questions.md
+    git permite copiar 
+    git clone http://github.com/diego0020/lab_vision
+    https://github.com/fjcedanos/lab_vision.git
 
 2.  What is the output of the ``cal`` command?
 
@@ -24,32 +26,43 @@ Cal imprime el calendario del mes actual
 
 
 5.  Where is the file ``xxxxxx``
-    >   answer
+    >   Se usa el comando find / -name 'xxxxxx' 2>/dev/null | wc -l y son 0 las coincidencias
 
 6.  How many files with ``gnu`` in its name are in ``dir``
-    >   
-
+    > cd /usr/src
+     find / -name '*gnu*' 2>/dev/null | wc -l 
+La respuesta es: 656 archivos
 
 7.  How many files contain ``gpl`` inside in ``dir``
-    >   answer
+    >   grep -rnw 'gpl' | wc -l
+La respuesta es : 51
+
 
 8.  What does the ``cut`` command do?
     >   Es un comando usado para la extracción de segmentos (o porciones) de las líneas de texto, provenientes de un archivo 
 
 9.  What does the ``wget`` command do?
-    >   answer
+    >   Permite descargar archivos del internet
 
 10.  What does the ``diff`` command do?
-    >   answer
+    >  diff --help
+Compara archivos linea por linea 
 
 11.  How many users exist in *Guitaca*?
-    >   48
+    >   cut -d: -f1 /etc/passwd | wc -l
+    Respuesta: 48 usuarios 
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   answer9
+    >  Para retornar una lista de usuarios y shells se usa el codigo cut, con las opciones f para encontrar un campo en una posicion especifica, y d para delimitar por ":". Por último se guardan las parejas en un archivo.
+cut -d':' -f 1,7 /etc/passwd > prueba.txt
+
+Para organizar las parejas alfabeticamente por shell. se usa Sort.  con la opción k para ignorar la primera columna y con t para delimitar por ":"
+sort -k 2 -t':' prueba.txt
+
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
-    >   answer
+    >   cut -d':' -f 7 /etc/passwd |grep '/sbin/nologin' | wc -l
+Respuesta: 41
 
 14.  What is the name of the linux distribution running on *Guitaca*?
     >   answer

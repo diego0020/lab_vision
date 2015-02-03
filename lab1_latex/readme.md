@@ -6,6 +6,7 @@ Slides: http://goo.gl/xJ3SBu
 ## Introduction
 
   - Latex and Git
+  	- .gitignore
   - Kile
   
 ## Images

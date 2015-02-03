@@ -1,9 +1,7 @@
 # Warmup Questions
 
 1.  What is the clone url of this repository?
-    git permite copiar 
-    git clone http://github.com/diego0020/lab_vision
-    https://github.com/fjcedanos/lab_vision.git
+      https://github.com/fjcedanos/lab_vision.git
 
 2.  What is the output of the ``cal`` command?
 
@@ -73,9 +71,11 @@ Kernel \r on an \m (\l\
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
 
+
+
 16.What is the meaning of ``#! /bin/bash`` at the start of scripts?
     >es una conveción para que el Shell sepa que interpretador correr.
 
 17. How many unique images are in the ``sipi_images`` folder?
-    >   answer  
+    >   Solo una repetida   
     

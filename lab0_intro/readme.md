@@ -179,7 +179,7 @@
    > Note in newer projects ``cmake`` is replacing configure
    
 8. test
-   WARNING: The game is very noisy
+   > WARNING: The game is very noisy
 
    ```bash
    syobon -window

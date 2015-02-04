@@ -54,6 +54,7 @@
 
 2. Find the ```passwd```file
    >  ``find / -name passwd 2 > /dev/null``
+
    The ``2>`` operator redirects the error output to ``/dev/null``. This is a special file that acts as a sink,
    anything that is send to it will dissappear. Other important redirection operations are
       -  `` > `` : Redirect standard output to a file
@@ -152,7 +153,7 @@
    
 6. Find a file named ``install`` and read it.
 6. install dependencies (SDL version 1.2)
-   > Note: to search packages use ``apt-cache search ```
+   > Note: to search packages use ``apt-cache search ``
 
    ```bash
    sudo apt-get install libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libfontconfig1-dev

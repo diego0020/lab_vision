@@ -3,6 +3,25 @@
 Slides: http://goo.gl/xJ3SBu
 
 
+## Required packages
+
+- git-gui
+- gitg
+- kile
+- inkscape
+- gimp
+- dvipng
+- ghostscript
+- imagemagick
+- psutils
+- texlive
+- texlive-humanities
+- python-pygments
+- kbibtex
+- texlive-latex-extra 
+- texlive-latex-recommended
+- 
+
 ## Introduction
 
   - Latex and Git

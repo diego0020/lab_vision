@@ -23,7 +23,7 @@
 4.  What does the ``-prune`` option of ``find`` do? Give an example
     >   answer
 
-5.  Where is the file ``xxxx``
+5.  Where is the file ``grub.cfg``
     >   answer
 
 6.  How many files with ``gnu`` in its name are in ``/usr/src``

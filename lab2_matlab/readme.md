@@ -169,7 +169,8 @@ which can be otained from [fspecial](http://www.mathworks.com/help/images/ref/fs
 
 1.  Smooth an image using average and gaussian filters
 2.  Try different sizes for the filters
-3.  What are the differences?
+3.  What differences do you notice?
+
     > Answer
 
 ### Sharpen

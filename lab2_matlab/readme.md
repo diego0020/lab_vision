@@ -267,8 +267,9 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
     d=floor(size(train)/2);
     dx=d(1);
     dy=d(2);
+    %Remove borders from c2 to make it the same size as image
     c2=c(dx+1:sx+dx,dy+1:sy+dy);
-    %lets accetuate it more
+    %lets accentuate it more
     c3=c2.^3;
     %convert it into an image from 0 to 1
     cr=0.5+0.5*c3;

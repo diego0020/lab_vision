@@ -74,11 +74,13 @@ The [imread](http://www.mathworks.com/help/matlab/ref/imread.html) command is us
 2.  Read the ``5.1.12`` image
     
     What is the dimension of the output?
-    >   answer
+
+    >   Answer
 
 3.  Read the ``4.2.03`` image
     What is the dimension of the output?
-    >   answer
+
+    >   Answer
 
 ## Displaying Images
 
@@ -90,7 +92,8 @@ The following commands can be used for displaying images
 1.  Look at their manual pages
 2.  Try displaying the images read in the previous point using both commands
 3.  What are the differences?
-    > answer
+
+    >Answer
 
 ## Writing Images
 
@@ -140,7 +143,8 @@ We can do this to simulate difficult capture conditions, and evaluate the algori
 1.  Read the manual page
 2.  Try the diffente noise types, and save the noisy images to the repository (5 images)
 3.  Try saving noisy images as jpg, what happens?
-    > answer
+
+    > Answer
 
 ### Median filter
 
@@ -172,8 +176,11 @@ which can be otained from [fspecial](http://www.mathworks.com/help/images/ref/fs
 The [imsharpen](http://www.mathworks.com/help/images/ref/imsharpen.html) function lets us sharpen an image. 
 
 1.  Sharp the ``5.1.12`` image. What do you notice?
+
     > Answer
+
 2.  Sharp a blurred image. What do you notice?
+
     > Answer
 
 ### Edge detection
@@ -188,6 +195,7 @@ Notice that the last two filters detect horizontal edges, in order to detect ver
 
 1.  Try applying this filters
 2.  What is the difference between prewitt and sobel?
+
     > Answer
 
 More sophisticated methods for finding edges can be found in the following pages
@@ -242,9 +250,12 @@ The [impyramid](http://www.mathworks.com/help/images/ref/impyramid.html) functio
 1.  Read the manual page
 2.  Create a four level pyramid from the ``5.1.12`` clock  image
 3.  At what level does the people in the picture dissappear?
-    > Answer
+
+    >   Answer
+    
 4.  At what level does the numbers in the clock disappear?
-    > Answer
+
+    >   Answer
 
 ## Template Matching
 
@@ -292,3 +303,6 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
 See [here](http://www.mathworks.com/help/images/examples/registering-an-image-using-normalized-cross-correlation.html)
 another example.
 
+## End
+
+Don't forget to commit and push your answers and images to github

@@ -78,6 +78,16 @@ The [imread](http://www.mathworks.com/help/matlab/ref/imread.html) command is us
 
 ## Displaying Images
 
+The following commands can be used for displaying images
+
+-   [image](http://www.mathworks.com/help/matlab/ref/image.html)
+-   [imshow](http://www.mathworks.com/help/images/ref/imshow.html)
+
+1.  Look at their manual pages
+2.  Try displaying the images read in the previous point using both commands
+3.  What are the differences?
+    > answer
+
 ## Writing Images
 
 

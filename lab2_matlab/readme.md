@@ -157,6 +157,7 @@ These filters can be applied to a an image in order to remove noise.
 2.  Try applying both kinds of filters to noisy images. Be sure to zoom in to see the effects
 3.  Try different sizes for the filters
 4.  Which filter works best for salt & pepper noise?
+
     > Answer
 
 For more on noise removal read http://www.mathworks.com/help/images/noise-removal.html

@@ -132,7 +132,7 @@ If the command or script doesn't end in ``exit`` the matlab shell will stay open
 
 ## Filters
 
-### adding noise
+### Adding noise
 
 The [imnoise](http://www.mathworks.com/help/images/ref/imnoise.html) command can be used to add noise to images.
 We can do this to simulate difficult capture conditions, and evaluate the algorithms over difficult situations.
@@ -250,8 +250,39 @@ The [impyramid](http://www.mathworks.com/help/images/ref/impyramid.html) functio
 
 The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be used to look for patterns in an image.
 
-1.  
+1.  Download the ``sequences.tar.gz`` file (from guitaca or sipi) and decompress it
+2.  Go to the sequences directory
+3.  Read the ``motion04.512.tiff`` image
+4.  Use the ``imcrop`` comand to crop the train at the right side of the figure
+    
+    ```matlab
+    [train,square] = imcrop(image);
+    ```
+5.  Now use [normxcorr2](http://www.mathworks.com/help/images/ref/normxcorr2.htm) to locate the train back in the image
 
+    ```matlab
+    c=normxcorr2(train,image);
+    % c is correlation from -1 to 1
+    [sx,sy] = size(image);
+    d=floor(size(train)/2);
+    dx=d(1);
+    dy=d(2);
+    c2=c(dx+1:sx+dx,dy+1:sy+dy);
+    %lets accetuate it more
+    c3=c2.^3;
+    %convert it into an image from 0 to 1
+    cr=0.5+0.5*c3;
+    cb=0.5*ones(size(image));
+    ycbcr=cat(3,image,cb,cr);
+    rgb=ycbcr2rgb(ycbcr);
+    imshow(rgb);
+    ```
+6.  Explain what the above code does
+    > Answer
+7.  Now lets find the train in the next frame, read image ``motion05.512.tiff``.
+8.  Apply the procedure written above to it (use the train template from the past frame)
+9.  What are the limitations of this method?
+    > Answer
 
 See [here](http://www.mathworks.com/help/images/examples/registering-an-image-using-normalized-cross-correlation.html)
 another example.

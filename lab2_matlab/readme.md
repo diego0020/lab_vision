@@ -229,14 +229,22 @@ color spaces.
     print ('-dpng','rgb_mosaic.png');
     ```
 5.  Transform the image to the following color spaces and repeat the exercise
--   ycbcr
--   lab
--   hsv (use [rgb2hsv](http://www.mathworks.com/help/matlab/ref/rgb2hsv.html))
+    -   ycbcr
+    -   lab
+    -   hsv (use [rgb2hsv](http://www.mathworks.com/help/matlab/ref/rgb2hsv.html))
 
 6.  Save all the mosaics in your github repository
 
 ## Pyramids
 
+The [impyramid](http://www.mathworks.com/help/images/ref/impyramid.html) function creates gaussian pyramids from an image.
+
+1.  Read the manual page
+2.  Create a four level pyramid from the ``5.1.12`` clock  image
+3.  At what level does the people in the picture dissappear?
+    > Answer
+4.  At what level does the numbers in the clock disappear?
+    > Answer
 
 ## Template Matching
 

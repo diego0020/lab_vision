@@ -248,5 +248,11 @@ The [impyramid](http://www.mathworks.com/help/images/ref/impyramid.html) functio
 
 ## Template Matching
 
+The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be used to look for patterns in an image.
 
+1.  
+
+
+See [here](http://www.mathworks.com/help/images/examples/registering-an-image-using-normalized-cross-correlation.html)
+another example.
 

@@ -59,7 +59,8 @@ For more file system see http://www.mathworks.com/help/matlab/file-operations.ht
 
 Note the current directory is also shown at the top of the graphical interface
 
-    >   Change to the *misc* directory, which contains the uncompressed sipi_images
+    1.  Change to the *misc* directory, which contains the uncompressed sipi_images
+    2.  List the contents of the directory
 
 ## Reading Images
 

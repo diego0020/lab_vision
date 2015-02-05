@@ -277,7 +277,8 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
     y=mat2gray(image);
     %empty cb channel
     cb=0.5*ones(size(image));
-    ycbcr=cat(3,image,cb,cr);
+    %join the three channels
+    ycbcr=cat(3,y,cb,cr);
     rgb=ycbcr2rgb(ycbcr);
     imshow(rgb);
     ```

@@ -200,6 +200,41 @@ For more filtering operations look at http://www.mathworks.com/help/images/linea
 
 ## Color Spaces
 
+As seen on the section on reading image, color images are represented by matrices with 4 dimensios.
+The [color](http://www.mathworks.com/help/images/color.html) matlab module contains functions for moving between
+color spaces.
+
+1.  Load the ``4.2.03.tiff`` image (Mandril).
+2.  Split it into the three color channels
+    
+    ```matlab
+    img=imread('4.2.03.tiff');
+    r = img(:,:,1);
+    g = img(:,:,2);
+    b = img(:,:,3);
+    ```
+3.  Look at the three channels simultaneusly
+
+    ```matlab
+    figure;
+    subplot(2,2,1), subimage(img);
+    subplot(2,2,2), subimage(r);
+    subplot(2,2,3), subimage(g);
+    subplot(2,2,4), subimage(b);
+    ```
+    
+4.  Save the mosaic as a png file
+    
+    ```matlab
+    print ('-dpng','rgb_mosaic.png');
+    ```
+5.  Transform the image to the following color spaces and repeat the exercise
+-   ycbcr
+-   lab
+-   hsv (use [rgb2hsv](http://www.mathworks.com/help/matlab/ref/rgb2hsv.html))
+
+6.  Save all the mosaics in your github repository
+
 ## Pyramids
 
 

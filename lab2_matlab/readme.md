@@ -59,12 +59,22 @@ For more file system see http://www.mathworks.com/help/matlab/file-operations.ht
 
 Note the current directory is also shown at the top of the graphical interface
 
-    1.  Change to the *misc* directory, which contains the uncompressed sipi_images
-    2.  List the contents of the directory
+1.  Change to the *misc* directory, which contains the uncompressed sipi_images
+2.  List the contents of the directory
 
 ## Reading Images
 
+The [imread](http://www.mathworks.com/help/matlab/ref/imread.html) command is used in matlab to read images. 
 
+1.  Look at the manual page for the command
+2.  Read the ``5.1.12`` image
+    
+    What is the dimension of the output?
+    >   answer
+
+3.  Read the ``4.2.03`` image
+    What is the dimension of the output?
+    >   answer
 
 ## Displaying Images
 

@@ -4,22 +4,27 @@
 
 1.  Start the virtual machine
 2.  Clone the original lab vision repository
+
     ```bash
     git clone https://github.com/diego0020/lab_vision.git lab_vision_orig
     ```
 3.  Clone your fork from the repository
+
     ```bash
     git clone https://github.com/<USER>/lab_vision.git lab_vision
     ```
 4.  Copy the folder lab2_matlab to your repository
+
     ```bash
     cp -rf lab_vision_orig/lab2_matlab lab_vision
     ```
 5.  Delete the original repository from your machine
+
     ```bash
     rm -rf lab_vision_orig
     ```
 6.  Commit changes to your repository
+
     ```bash
     cd lab_vision
     git status
@@ -27,10 +32,12 @@
     git commit -m "added matlab lab"
     ```
 7.  Push changes
+
     ```bash
     git push
     ```    
 8.  Download and uncompress the sipi_images misc folder in your home folder
+
     ```bash
     cd ~
     scp -r vision@guitaca.uniandes.edu.co:/home/vision/sipi_images/misc.tar.gz .

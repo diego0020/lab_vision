@@ -273,6 +273,9 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
     c3=c2.^3;
     %convert it into an image from 0 to 1
     cr=0.5+0.5*c3;
+    %leave the original image as the luminance channel
+    y=mat2gray(image);
+    %empty cb channel
     cb=0.5*ones(size(image));
     ycbcr=cat(3,image,cb,cr);
     rgb=ycbcr2rgb(ycbcr);

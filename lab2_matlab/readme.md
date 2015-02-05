@@ -90,15 +90,42 @@ The following commands can be used for displaying images
 
 ## Writing Images
 
+The [imwrite](http://www.mathworks.com/help/matlab/ref/imwrite.html) image is used for writing images to disk
+
+1.  Look at the manual page
+2.  Write one of the images from before as png and as jpg
+3.  Write a matlab function that takes the path of an image and converts it to jpg
 
 ## Matlab and the shell
 
 ### Shell from Matlab
 
+It is possible to excecute bash commands from matlab by using the [system](http://www.mathworks.com/help/matlab/ref/system.html) command
+or by using a [bang](http://www.mathworks.com/help/matlab/matlab_env/run-external-commands-scripts-and-programs.html)
+
+1.  Look at the manual pages
+2.  Try it (for example ``!ps``)
+
 ### Matlab from the shell
 
+It is also possible to invoke matlab in a non interactive mode to run a script from the terminal. If the matlab
+binary is on the system PATH you can do something like this
+
+```bash
+matlab -nodisplay -nosplash -r "write_jpg('boat.512.tiff'); exit"
+# or
+matlab -nodisplay -nosplash script.m"
+```
+If the command or script doesn't end in ``exit`` the matlab shell will stay open, and will block the bash script.
+
+
+1.  Create a script for converting all tiff images to jpeg
+    -   You may create a bash script that calls matlab
+    -   Or a matlab script that calls bash 
+    -   Or both
 
 ## Filters
+
 
 
 ## Color Spaces

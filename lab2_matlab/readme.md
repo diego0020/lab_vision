@@ -49,7 +49,21 @@
 
 ## Working directory
 
+The following commands can be used inside matlab, just like in bash
+
+    -   pwd
+    -   ls
+    -   cd
+
+For more file system see http://www.mathworks.com/help/matlab/file-operations.html
+
+Note the current directory is also shown at the top of the graphical interface
+
+    >   Change to the *misc* directory, which contains the uncompressed sipi_images
+
 ## Reading Images
+
+
 
 ## Displaying Images
 

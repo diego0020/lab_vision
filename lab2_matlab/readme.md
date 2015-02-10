@@ -46,9 +46,11 @@
     tar -xzf misc.tar.gz
     ```    
 9.  Open matlab
+
     ```bash
     /usr/local/MATLAB/R2014b/bin/matlab
     ```
+
 Note: On windows you can use [github for windows](https://windows.github.com/) or [git-scm](http://git-scm.com/)
 
 **IMPORTANT**

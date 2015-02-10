@@ -46,6 +46,10 @@
     tar -xzf misc.tar.gz
     ```    
 9.  Open matlab
+    ```bash
+    /usr/local/MATLAB/R2014b/bin/matlab
+    ```
+Note: On windows you can use [github for windows](https://windows.github.com/) or [git-scm](http://git-scm.com/)
 
 **IMPORTANT**
 This file contains questions, you should write your answers here and don't forget to **commit** and **push** to
@@ -296,7 +300,9 @@ The [norm2corrx](http://www.mathworks.com/help/images/ref/normxcorr2.htm) can be
     imshow(rgb);
     ```
 6.  Explain what the above code does
+
     > Answer
+    
 7.  Now lets find the train in the next frame, read image ``motion05.512.tiff``.
 8.  Apply the procedure written above to it (use the train template from the past frame)
 9.  What are the limitations of this method?

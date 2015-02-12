@@ -51,7 +51,7 @@ Where *f1* and *f2* are low pass filters, and *X1* and *X2* are the input images
 
 ### Visualization
 
-In order to simulate how the image will look from different distances we can use a pyramid (see figure 7 of the  [Hybrid Images paper](http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf) ).
+In order to simulate how the image will look from different distances we can use a pyramid (see figure at the bottom of http://cs.brown.edu/courses/cs143/proj1/ ).
 
 - Create such a visualization for your image
 - Upload it to the repository
@@ -66,7 +66,7 @@ Create a hybrid image based on images from your own collections. The more origin
 - Pictures of places you have visited (preferably in Colombia)
 - Use your creativity
 
-Notice that you will have to align the images to increase the effect. To do this you may use image edition software like gimp or photoshop. 
+Notice that you will have to align the images to increase the effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect.
 
 Finally, upload to the repository 
 

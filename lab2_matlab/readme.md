@@ -206,7 +206,7 @@ which can be otained from [fspecial](http://www.mathworks.com/help/images/ref/fs
 2.  Try different sizes for the filters
 3.  What differences do you notice?
 
-    > Answer
+    > gaussiano hace que la imagen sesuavice mas 
 
 ### Sharpen
 
@@ -214,11 +214,11 @@ The [imsharpen](http://www.mathworks.com/help/images/ref/imsharpen.html) functio
 
 1.  Sharp the ``5.1.12`` image. What do you notice?
 
-    > Answer
+    > Se notan mejor los bordes
 
 2.  Sharp a blurred image. What do you notice?
 
-    > Answer
+    > es lo contrario de blur, devuelve la misma imagen original
 
 ### Edge detection
 
@@ -233,7 +233,7 @@ Notice that the last two filters detect horizontal edges, in order to detect ver
 1.  Try applying this filters
 2.  What is the difference between prewitt and sobel?
 
-    > Answer
+    > sobel ademas de detectar bordes horizontales suaviza la imagen resultante
 
 More sophisticated methods for finding edges can be found in the following pages
     -   http://www.mathworks.com/discovery/edge-detection.html

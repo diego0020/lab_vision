@@ -38,7 +38,7 @@ Look at the [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](
 - The filter 
 - The filtered images
 
-### Adding the images
+### Summing the images
 
 The hybrid image is composed by adding the two filtered images. The full formula would be
 
@@ -64,7 +64,7 @@ Create a hybrid image based on images from your own collections. The more origin
 - Pets
 - Pictures of the university or the city
 - Pictures of places you have visited (preferably in Colombia)
-- Use your creativity
+- Be creative
 
 Notice that you will have to align the images to increase the effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect.
 
@@ -72,5 +72,7 @@ Finally, upload to the repository
 
 - The original images
 - The final hybrid image
-- The code you used to blend them
+- The pyramid
+- The code you used
 
+**DUE**: 3 /3 /2015 ; 8:00 a.m. 

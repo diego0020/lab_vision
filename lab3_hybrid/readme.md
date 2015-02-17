@@ -65,6 +65,7 @@ Create a hybrid image based on images from your own collections. The more origin
 - Pictures of the university or the city
 - Pictures of places you have visited (preferably in Colombia)
 - Be creative
+- Avoid images downloaded from internet
 
 Notice that you will have to align the images to increase the effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect.
 

@@ -288,11 +288,11 @@ The [impyramid](http://www.mathworks.com/help/images/ref/impyramid.html) functio
 2.  Create a four level pyramid from the ``5.1.12`` clock  image
 3.  At what level does the people in the picture dissappear?
 
-    >   Answer
+    >   tercer nivel
     
 4.  At what level does the numbers in the clock disappear?
 
-    >   Answer
+    >   tercer nivel
 
 ## Template Matching
 

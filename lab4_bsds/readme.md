@@ -10,9 +10,42 @@ Please look at this page.
 
 The data for this lab can be downloaded from the following mirrors in the university
 
-Guainia, http: http://guainia.uniandes.edu.co/
-Guitaca, ssh: ``scp guitaca.uniandes.edu.co:/home/vision/ .``
+- Guainia, http: http://guainia.uniandes.edu.co/BSR_full.tgz
+- Guitaca, ssh: ``scp vision@guitaca.uniandes.edu.co:/home/vision/BSR_full.tgz .``
 
 The original source can be found in the Berkley group page.
 
+**Note**: Don't add any of these files to your repository, they are too large.
+
 ## Data description
+
+The folder will contain the following direcotries
+
+- bench: Code for running benchmarks and comparing algorithms
+- BSD500: 
+  -   Data: Images and manual segmentations (ground truth)
+  -   ucm2: Precalculated results of the *Ultrametric Contour Map* segmentation algorithm,
+-   Documentation: Paper describing the UCM algorithm
+-   Grouping: The UCM algorithm implementation
+
+## Ground truth data
+
+The ground truth data is saved as matlab data, it contains manual segmentation from different people. For example,
+to look at the ground truth for image ``train/22090`` we can use the following code
+
+```matlab
+load('BSDS500/data/groundTruth/train/22090.mat')
+% Load segmentation from first human
+segm=groundTruth{1}.Segmentation;
+image(segm)
+colormap colorcube
+
+% create a new figure
+figure
+% Boundaries from first human
+bound=groundTruth{1}.Boundaries;
+image(bound)
+colormap flag
+```
+
+

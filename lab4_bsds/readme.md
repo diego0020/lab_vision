@@ -76,7 +76,7 @@ Use only the ``train`` and ``eval`` datasets to calibrate your function. See htt
 
 ## Test your function
 
-Run a contour benchmark on two cases of your function, and compare it to the UCM algorithm. Use the ``test`` data set of the BSDS500. The final plot should contain at least three lines (two instances of your function and the UCM algorithm).
+Run a contour benchmark on two cases of your function, and compare it to the UCM algorithm. Use the ``test`` data set of the BSDS500. The final plot should contain at least three lines or dots (two instances of your function and the UCM algorithm).
 See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example otuput.
 
 ## Report

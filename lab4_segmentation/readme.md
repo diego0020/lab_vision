@@ -37,6 +37,7 @@ colormap colorcube
 
 You should see an image similar to the following, where each color represents a different cluster.
 
+![Example of segmentation](segmented.png)
 
 Try different parameters of your function, and see which ones work best. Next week we will perform a formal test of this function.
 

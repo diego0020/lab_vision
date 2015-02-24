@@ -21,7 +21,7 @@ function my_segmentation = segment_by_clustering( rgb_image, feature_space, clus
 ```
 Where
 
-- feature_space : 'rgb', 'lab', 'hsv', 'rgb+xy', 'lab+xy', 'hsv+xy', 'textons', 'textons+xy'
+- feature_space : 'rgb', 'lab', 'hsv', 'rgb+xy', 'lab+xy', 'hsv+xy'
 - clustering_method = k-means, gmm, hierarchical or watershed (code seen in class).
 
 The output of the function should be a image (or matrix) where each pixel has a cluster label.

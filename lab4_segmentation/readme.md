@@ -5,7 +5,7 @@
 
 The data for this lab can be downloaded from the following mirrors in the university
 
-- Guainia, http: http://guiania.uniandes.edu.co/seg_images.zip
+- Guainia, http: http://guainia.uniandes.edu.co/seg_images.zip
 - Guitaca, ssh: ``scp vision@guitaca.uniandes.edu.co:/home/vision/seg_images.zip .``
 
 For using ssh in windows you may use [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 

@@ -78,3 +78,18 @@ See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.
 ## Report
 
 Write a report describing your chosen segmentation methods, the testing methodology, the results from the testing, and a discussion about the results and potential improvements to the function. Use te LaTeX template from the second lab. Upload to your repository the report and the code for your segmentation function.
+
+## Running the benchmark remotely
+
+The benchmark on the 200 test images can take a several hours. If you prefer, you may run them on the *guitaca* server. In order to be able to disconnect from the server and have it continue the work we can use [sceen](http://linux.die.net/man/1/screen).
+Connect to guitaca using ``ssh`` and afterwards type
+
+```bash
+screen -S <session_name>
+```
+
+Use your name as session name, so that you don't get confused with other people working at the same time. If you disconnect from the session, you can return to it by typing
+
+```bash
+screen -r <session_name>
+```

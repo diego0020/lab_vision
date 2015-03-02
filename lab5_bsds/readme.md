@@ -81,7 +81,14 @@ Write a report describing your chosen segmentation methods, the testing methodol
 
 ## Running the benchmark remotely
 
-The benchmark on the 200 test images can take a several hours. If you prefer, you may run them on the *guitaca* server. In order to be able to disconnect from the server and have it continue the work we can use [sceen](http://linux.die.net/man/1/screen).
+The benchmark on the 200 test images can take a several hours. If you prefer, you may run them on the *guitaca* server. 
+
+However, all of you would be using the same account so please take into account the following
+
+- Be careful not to mess with other people's data or processes
+- Create a new directory and work there
+
+In order to be able to disconnect from the server and have it continue the work you can use [sceen](http://linux.die.net/man/1/screen).
 Connect to guitaca using ``ssh`` and afterwards type
 
 ```bash

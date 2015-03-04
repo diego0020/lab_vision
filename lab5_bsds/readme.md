@@ -56,7 +56,7 @@ Look at the ground truth data for the different human participants, and differen
 
 The file ``bench/test_benchs.m`` contains several examples of how to use the benchmark functions for different types of *results* images. Look at it and run the examples.
 
-Look at the files the define the function ``boundaryBench`` and read the description of inputs.
+Look at the file that defines the function ``boundaryBench`` and read the description of inputs.
 
 # Homework
 
@@ -72,10 +72,18 @@ Use only the ``train`` and ``eval`` datasets to calibrate your function. See htt
 
 ## Test your function
 
-Run a contour benchmark on two cases of your function, and compare it to the UCM algorithm. Use the ``test`` data set of the BSDS500. The final plot should contain at least three lines (two instances of your function and the UCM algorithm).
+Run a contour benchmark on two cases of your function, and compare it to the state of the art. Use the ``test`` data set of the BSDS500. The final plot should contain at least three lines (two instances of your function and the UCM algorithm). You can also use the figure updated to sicua as base. Look at the code of the ``plot_eval`` function for more information on how to create these plots.
+
 See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example otuput.
 
 Use different thresholds numbers to generate a curve.
+
+A summary of the steps required is:
+
+  - Apply your function to each of the images in the *test* dataset
+  - For each image, create a *.mat* file that contains a cell array, which contains severa matrices representing the output of the function for different values of the parameter. Look at the *bench/data/segs* folder for examples.
+  - Run the ``boundaryBench`` function specifying the folder with the *.mat* files as ``pbDir``. See the third example in the *test_benchs* file.
+  - Generate the plot using the code from the ``test_eval`` function.
 
 ## Report
 

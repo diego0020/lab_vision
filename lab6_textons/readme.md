@@ -9,8 +9,8 @@ The database for this lab comes from the [ponce group](http://www-cvr.ai.uiuc.ed
 
 You can download it from the following mirrors in the university
 
-    -   http:
-    -   ssh:
+    -   http: http://guainia.uniandes.edu.co/textures.zip
+    -   ssh: ``scp vision@guitaca.uniandes.edu.co:/home/vision/textures.zip .``
 
     
 ## Representation
@@ -18,15 +18,15 @@ You can download it from the following mirrors in the university
 To *lib* foder contains functions that can be used to represent images as textons. 
 The ``example.m`` file shows how to use them. 
 
-For each of the following functions, used in the example, describe what they do, what are their inputs, and what are their outputs
+For each of the following functions, used in the example, find what they do, what are their inputs, and what are their outputs.
 
     -   fbCreate
     -   fbRun
     -   computeTextons
     -   assignTextons
 
-    >> Answer
-
+Use ``computeTextons`` to create descriptors appropriate for the database. Remember that at this stage you may only use the images in the *train* folder.
+    
 ## Classification
 
 After images are represented as a dictionary of textons, train and test a classifier using the above database. Try two different kinds of classifiers:
@@ -41,8 +41,9 @@ Train both classifiers and with images in the *train* directory and test them on
 
 The report for this laboratory should include
 
-    -   Description of the method and filters used for representing the images
     -   Small (one paragraph) description of the database
+    -   Description of the method and filters used for representing the images
+        -   How did you create the dictionary?
     -   Small (one paragraph for each one) description of the classifiers and the distance metrics
     -   Results
     -   Discussion of the results
@@ -53,4 +54,4 @@ The report for this laboratory should include
         -   How could the method be improved?
 
 The functions created during this lab will be used again, so try your best to make them reusable.         
-        
+       

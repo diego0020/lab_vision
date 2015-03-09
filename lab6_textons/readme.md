@@ -9,8 +9,8 @@ The database for this lab comes from the [ponce group](http://www-cvr.ai.uiuc.ed
 
 You can download it from the following mirrors in the university
 
-    -   http: http://guainia.uniandes.edu.co/textures.zip
-    -   ssh: ``scp vision@guitaca.uniandes.edu.co:/home/vision/textures.zip .``
+-   http: http://guainia.uniandes.edu.co/textures.zip
+-   ssh: ``scp vision@guitaca.uniandes.edu.co:/home/vision/textures.zip .``
 
     
 ## Representation
@@ -41,17 +41,17 @@ Train both classifiers and with images in the *train* directory and test them on
 
 The report for this laboratory should include
 
-    -   Small (one paragraph) description of the database
-    -   Description of the method and filters used for representing the images
-        -   How did you create the dictionary?
-    -   Small (one paragraph for each one) description of the classifiers and the distance metrics
-    -   Results
-    -   Discussion of the results
-        -   Which classifier works best?
-        -   Which categories cause the most confusion?
-        -   What are the limitations of the method?
-        -   What are the limitations of the database?
-        -   How could the method be improved?
+-   Small (one paragraph) description of the database
+-   Description of the method and filters used for representing the images
+    -   How did you create the dictionary?
+-   Small (one paragraph for each one) description of the classifiers and the distance metrics
+-   Results
+-   Discussion of the results
+    -   Which classifier works best?
+    -   Which categories cause the most confusion?
+    -   What are the limitations of the method?
+    -   What are the limitations of the database?
+    -   How could the method be improved?
 
 The functions created during this lab will be used again, so try your best to make them reusable.         
        

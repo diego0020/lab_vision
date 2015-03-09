@@ -31,9 +31,9 @@ Use ``computeTextons`` to create descriptors appropriate for the database. Remem
 
 After images are represented as a dictionary of textons, train and test a classifier using the above database. Try two different kinds of classifiers:
 
-    -   Nearest neighbour: Use intersection of histograms or Chi-Square metrics (see [opencv-histograms](http://docs.opencv.org/modules/imgproc/doc/histograms.html#comparehist) 
-        for more information.
-    -   Random forest: Use the matlab [tree bagger](http://www.mathworks.com/help/stats/treebagger.html) function. See an example at [kawahara.ca](http://kawahara.ca/matlab-treebagger-example/)
+-   Nearest neighbour: Use intersection of histograms or Chi-Square metrics (see [opencv-histograms](http://docs.opencv.org/modules/imgproc/doc/histograms.html#comparehist) 
+    for more information.
+-   Random forest: Use the matlab [tree bagger](http://www.mathworks.com/help/stats/treebagger.html) function. See an example at [kawahara.ca](http://kawahara.ca/matlab-treebagger-example/)
 
 Train both classifiers and with images in the *train* directory and test them once with images in the *test* directory. From the test results calculate the confusion matrix. 
 
@@ -44,6 +44,7 @@ The report for this laboratory should include
 -   Small (one paragraph) description of the database
 -   Description of the method and filters used for representing the images
     -   How did you create the dictionary?
+    -   What filters discriminate the most?
 -   Small (one paragraph for each one) description of the classifiers and the distance metrics
 -   Results
 -   Discussion of the results

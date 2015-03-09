@@ -44,6 +44,7 @@ The report for this laboratory should include
 -   Small (one paragraph) description of the database
 -   Description of the method and filters used for representing the images
     -   How did you create the dictionary?
+    -   How many textons are you using? Why?
     -   What filters discriminate the most?
 -   Small (one paragraph for each one) description of the classifiers and the distance metrics
 -   Results

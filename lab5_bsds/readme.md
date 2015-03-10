@@ -89,6 +89,9 @@ A summary of the steps required is:
 
 Write a report describing your chosen segmentation methods, the testing methodology, the results from the tests, and a discussion about the results and potential improvements to the function. Use te LaTeX template from the second lab. Upload to your repository the report and the code for your segmentation function.
 
+
+**Due:** March 17, 2015
+
 ## Running the benchmark remotely
 
 The benchmark on the 200 test images can take a several hours. If you prefer, you may run them on the *guitaca* server. 

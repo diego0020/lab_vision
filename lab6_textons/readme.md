@@ -59,4 +59,5 @@ The report for this laboratory should include
     -   How could the method be improved?
 
 The functions created during this lab will be used again, so try your best to make them reusable.         
-       
+
+**Due date:** March 24, 2015

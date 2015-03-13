@@ -46,4 +46,4 @@ In addition to the labels for the test data and the source code you should uploa
 - Limitations of the method
 - Possible improvements
 
-**Due date:**  March 27, 2015
+**Due date:**  March 27, 2015; 6:00 p.m.

@@ -23,14 +23,27 @@ Analyze the script and understand very well what it does. Run it using checkpoin
 
 ## Homework
 
-You will apply the method illustrated in the script mentioned above to a new data-set. You will be given train images with ground truth and test images. You should upload your estimation of the labels for the test images to sicua. In other words, you will *not* have access to the ground truth data for test images. Also notice only your final submission will be taken into account. Also you should upload the source code for training your model and generating the labels to github. Finally you should write a report explaining how you applied your method to this dataset (more details below).  
+You will apply the method illustrated in the script mentioned above to a new data-set. You will be given train images with ground truth and test images. You should upload your estimation of the labels for the test images to sicua. In other words, you will *not* have access to the ground truth data for test images. Also you should upload the source code for training your model and generating the labels to github. Finally you should write a report explaining how you applied your method to this dataset (more details below).  
+
+After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and give you the performance results. Notice that you will only be able to submit results once.
 
 Some tips:
 
 - Notice the database can have more than one object per image, you need to indicate all the objects you find in each image
-- Leave a subset of the training data for *validation*
+- Leave a subset of the training data for *validation* or use boot-strap techniques.
 - Adjust the scale, grid density, number of words and other parameters to this new dataset.
-
-
+- Feel free to add additional improvements to the algorithm
+- Make your code reusable so that you can use it again in other labs and on the final project
 
 ## Report
+
+In addition to the labels for the test data and the source code you should upload a report (using the LaTeX style) containing the following points
+
+- Description of the database
+- Description of the recognition method (focus on the adjustments you made to adapt it to the database)
+- Training and test results
+- Discussion of the results
+- Limitations of the method
+- Possible improvements
+
+**Due date:**  March 27, 2015

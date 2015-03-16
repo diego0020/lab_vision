@@ -21,29 +21,57 @@ During this lab you will use dense-sift descriptors for image recognition in the
 
 Analyze the script and understand very well what it does. Run it using checkpoints to further see how it works. Notice the flow is very similar to the one used with textons in the previous lab. After the script is done take a close look at the results and interpret them. Finally, use the trained model to classify new images.
 
-## Homework
+## Exercise
 
-You will apply the method illustrated in the script mentioned above to a new data-set. You will be given train images with ground truth and test images. You should upload your estimation of the labels for the test images to sicua. In other words, you will *not* have access to the ground truth data for test images. Also you should upload the source code for training your model and generating the labels to github. Finally you should write a report explaining how you applied your method to this dataset (more details below).  
+Use the techniques illustrated in the example to train and test a classifier in a subset of the [image-net](www.image-net.org) database. 
 
-After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and give you the performance results. Notice that you will only be able to submit results once.
+http://guainia.uniandes.edu.co/imagenet_train_small.tar
 
-Some tips:
+Notice this is a large file (~6GB), so it would be best to use ``wget`` or some download manager. You may also experience problems extracting the data with graphical tools. 
 
-- Notice the database can have more than one object per image, you need to indicate all the objects you find in each image
-- Leave a subset of the training data for *validation* or use boot-strap techniques.
-- Adjust the scale, grid density, number of words and other parameters to this new dataset.
-- Feel free to add additional improvements to the algorithm
-- Make your code reusable so that you can use it again in other labs and on the final project
+Adapt the script from the example to work on this new dataset. What performance do you get? How does it compare to the results from caltech-101? Can you guess what causes the differences?
+
+Notice that using all the 995 categories will require significant amount of memory, and you possibly won't be able to try the full problem at the lab. 
+
+Also, experiment with the script to try to find out the following
+
+- How does the problem changes when the number of categories increases?
+- How does the problem changes when the size of the training set changes?
+- How does the problem changes when the spatial paritioning changes (``conf.numSpatialX``)?
+
+Answer all questions from the following points of view
+
+- Performance of the classifier (in test and training)
+- Computational resources needed
+
+Don't just say *"it improves"*; explain how much it improves. Is it linear? Is it significant? Where are the computing resources being used? What are the practical implications of these?
 
 ## Report
 
-In addition to the labels for the test data and the source code you should upload a report (using the LaTeX style) containing the following points
+In addition to the source code used in the above exercise, you should upload a report (using the LaTeX style) containing the following points
 
 - Description of the database
 - Description of the recognition method (focus on the adjustments you made to adapt it to the database)
 - Training and test results
 - Discussion of the results
+- Discussion on the effecs of
+  - number of categories 
+  - size of training set
+  - number of spatial partitions
 - Limitations of the method
 - Possible improvements
 
+
+## Bonus
+
+You will apply the method illustrated in the script mentioned above to a new data-set. You will be given an additional set of test images without labels. You should upload your estimation of the labels for the test images to sicua. 
+http://guainia.uniandes.edu.co/imagenet_test_small.tar
+
+You should upload a ``csv`` file where each line contains the name of the image, a comma, and the name of the label. The names of the labels should match those in the training data-set.
+
+After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and give you the performance results. Notice that you will only be able to submit results once.
+
+
 **Due date:**  March 27, 2015; 6:00 p.m.
+
+

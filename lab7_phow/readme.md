@@ -26,7 +26,7 @@ Use the techniques illustrated in the example to train and test a classifier in 
 
 http://guainia.uniandes.edu.co/imagenet_train_tiny.tar
 
-Notice this is a large file (~6GB), so it would be best to use ``wget`` or some download manager. You may also experience problems extracting the data with graphical tools. 
+Notice this is a large file (~1.2GB), so it would be best to use ``wget`` or some download manager. You may also experience problems extracting the data with graphical tools. 
 
 Adapt the script from the example to work on this new dataset. What performance do you get? How does it compare to the results from caltech-101? Can you guess what causes the differences?
 
@@ -81,6 +81,13 @@ Notice we will need to reproduce your results by running your code again (you ca
 - Don't use any external data
 
 You may improve the classifier using the techniques seen in class.
+
+## Extra Challenge
+
+You can find versions of the database with 950 categories in
+
+http://guainia.uniandes.edu.co/imagenet_train_small.tar
+http://guainia.uniandes.edu.co/imagenet_test_small.tar
 
 **Due date:**  March 27, 2015; 6:00 p.m.
 

@@ -2,10 +2,9 @@
 
 ## Setup
 
-For this lab you will use the [vl_feat](http://www.vlfeat.org/index.html) library. We provide a download for the libray including the example dataset at the following locations
+For this lab you will use the [vl_feat](http://www.vlfeat.org/index.html) library. We provide a download for the libray including the example dataset from
 
-  - http: guainia
-  - ssh: guitaca
+http://guainia.uniandes.edu.co/caltech101.zip
 
 After downloading and uncompressing the folde, open matlab and change and run the following command
 
@@ -25,7 +24,7 @@ Analyze the script and understand very well what it does. Run it using checkpoin
 
 Use the techniques illustrated in the example to train and test a classifier in a subset of the [image-net](www.image-net.org) database. 
 
-http://guainia.uniandes.edu.co/imagenet_train_small.tar
+http://guainia.uniandes.edu.co/imagenet_train_tiny.tar
 
 Notice this is a large file (~6GB), so it would be best to use ``wget`` or some download manager. You may also experience problems extracting the data with graphical tools. 
 
@@ -65,7 +64,7 @@ In addition to the source code used in the above exercise, you should upload a r
 ## Bonus
 
 You will apply the method illustrated in the script mentioned above to a new data-set. You will be given an additional set of test images without labels. You should upload your estimation of the labels for the test images to sicua. 
-http://guainia.uniandes.edu.co/imagenet_test_small.tar
+http://guainia.uniandes.edu.co/imagenet_test_tiny.tar
 
 You should upload a ``csv`` file where each line contains the name of the image, a comma, and the name of the label. The names of the labels should match those in the training data-set. For example one line could look like this
 

@@ -69,8 +69,9 @@ http://guainia.uniandes.edu.co/imagenet_test_small.tar
 
 You should upload a ``csv`` file where each line contains the name of the image, a comma, and the name of the label. The names of the labels should match those in the training data-set.
 
-After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and give you the performance results. Notice that you will only be able to submit results once.
+After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and give you the confussion matrix. Notice that you will only be able to submit results once.
 
+The *three* submission with more correct labels will win a surprise bonus!
 
 **Due date:**  March 27, 2015; 6:00 p.m.
 

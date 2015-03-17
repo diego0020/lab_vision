@@ -30,7 +30,7 @@ Notice this is a large file (~1.2GB), so it would be best to use ``wget`` or som
 
 Adapt the script from the example to work on this new dataset. What performance do you get? How does it compare to the results from caltech-101? Can you guess what causes the differences?
 
-Notice that using all the 995 categories will require significant amount of memory, and you possibly won't be able to try the full problem at the lab. 
+Using all the 200 categories will require significant amount of memory, and you possibly won't be able to try the full problem at the lab. 
 
 Also, experiment with the script to try to find out the following
 

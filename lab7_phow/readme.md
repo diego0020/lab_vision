@@ -43,7 +43,7 @@ Answer all questions from the following points of view
 - Performance of the classifier (in test and training)
 - Computational resources needed
 
-Don't just say *"it improves"*; explain how much it improves. Is it linear? Is it significant? Where are the computing resources being used? What are the practical implications of these?
+Don't just say *"it improves"*; explain how much it improves. Is it linear? Is it significant? Where are the computing resources being used? What are the practical implications? What are the costs and the benefits? 
 
 ## Report
 

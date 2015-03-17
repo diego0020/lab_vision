@@ -87,6 +87,7 @@ You may improve the classifier using the techniques seen in class.
 You can find versions of the database with 950 categories in
 
 http://guainia.uniandes.edu.co/imagenet_train_small.tar
+
 http://guainia.uniandes.edu.co/imagenet_test_small.tar
 
 **Due date:**  March 27, 2015; 6:00 p.m.

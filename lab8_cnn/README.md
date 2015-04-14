@@ -75,7 +75,11 @@ We will train and test your functions. Each one will be given a maximum of 3 hou
 - Matlab 2014b
 - Fedora Core 21
 
-We will use the gpu accelerated version of MatConvNet
+We will use the gpu accelerated version of MatConvNet. We will give you back your trained network and the results. 
+
+## Bonus
+
+The 4 networks that achieve the best performance will receive 4 extra points, which can be added to any of your lab grades, or distributed among several grades. 
 
 ## Note
 

@@ -65,7 +65,7 @@ You will need to **upload to sicua**:
   ```
   where ``net`` is your trained network, ``testdata`` is a *128x128xK* matrix containing the test data, and res is a vector of length *K* that contains the numerical labels of the predicted classes.
   
-We will train and test your functions. Each one will be given a maxium of 4 hours of machine time to train. After the time has passed we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. Tha machine that we will use has the following specifications:
+We will train and test your functions. Each one will be given a maximum of 3 hours of machine time to train. After the time has passed we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. Tha machine that we will use has the following specifications:
 
 - 62G of ram
 - 24 logical cores, contained in 2 Intel(R) Xeon(R) E5-2620  @ 2.00GHz

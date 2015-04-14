@@ -6,15 +6,12 @@ This lab makes use of [vl-feat](http://www.vlfeat.org/matlab/matlab.html) and [M
 
 ## 0. Setup
 
-The data and code for this lab can be downloaded from
-
-http://guainia.uniandes.edu.co/practical-cnn-2015a.tar.gz
-
+The data and code for this lab can be downloaded from [guainia](http://guainia.uniandes.edu.co/practical-cnn-2015a.tar.gz)
 or from the practical site indicated above.
 
 ## 1. Creating CNN
 
-Read throug [Part 1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part1) of the practical.
+Read through [Part 1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part1) of the practical.
 
 Understand the different types of layers and what they do
 
@@ -23,7 +20,7 @@ Understand the different types of layers and what they do
 - pooling
 - normalisation
 
-Specially try to understand the dimension of their inputs and outputs.
+Specifically, try to understand the dimensions of their inputs and outputs. How are they connected? How the data flows accross the network?
 
 ## 2. Training CNN
 
@@ -60,19 +57,19 @@ You will need to **upload to sicua**:
   ```matlab
   function res=train_net(net ,test_data)
   ```
-  where ``net`` is your trained network, ``testdata`` is a *128x128xK* matrix containing the test data, and res is a vector of length *K* that contains the numerical labels of the predicted classes.
+  where ``net`` is your trained network, ``testdata`` is a *128x128xK* matrix containing the test data, and ``res`` is a vector of length *K* that contains the numerical labels of the predicted classes.
   
-We will train and test your functions. Each one will be given a maximum of 3 hours of machine time to train. After the time has passed we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. Tha machine that we will use has the following specifications:
+We will train and test your network. You will be assigned a maximum of 4 hours of machine time to train. After the time has passed we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. Tha machine that we will use has the following specifications:
 
 - 62G of ram
 - 24 logical cores, contained in 2 Intel(R) Xeon(R) E5-2620  @ 2.00GHz
-- Video:
+- 4 Video Cards:
   - 1 NVIDIA Tesla K20c
   - 3 NVIDIA Quadro K5000
-- Matlab 2014b
+- Matlab 2014a
 - Fedora Core 21
 
-We will use the gpu accelerated version of MatConvNet. We will give you back your trained network and the results. 
+We will use the GPU accelerated version of MatConvNet. We will give you back your trained network and the results. 
 
 ## Bonus
 

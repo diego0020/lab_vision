@@ -44,7 +44,7 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 The file [textonsdb](http://guainia.uniandes.edu.co/textonsdb.mat),
 also available in sicua, contains a database based on the textures from [lab6](https://github.com/diego0020/lab_vision/tree/master/lab6_textons). In this case we took 25 random *128x128* patches from each image in the train set in order to create a set of 18750 training images.  
 
-Based on the fonts classification CNN, [Part 4](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part-4-learning-a-character-cnn) of the practical, design a network appropriate for classifying this new dataset. **There is no need to throughly train the network.** 
+Based on the fonts classification CNN ([Part 4](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part-4-learning-a-character-cnn) of the practical), design a network appropriate for classifying this new dataset. **There is no need to throughly train the network.** 
 
 You will need to **upload to sicua**:
 

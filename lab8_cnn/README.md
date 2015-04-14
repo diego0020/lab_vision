@@ -75,6 +75,9 @@ We will use the GPU accelerated version of MatConvNet. If everythin runs smoothl
 
 The 4 networks that achieve the best performance will receive 4 extra points, which can be added to any of your lab grades, or distributed among several grades. 
 
+## Due Date:
+Tuesday 21 of April, 2015 at 11:00 a.m.
+
 ## Note
 
 If you think you can apply these techniques to your project, you should do the full practical.

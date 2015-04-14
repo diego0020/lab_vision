@@ -61,3 +61,9 @@ The report for this laboratory should include
 The functions created during this lab will be used again, so try your best to make them reusable.         
 
 **Due date:** March 24, 2015
+
+## Extra Credit
+
+-   Add circular gaussian filters to the bank
+-   Add another spatial layer to the bank
+-   Try a SVM classifier (as in the phow lab)

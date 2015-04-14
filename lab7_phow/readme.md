@@ -82,6 +82,10 @@ Notice we will need to reproduce your results by running your code again (you ca
 
 You may improve the classifier using the techniques seen in class.
 
+## Extra Credit
+
+- Repeat the lab using *Color-PHOW* and compare the results
+
 ## Extra Challenge
 
 You can find versions of the database with 950 categories in

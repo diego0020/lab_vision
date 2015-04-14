@@ -44,9 +44,9 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 The file [textonsdb](http://guainia.uniandes.edu.co/textonsdb.mat),
 also available in sicua, contains a database based on the textures from [lab6](https://github.com/diego0020/lab_vision/tree/master/lab6_textons). In this case we took 25 random *128x128* patches from each image in the train set in order to create a set of 18750 training images.  
 
-Based on the fonts classification CNN ([Part 4](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part-4-learning-a-character-cnn) of the practical), design a network appropriate for classifying this new dataset. **There is no need to throughly train the network.** 
+Based on the fonts classification CNN ([Part 4](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part-4-learning-a-character-cnn) of the practical), design a network appropriate for classifying this new dataset. You are NOT required to fully train the network; however make sure it works by running a few training iterations. 
 
-You will need to **upload to sicua**:
+You will need to **upload to Sicua**:
 
 - A matlab source file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input.
 - A brief (one or two paragraph) description of your network, and the intuition behind each layer. Why are you proposing this architecture?
@@ -59,7 +59,7 @@ You will need to **upload to sicua**:
   ```
   where ``net`` is your trained network, ``testdata`` is a *128x128xK* matrix containing the test data, and ``res`` is a vector of length *K* that contains the numerical labels of the predicted classes.
   
-We will train and test your network. You will be assigned a maximum of 4 hours of machine time to train. After the time has passed we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. Tha machine that we will use has the following specifications:
+We will train and test your network. You will be assigned a maximum of 4 hours of machine time to train. After this time we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. Tha machine that we will use has the following specifications:
 
 - 62G of ram
 - 24 logical cores, contained in 2 Intel(R) Xeon(R) E5-2620  @ 2.00GHz
@@ -69,7 +69,7 @@ We will train and test your network. You will be assigned a maximum of 4 hours o
 - Matlab 2014a
 - Fedora Core 21
 
-We will use the GPU accelerated version of MatConvNet. We will give you back your trained network and the results. 
+We will use the GPU accelerated version of MatConvNet. If everythin runs smoothly, and the justification of your network is sound, you will get a five.
 
 ## Bonus
 

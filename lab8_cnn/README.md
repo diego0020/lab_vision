@@ -66,7 +66,7 @@ We will train and test your network. You will be assigned a maximum of 4 hours o
 - 4 Video Cards:
   - 1 NVIDIA Tesla K20c
   - 3 NVIDIA Quadro K5000
-- Matlab 2014a
+- Matlab 2014b
 - Fedora Core 21
 
 We will use the GPU accelerated version of MatConvNet. If everythin runs smoothly, and the justification of your network is sound, you will get a five.

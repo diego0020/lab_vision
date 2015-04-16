@@ -69,7 +69,7 @@ We will train and test your network. You will be assigned a maximum of 4 hours o
 - Matlab 2014b
 - Fedora Core 21
 
-We will use the GPU accelerated version of MatConvNet. If everythin runs smoothly, and the justification of your network is sound, you will get a five.
+You can choose to use GPU accelerated functions or just CPU. If everythin runs smoothly, and the justification of your network is sound, you will get a five.
 
 ## Bonus
 
@@ -85,3 +85,4 @@ If you think you can apply these techniques to your project, you should do the f
 ## Additional Bibliography
 
 http://neuralnetworksanddeeplearning.com/
+http://benanne.github.io/2015/03/17/plankton.html

@@ -81,3 +81,7 @@ Tuesday 21 of April, 2015 at 11:00 a.m.
 ## Note
 
 If you think you can apply these techniques to your project, you should do the full practical.
+
+## Additional Bibliography
+
+http://neuralnetworksanddeeplearning.com/

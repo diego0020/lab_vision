@@ -13,28 +13,28 @@ There are NO homeworks or deliverables. However try to answer to yourself all th
 
 Go through the tutorial [SIFT detector and description](http://www.vlfeat.org/overview/sift.html) . 
 
-- ¿ What is a Frame in vl_feat ? ¿ What do they represent ?
-- ¿ How is the location and shape of frames determined ?
-- ¿ What is a SIFT descripor ?
-- ¿ How is scale invariance achieved ?
-- ¿ Is SIFT invariant to rotations ?
-- ¿ Is SIFT invariant to illumination changes ?
-- ¿ What are some possible applications of SIFT ?
+- What is a Frame in vl_feat ? ¿ What do they represent ?
+- How is the location and shape of frames determined ?
+- What is a SIFT descripor ?
+- How is scale invariance achieved ?
+- Is SIFT invariant to rotations ?
+- Is SIFT invariant to illumination changes ?
+- What are some possible applications of SIFT ?
 - Try using the technique in your own images or videos.
 
 ## 2. Maximally Stable Extremal Regions 
 
 Go through the [MSER Feature Detector](http://www.vlfeat.org/overview/mser.html) tutorial. 
 
-- ¿ What are MSER ? ¿ What is their purpose ?
-- ¿ How are they compared to SIFT ?
-- ¿ To what operations are MSER invariant ?
-- ¿ What is the purpose of the *delta* parameter ?
+- What are MSER ? ¿ What is their purpose ?
+- How are they compared to SIFT ?
+- To what operations are MSER invariant ?
+- What is the purpose of the *delta* parameter ?
 - Try applying this technique to your own images or videos, compare with SIFT
 
 ## 3. Covariant feature detectors
 
 Go through the [Covariant feature detectors](http://www.vlfeat.org/overview/covdet.html) tutorial
 
-
+- 
 

@@ -44,7 +44,7 @@ Go through the [Covariant feature detectors](http://www.vlfeat.org/overview/covd
 
 ## 4 (Optional) Local Feature Frames
 
-Go through the [Local feature frames](http://www.vlfeat.org/overview/frame.html) tutorial
+Go through the [Local feature frames](http://www.vlfeat.org/overview/frame.html) tutorial.
 
 
 

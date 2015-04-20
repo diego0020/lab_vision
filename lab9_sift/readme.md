@@ -36,5 +36,15 @@ Go through the [MSER Feature Detector](http://www.vlfeat.org/overview/mser.html)
 
 Go through the [Covariant feature detectors](http://www.vlfeat.org/overview/covdet.html) tutorial
 
-- 
+- What is the relation between co-variant features and SIFT ?
+- What is *DoG* in this context ?
+- What is the purpose of *Affine adaptation* ?
+- How do coordinats inside a *frame* relate to pixel coordinates ?
+- Play with your own images and the differnt types of detectors and descriptors.
+
+## 4 (Optional) Local Feature Frames
+
+Go through the [Local feature frames](http://www.vlfeat.org/overview/frame.html) tutorial
+
+
 

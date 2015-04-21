@@ -84,5 +84,5 @@ If you think you can apply these techniques to your project, you should do the f
 
 ## Additional Bibliography
 
-http://neuralnetworksanddeeplearning.com/
-http://benanne.github.io/2015/03/17/plankton.html
+- http://neuralnetworksanddeeplearning.com/
+- http://benanne.github.io/2015/03/17/plankton.html

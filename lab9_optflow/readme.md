@@ -14,3 +14,5 @@
 - http://opencv.org
 - http://docs.opencv.org/modules/refman.html
 - http://docs.opencv.org/doc/tutorials/tutorials.html
+- https://python-pillow.github.io/
+

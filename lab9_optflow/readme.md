@@ -13,4 +13,4 @@
 - http://www.pyzo.org/python_vs_matlab.html
 - http://opencv.org
 - http://docs.opencv.org/modules/refman.html
-- 
+- http://docs.opencv.org/doc/tutorials/tutorials.html

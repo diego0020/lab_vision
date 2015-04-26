@@ -224,5 +224,9 @@
 
 Answer the rest of the questions in ``questions.md``
 
+## Additional Reading
+
+http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous
+
 
 

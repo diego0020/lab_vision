@@ -22,6 +22,7 @@
 - http://docs.opencv.org/modules/refman.html
 - http://docs.opencv.org/doc/tutorials/tutorials.html
 - https://github.com/Itseez/opencv
+- http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_video/py_lucas_kanade/py_lucas_kanade.html
 
 ### Other
 

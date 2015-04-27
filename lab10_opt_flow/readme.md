@@ -11,13 +11,32 @@ The compressed folder contains a [winpython](http://winpython.sourceforge.net/) 
 We will use the [Spyder IDE](https://pythonhosted.org/spyder/), which provides an interface very similar to matlab.
 Uncompress the folder, and launch the *Spyder* executable, located at *cv_lab\WinPython-64bit-2.7.9.4\Spyder.exe*. 
 
+<img src="http://wiki.spyderlib.googlecode.com/hg/Screenshots/spyder-windows.png" alt="Spyder IDE">
+
 If you are not familiar with python syntax, at the bottom of this documents you will find links to several *Python for matlab users* documents.
 
 ## Samples
 
-### Lucas-Kanade
+During the first stage of the lab we will look at some of the OpenCV Optical Flow Samples
 
 ### Dense optical flow
+
+Open the *opt_flow.py* in spyder, and click *Run* (or press F5). By default the program will take input from the web-cam and show you the optical flow. Try moving the camera, or moving objects in front of the camera. Press *1* to toggle the HSV visualization of the optical flow. To exit press the *escape* key. 
+
+In order to run the example with another video, click on *Run->Options* (or press F6). In front of *Command Line options* 
+write
+
+``..\data\768x576.avi``
+
+To try it with synthetic data write
+
+``synth:class=chess:bg=../data/lena.jpg:noise=0.1:size=640x480``
+
+Now let's analyze the code
+
+
+
+### Lucas-Kanade
 
 ## Your turn
 

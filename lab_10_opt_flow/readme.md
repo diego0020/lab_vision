@@ -281,6 +281,12 @@ The previous examples calculated the optical flow and showed it to you. In this 
 
 Modify the ``lk_track.py`` example, such that when the camera or the subject moves fast to the left, the visualization is changed. 
 
+You need to 
+
+- Detect the event (sudden increase in lateral flow)
+- React to the event (you can be creative here)
+- Block other eventes for a couple of a seconds
+
 ## References
 
 ### Python for Matlab users

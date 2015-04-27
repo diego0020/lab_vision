@@ -28,7 +28,8 @@
 - https://github.com/Itseez/opencv
 - http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_video/py_lucas_kanade/py_lucas_kanade.html
 
-### Other
+### Other image libraries in python
 
 - https://python-pillow.github.io/
+- http://scikit-image.org/
 

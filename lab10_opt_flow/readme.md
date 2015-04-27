@@ -270,11 +270,16 @@ if ch == 27:
 
 As you can see the most important functions in the script are
 
-- [calcOpticalFlowPyrLK]()
-- [goodFeaturesToTrack]()
+- [calcOpticalFlowPyrLK](http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html?highlight=calcopticalflowfarneback#calcopticalflowpyrlk)
+- [goodFeaturesToTrack](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html?highlight=goodfeaturestotrack#cv.GoodFeaturesToTrack)
 
+Look at the manual entries for both of them and try to understand what they do.
 
 ## Your turn
+
+The previous examples calculated the optical flow and showed it to you. In this case your mission is to use the optical flow to detect events. For example the camera or subjects moving suddenly. 
+
+Modify the ``lk_track.py`` example, such that when the camera or the subject moves fast to the left, the visualization is changed. 
 
 ## References
 

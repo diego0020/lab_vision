@@ -1,4 +1,4 @@
-# Optocal Flow in Open CV
+# Optical Flow in Open CV
 
 ## Setup
 

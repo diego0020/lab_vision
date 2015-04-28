@@ -231,7 +231,7 @@ if len(self.tracks) > 0:
     # Write a message at the corner showing how many points we are currently tracking
     draw_str(vis, (20, 20), 'track count: %d' % len(self.tracks))
 
-# Some times we need to refresh the list of tracked points with new points
+# Each "self.detect_interval" frames we refresh the list of tracked points with new points
 if self.frame_idx % self.detect_interval == 0:
     # Create an all zero matrix to hold a mask
     mask = np.zeros_like(frame_gray)

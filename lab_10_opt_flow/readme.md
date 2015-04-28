@@ -204,8 +204,10 @@ if len(self.tracks) > 0:
     # Create a list to hold the new set of tracked points
     new_tracks = []
     
-    # Iterate at the same time trough the currently tracked points, the vectors returned by the LK algorithm 
-    # and the vector indicating which points are good
+    # Iterate at the same time trough 
+    # - the currently tracked points (tr), 
+    # - the vectors returned by the LK algorithm ( (x,y) )
+    # - and the vector indicating which points are good (good_flag)
     for tr, (x, y), good_flag in zip(self.tracks, p1.reshape(-1, 2), good):
         # Ignore points which are not good
         if not good_flag:

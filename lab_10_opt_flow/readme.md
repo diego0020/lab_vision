@@ -179,9 +179,11 @@ if len(self.tracks) > 0:
     
     # Create a Nx1x2 array with the last known coordinates of each tracked point
     # each element of self.tracks is actually a vector containing at most ten positions for each point
-    # "for tr in self.tracks" iterates over the tracked points, at each iteration tr takes the value of the current point
+    # "for tr in self.tracks" iterates over the tracked points, at each iteration tr takes the value
+    # of the current point
     # tr[-1] takes the last point in this array
-    # reshape does the same as its matlab equivalent. The -1 means: automatically calculate the size of this dimension.
+    # reshape does the same as its matlab equivalent. The -1 means: automatically calculate the size 
+    # of this dimension.
     p0 = np.float32([tr[-1] for tr in self.tracks]).reshape(-1, 1, 2)
     
     # Perform the LK motion estimation. The operation is done twice, in the first case
@@ -202,14 +204,15 @@ if len(self.tracks) > 0:
     # Create a list to hold the new set of tracked points
     new_tracks = []
     
-    # Iterate at the same time trough the currently tracked points, the vectors returned by the LK algorithm and the 
-    # vector indicating which points are good
+    # Iterate at the same time trough the currently tracked points, the vectors returned by the LK algorithm 
+    # and the vector indicating which points are good
     for tr, (x, y), good_flag in zip(self.tracks, p1.reshape(-1, 2), good):
         # Ignore points which are not good
         if not good_flag:
             continue
         
-        # Add the current coordinates to the end of the tr list, which contains previous positions of each tracked point
+        # Add the current coordinates to the end of the tr list, which contains previous positions 
+        # of each tracked point
         tr.append((x, y))
         
         # If the list grows larger than self.track_len; delete the oldest coordinates

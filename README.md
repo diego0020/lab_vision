@@ -1,3 +1,3 @@
 # Computer vision lab
 
-This repository will contain guides and scripts required during the lab.
+This branch contains a previous version of the course, to see the current version switch to the Master branch

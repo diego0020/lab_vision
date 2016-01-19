@@ -2,8 +2,7 @@
 
 ## Preparation
 
-1. Boot from a live cd
-   We will be using the [Ubuntu gnome](http://ubuntugnome.org/) distribution
+1. Boot from a live cd, we will be using the [Ubuntu gnome](http://ubuntugnome.org/) distribution.
 
 2. Configure keyboard and software repository
    From the *Activities* menu (top left corner, or *start* key):
@@ -140,93 +139,6 @@
 5.  Find all images with size larger than 500k
     how many are there? (use ``wc`` and ``find``)
    
-
-## Compiling a program
-
-4. Install git (use ``apt-get`` as before)
-5. Also install ``g++`` and ``autoconf`` 
-5. clone open syobon
-   ```bash
-   git clone https://github.com/Alexander--/open-syobon.git
-   ```
-   This will create the repository directory in the current directory
-   
-6. Find a file named ``install`` and read it.
-6. install dependencies (SDL version 1.2)
-   > Note: to search packages use ``apt-cache search ``
-
-   ```bash
-   sudo apt-get install libsdl-gfx1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libfontconfig1-dev
-   ```
-   
-   
-7. Create configure file
-
-   ```bash
-   #to generate the configuration file
-   autoreconf --install
-   autoconf
-   ```
-   
-   
-7. compile game
-
-   ```bash
-   ./configure --prefix=/usr/local
-   make
-   sudo make install
-   ```
-   > Note in newer projects ``cmake`` is replacing configure
-   
-8. test
-   > WARNING: The game is very noisy
-
-   ```bash
-   syobon -window
-   #If he is jumping like crazy press all 4 arrow keys sequentially
-   ```
-
-## GitHub
-
-1. Open the openSyobon repository on the web browser
-   https://github.com/Alexander--/open-syobon
-   
-   -  Look at the commit history
-   -  How many other repositories does the author have
-
-2. Vision lab repository: https://github.com/diego0020/lab_vision
-   
-3. Fork vision lab repository to your account
-
-## SmartGit
-
-1. Install smart git from http://www.syntevo.com/smartgit/download
-   choose debian package
-2. Configure your github account
-3. Clone your fork of the vision_lab repository (use the clone button)
-4. open the ``questions.md`` file
-4. answer the first question in the github web interface, and commit
-5. pull
-   > This will bring changes from the server to your local copy
-6. answer the second question in gedit at your local pc
-5. commit the changes
-6. push
-   > This sends changes from your local copy to the server
-7. verify changes in github
-
-   Notice that in order to push, your local copy and that of the server must be synchronized. If it is not the
-   case, you need to first pull the changes from the server, and rebase or merge, solving the possible conflicts.
-   
-   For more information about git look at
-   https://www.atlassian.com/git/tutorials
-
 ## Homework
 
 Answer the rest of the questions in ``questions.md``
-
-## Additional Reading
-
-http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous
-
-
-

@@ -1,4 +1,4 @@
-# Introduction to the lab
+# Introduction to Linux
 
 ## Preparation
 
@@ -12,20 +12,23 @@
 ## Introduction to Linux
 
 1. The graphical interface
+
    Linux can be run using a graphical interface. There are several of these available for every taste.
    (http://www.howtogeek.com/163154/linux-users-have-a-choice-8-linux-desktop-environments/).
    Most activities can be accomplished from the interface, but the terminal is where the real power lies.
 
 2. Linux Distributions
+
    Linux is free software, and as such it is possible for people to do all kinds of things with it.
-   The main component in linux is the kernel, which is the part of the operating system that communicates
-   with the hardware and manages resources. On top of it applications run. Just the kernel is not very useful,
-   applications are required to get the job done. Distributions pack together the kernel with several 
+   The main component in linux is the kernel, which is the part of the operating system that interfaces 
+   with the hardware and manages resources. Applications run on top of it on user space. 
+   Distributions pack together the kernel with several 
    applications in order to provide a complete system. There are hundreds of linux distributions available. In
    this lab we will be using Ubuntu because it is one of the largest, more supported, and user friendly distributions.
 
 2. The file system through the terminal
-   Some basic systems to navigate through the file system
+3. 
+   Some basic commands to navigate through the file system
 
    -  ls: List contents of current directory
    -  pwd: Give location of current directory

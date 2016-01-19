@@ -73,9 +73,9 @@
    ```
 
 
-## Image database
+## Exercise: Image database
 
-1. The following command lets us connect to another system and use the terminal as it where there,
+1. The following command lets us connect to another machine and use its terminal,
    the second command lets us copy files between systems.
 
    ```bash
@@ -88,7 +88,7 @@
    ```
    
 2.  Decompress the images (use ``tar``, check the man)
-3.  use  ``imagemagick`` to find all *grayscale* images
+3.  Use  ``imagemagick`` to find all *grayscale* images
     Notice that we first need to install the *imagemagick* package by typing
 
     ```bash
@@ -97,7 +97,7 @@
     
     Sudo is a special command that lets us perform the next command as if we were system administrators
     (super users). In general it is not recommended to work as a super user, it should only be used 
-    when it is necessary. This is like that to protect you from breaking the system.
+    when it is necessary. This provides additional protectection for the system.
     
     ```bash
     find . -name "*.tiff" -exec identify {} \; | grep -i gray | wc -l
@@ -135,13 +135,13 @@
       done
       
       ```
-      -  save it for example as ``find_duplicates.sh``
-      -  make executable ``chmod u+x`` (This means add Execute permiisin for the user)
+      -  save it for example as ``find_color_images.sh``
+      -  make executable ``chmod u+x`` (This means add Execute permision for the user)
       -  run ``./find_duplicates.sh`` (The dot is necessary to run a program in the current directory)
       
 5.  Find all images with size larger than 500k
-    how many are there? (use ``wc`` and ``find``)
+6.  how many are there? (use ``wc`` and ``find``)
    
 ## Homework
 
-Answer the rest of the questions in ``questions.md``
+Answer the questions in ``questions.md``

@@ -142,6 +142,9 @@
 5.  Find all images with size larger than 500k
 6.  how many are there? (use ``wc`` and ``find``)
    
+Mogrify.... convert all to jpg
+
+
 ## Homework
 
 Answer the questions in ``questions.md``

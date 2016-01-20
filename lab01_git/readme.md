@@ -1,25 +1,9 @@
 # Introduction to GIT
 
-http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control 
+## Preparation
 
-Tutorial interactivo:
-https://try.github.io
-
-Video:
-http://youtu.be/lbLdbvIMHvw
-
-Guía muy corta:
-http://rogerdudler.github.io/git-guide/
-
-Guía muy detallada:
-https://www.atlassian.com/git/tutorials/
-
-Guía muy técnica
-http://git-scm.com/docs/gittutorial
-
-Guía github (amigable)
-http://readwrite.com/2013/10/02/github-for-beginners-part-2
-
+- Read about version control and Git (sections 1.1 - 1.4)  
+  http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control 
 
 ## Basics
 
@@ -52,6 +36,27 @@ http://readwrite.com/2013/10/02/github-for-beginners-part-2
 
 ## Additional Reading
 
-http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous
 
 
+## Additional Resources
+
+- Just enough git to be less dangerous  
+  http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous
+
+- Interactive tutorial:  
+  https://try.github.io
+
+- Video:  
+  http://youtu.be/lbLdbvIMHvw
+
+- Short guide:  
+  http://rogerdudler.github.io/git-guide/
+
+- Long guide:  
+  https://www.atlassian.com/git/tutorials/
+
+- Highly technical guide:  
+  http://git-scm.com/docs/gittutorial
+
+- Friendly GitHub guide:  
+  http://readwrite.com/2013/10/02/github-for-beginners-part-2

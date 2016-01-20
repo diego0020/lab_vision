@@ -27,6 +27,8 @@
 - Profesional
 - Portfolio
 
+## Graphical Clients
+
 ## Additional Reading
 
 http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous

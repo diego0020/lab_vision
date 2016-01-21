@@ -128,6 +128,9 @@ See a more complete list at https://git-scm.com/downloads/guis
 
 ## Additional Resources
 
+- XKCD  
+  http://xkcd.com/1597/
+
 - Just enough git to be less dangerous  
   http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous
 

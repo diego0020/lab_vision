@@ -96,24 +96,25 @@ GitHub is a web service that provides git on the cloud.
 
 - It is free for open source projects.
 - Provides a web based interface for several git tasks. Specially interesting
--- Blame
--- Diff
--- Branching
--- Pull Requests
+ - Blame
+ - Diff
+ - Branching
+ - Pull Requests
 - Makes collaboration easy
 - Makes easy to contribute to open source projects
 - An student package is available. It provies 10 free private repositories among other benefits   
   https://education.github.com/pack
-- Additional features:
--- Issue Tracker
--- GitHub Pages
--- Wiki
+ - Additional features:
+ - Issue Tracker
+ - GitHub Pages
+ - Wiki
 - Used by ... everyone...
--- Big companies (facebook, google, microsoft)
--- Small companies
--- Students
--- Professionals
--- Hobbyists
+ - Big companies (facebook, google, microsoft)
+ - Small companies
+ - Students
+ - Professionals
+ - Open Source Projects
+ - Hobbyists
 - Becomes part of your portfolio
 - Usually tech companies will see your gitHub profile
 

@@ -47,27 +47,82 @@
 
 ## Working with multiple repositories
 
-- Pull
-- Push
-- Clone
-- Fork
-- Pull Request
+### Setup
 
-## Branches
+Go into your GitHub account and create a new repository (green button at the right side). Don't initialize the repository, and in the next step say that you are importing an existing repository. Follow the instructions to link load your local repository into github.
 
-- Create
-- Merge
+### Pushing changes
+
+1. Make some changes to the local repository and commit them.
+2. Run `git push`. What happens?
+3. Check your repository on GitHub
+
+### Pulling changes
+
+1. Make some changes to your project using the GitHub interface.
+2. Run `git pull`. What happenes?
+
+### Conflicts
+
+1. Do some changes locally, commit them, but don't push.
+2. Do some changes in GitHub and commit them.
+3. Now try to push from your local copy, what happens?
+4. Try to pull from your local machine, what happens?
+
+### Clones and Forks
+
+1. Go into the lab repository (https://github.com/diego0020/lab_vision) , and fork it (button at the top right), what happened?
+2. In your machine run `git clone <github url>`, to clone your copy of the lab repository.
+3. Run `git remotes`, what is the output?
+4. Can you see the commit history?
+5. Can you make changes?
+6. Can you make upstream changes?
+
+### Pull Request
+
+If you don't have *push* permission to a repository, you can ask the owner to *pull* changes from your fork. This is called a pull requests. 
+
+### Branches (Optional)
+
+Branches lets you split work more efficiently, for example to develop different features independently or to work in teams. Branches can be created at any point, and can then be merged together, possibly requiring conflict resolution. 
+
+- To create a branch run `git checkout -b <branch name>`
+- To switch between branches use `git checkout <branch name>`
+- To merge branches use `git merge`
 
 ## Github
 
-- Students
-- Profesional
-- Portfolio
+GitHub is a web service that provides git on the cloud.
+
+- It is free for open source projects.
+- Provides a web based interface for several git tasks. Specially interesting
+-- Blame
+-- Diff
+-- Branching
+-- Pull Requests
+- Makes collaboration easy
+- Makes easy to contribute to open source projects
+- An student package is available. It provies 10 free private repositories among other benefits   
+  https://education.github.com/pack
+- Additional features:
+-- Issue Tracker
+-- GitHub Pages
+-- Wiki
+- Used by ... everyone...
+-- Big companies (facebook, google, microsoft)
+-- Small companies
+-- Students
+-- Professionals
+-- Hobbyists
+- Becomes part of your portfolio
+- Usually tech companies will see your gitHub profile
 
 ## Graphical Clients
 
-## Additional Reading
+- GitHub for windows, mac
+- Smartgit
 
+See a more complete list at https://git-scm.com/downloads/guis
 
 
 ## Additional Resources

@@ -17,25 +17,25 @@
 2.  What is a *makefile*?
     >   answer
 
-3.  What is *git*?
-    >   answer
-
 4.  What does the ``-prune`` option of ``find`` do? Give an example
     >   answer
 
-5.  Where is the file ``grub.cfg``
+5.  Where is the ``grub.cfg``  file
     >   answer
 
 6.  How many files with ``gnu`` in its name are in ``/usr/src``
     >   answer
 
-7.  How many files contain ``gpl`` inside in ``/usr/src``
+7.  How many files contain the word ``gpl`` inside in ``/usr/src``
     >   answer
 
 8.  What does the ``cut`` command do?
     >   answer
 
 9.  What does the ``wget`` command do?
+    >   answer
+
+9.  What does the ``rsync`` command do?
     >   answer
 
 10.  What does the ``diff`` command do?

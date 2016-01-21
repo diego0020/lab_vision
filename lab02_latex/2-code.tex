@@ -1,0 +1,131 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+
+\usepackage{minted}
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+\setcounter{page}{4321}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{\LaTeX\ Author Guidelines for CVPR Proceedings}
+
+\author{First Author\\
+Institution1\\
+Institution1 address\\
+{\tt\small firstauthor@i1.org}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+\and
+Second Author\\
+Institution2\\
+First line of institution2 address\\
+{\tt\small secondauthor@i2.org}
+}
+
+\maketitle
+%\thispagestyle{empty}
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+   The ABSTRACT is to be in fully-justified italicized text, at the top
+   of the left-hand column, below the author and affiliation
+   information. Use the word ``Abstract'' as the title, in 12-point
+   Times, boldface type, centered relative to the column, initially
+   capitalized. The abstract is to be in 10-point, single-spaced type.
+   Leave two blank lines after the Abstract, then begin the main text.
+   Look at previous CVPR abstracts to get a feel for style and length.
+\end{abstract}
+
+%%%%%%%%% BODY TEXT
+\section{Introduction}
+
+Please follow the steps outlined below when submitting your manuscript to
+the IEEE Computer Society Press.  This style guide now has several
+important modifications (for example, you are no longer warned against the
+use of sticky tape to attach your artwork to the paper), so all authors
+should read this new version.
+
+
+
+
+
+Some c code
+
+
+\begin{minted}[bgcolor=bg]{c}
+int main() {
+printf("hello, world");
+return 0;
+}
+\end{minted}
+
+
+Matlab code from an external file
+
+\inputminted[bgcolor=bg]{matlab}{code.m}
+
+Some inline matlab \mintinline{matlab}{identity = eye(4)}.  Fusce auctor magna vitae pellentesque maximus. Donec volutpat massa ut eros aliquet rhoncus. Etiam at magna neque. Vestibulum eleifend nunc id lorem volutpat, ac pretium odio mattis. Etiam maximus eget odio vitae faucibus. Sed facilisis sed metus tincidunt hendrerit. Curabitur ex dui, condimentum eget odio vel, pulvinar iaculis elit. Aenean tincidunt dolor et ex tempor semper. Vivamus dictum lacus est. Cras euismod urna at sapien rutrum consectetur vitae quis velit. Nam vitae porttitor mauris. Cras condimentum, augue eu scelerisque vulputate, velit urna malesuada ligula, condimentum placerat leo enim nec augue. Donec gravida cursus quam, ac tincidunt eros pellentesque sed. Morbi ut facilisis sapien.
+
+\begin{listing}[xleftmargin=25.0ex,tp]
+ \centering
+\begin{minipage}{0.8\linewidth}
+
+
+\begin{minted}[bgcolor=bg,linenos]{bash}
+#!/bin/bash
+grep --help | tail -n5 
+echo $?
+\end{minted}
+\end{minipage}
+\caption{Example of floating listing.}
+\label{lst:example}
+\end{listing}
+
+Vestibulum a mattis urna. Integer semper mauris eu pretium dictum. Maecenas et vestibulum velit. Nunc auctor imperdiet risus ut consequat. Duis mattis ornare orci. Integer sed euismod nisi, nec convallis enim. Morbi sed sem porta, commodo lorem at, ornare enim. Duis at magna quis ipsum ultrices bibendum in eu leo. Phasellus at urna aliquet, tristique mi at, ultricies enim.
+
+
+
+Phasellus sed justo rutrum, blandit arcu a, ultricies felis. Vivamus hendrerit venenatis feugiat. Aliquam non tempor leo. Proin nec tortor lectus. Morbi eget ultrices purus. Vivamus placerat ac elit et vehicula. Aliquam ultricies lorem sit amet nibh lacinia, at tincidunt nisl laoreet. Praesent et hendrerit nisi. Mauris placerat orci vitae maximus rhoncus. Morbi convallis porta erat vitae maximus. Proin et turpis a justo ornare cursus id nec odio. Etiam risus erat, consequat ac ultrices nec, semper nec mi. Nam vehicula, massa at ornare fermentum, quam risus tristique libero, non aliquam odio ante at magna.
+
+
+
+Curabitur nulla dolor, tincidunt ut turpis nec, vestibulum consequat dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque commodo ipsum arcu, nec blandit elit consequat sed. Cras faucibus nisi et ipsum congue varius. Duis laoreet, enim eget sagittis mattis, ligula diam rhoncus erat, vitae consectetur ex erat a tortor. Integer eu odio pretium, commodo risus ut, fringilla urna. Vivamus vitae orci ipsum. Suspendisse elit ipsum, commodo eget purus id, sodales semper risus. Donec gravida non ipsum ac auctor.
+
+Etiam tempor ultricies dui, at sagittis massa hendrerit a. Cras posuere ipsum quis tempor iaculis. Integer at sem augue. Duis luctus, est at tincidunt dictum, felis mauris ullamcorper nibh, vel finibus enim ligula nec arcu. Fusce et molestie enim, id accumsan mi. Aenean at metus dolor. Suspendisse potenti. Praesent condimentum viverra sapien nec aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tempus nisi erat, et semper turpis sagittis ac. Cras feugiat ac nulla id laoreet. Integer ornare blandit tempor. Praesent ultricies vel orci ut dictum.
+
+Mauris tincidunt leo sed magna suscipit tempor. Nullam laoreet vehicula ipsum bibendum sodales. Curabitur luctus dui ante, sed convallis lectus molestie id. Nam bibendum lectus sed ultrices dictum. Donec in mi tempus risus convallis hendrerit nec ut eros. Cras blandit felis metus, id cursus elit auctor blandit. Ut varius aliquam egestas.
+
+Curabitur vel lacus nunc. Maecenas a ante lobortis, tincidunt tellus in, euismod neque. Donec vitae magna turpis. Nulla eleifend ultricies justo, quis feugiat neque fringilla sed. Suspendisse sagittis arcu et sapien maximus, eu dapibus nunc lobortis. Sed elit nunc, volutpat et vulputate sed, fringilla eu eros. Vivamus sed lectus vel neque suscipit posuere et vitae felis. Donec ut elit eget tellus interdum consectetur. Integer rutrum gravida elit in vulputate. Maecenas ut nunc at dolor pretium maximus. Cras eu dui sapien. Duis lorem risus, tincidunt ac facilisis sed, fermentum ut ligula.
+
+Nunc fermentum neque velit, volutpat molestie massa gravida quis. Sed pretium porttitor maximus. Nunc cursus ex et nunc varius faucibus. Vivamus nisl libero, pretium a orci ut, condimentum egestas lacus. Proin vehicula eget mi sagittis tempor. Vestibulum porttitor sit amet purus non congue. Nunc ac urna nisi. Fusce egestas eros ut sem facilisis varius. Suspendisse non ante in nibh scelerisque tincidunt. Integer hendrerit quis arcu a fermentum. Ut in purus sed odio maximus sollicitudin. Nunc suscipit quis nulla eget luctus. Nullam et libero posuere metus laoreet pulvinar. Vivamus molestie faucibus fermentum. Maecenas aliquam facilisis sapien, vel viverra ante imperdiet sit amet. 
+
+
+
+
+\end{document}

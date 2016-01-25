@@ -26,8 +26,7 @@
    applications in order to provide a complete system. There are hundreds of linux distributions available. In
    this lab we will be using Ubuntu because it is one of the largest, more supported, and user friendly distributions.
 
-2. The file system through the terminal
-3. 
+2. The file system through the terminal   
    Some basic commands to navigate through the file system
 
    -  ls: List contents of current directory
@@ -81,10 +80,10 @@
    ```bash
    
    #connect
-   ssh vision@guitaca.uniandes.edu.co
+   ssh vision@SERVER
    
    #copy 
-   scp vision@guitaca:/home/vision/sipi_images/<file> .
+   scp vision@SERVER:/datos1/vision/sipi_images/<file> .
    ```
    
 2.  Decompress the images (use ``tar``, check the man)
@@ -142,9 +141,13 @@
 5.  Find all images with size larger than 500k
 6.  how many are there? (use ``wc`` and ``find``)
    
-Mogrify.... convert all to jpg
+7. Convert all images to *jpg* (tip: use ``mogrify``)
 
 
 ## Homework
 
-Answer the questions in ``questions.md``
+1. Download the *bsds500* database and decompress it.
+2. How many images are there?
+3. What is the resolution?
+4. How many of them are horizontal?
+5. Crop all images to make them square using [imagemagick](http://www.imagemagick.org/script/index.php)

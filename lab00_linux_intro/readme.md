@@ -143,6 +143,13 @@
    
 7. Convert all images to *jpg* (tip: use ``mogrify``)
 
+## In the Cloud
+
+- [Koding](https://koding.com/R/diego0020) Offers free virtual machines running linux in the cloud. 
+- [Red Hat OpenShift](https://www.openshift.com/pricing/plan-comparison.html) Commercial platform as a service from red hat, has a free plan.
+- [Amazon Web Services](https://aws.amazon.com) Commercial cloud service, includes instances with GPU to run CUDA applications.
+- [Google Cloud](cloud.google.com) Commercial cloud service
+- [Cloud académico uniandes](https://cloud.uniandes.edu.co/).... New offer in the university
 
 ## Homework
 

@@ -70,7 +70,18 @@
    ```bash
    cat /etc/passwd | tr ':' '\t'
    ```
-
+   
+4. Owner and permissions   
+   Use ``ls -l`` to see a detailed list of files, this includes permissions and ownership
+   Permissions are displayed as 9 letters, for example the following line means that the directory (we know it is a directory becasue of the first *d*) *images*
+   belongs to user *vision* and group *vision*. Its owner can read write and enter it, users in the group can only read and enter the directory, while other users can't do anything. For files the x means execute. 
+   ```bash
+   drwxr-x--- 2 vision vision 4096 ene 25 18:45 images
+   ```
+   See http://linuxcommand.org/lts0070.php for more information.
+   
+   -  ``chmod`` change access permissions of a file (you must have write access)
+   -  ``chown`` change the owner of a file
 
 ## Exercise: Image database
 

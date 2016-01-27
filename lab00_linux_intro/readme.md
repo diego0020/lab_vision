@@ -156,5 +156,5 @@
 1. Download the *bsds500* database and decompress it.
 2. How many images are there?
 3. What is the resolution?
-4. How many of them are horizontal?
+4. How many of them are in *landscape* orientation (opposed to *portrait*)?
 5. Crop all images to make them square using [imagemagick](http://www.imagemagick.org/script/index.php)

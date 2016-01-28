@@ -174,7 +174,7 @@
 - Emulate linux environment, run shell scripts, connect to machines using X protocol, use linux tools
    - [cygwin](https://www.cygwin.com/)
 
-## Homework
+## Practice questions
 
 1. Download the *bsds500* database and decompress it.
 2. How many images are there?

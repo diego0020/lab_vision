@@ -162,6 +162,18 @@
 - [Google Cloud](cloud.google.com) Commercial cloud service
 - [Cloud académico uniandes](https://cloud.uniandes.edu.co/).... New offer in the university
 
+## On Windows
+
+- To connect to linux machines using ssh:
+   - (putty)[http://www.chiark.greenend.org.uk/~sgtatham/putty/]
+   - (MobaXterm)[http://mobaxterm.mobatek.net/] Non-free
+- To transfer files using ssh
+   - (filezilla)[https://filezilla-project.org/]
+   - (WinSCP)[https://winscp.net/eng/docs/free_ssh_client_for_windows]
+   - (... more)[http://www.thegeekstuff.com/2011/06/windows-sftp-scp-clients/]
+- Emulate linux environment, run shell scripts, connect to machines using X protocol, use linux tools
+   - (cygwin)[https://www.cygwin.com/]
+
 ## Homework
 
 1. Download the *bsds500* database and decompress it.

@@ -181,3 +181,7 @@
 3. What is the resolution?
 4. How many of them are in *landscape* orientation (opposed to *portrait*)?
 5. Crop all images to make them square using [imagemagick](http://www.imagemagick.org/script/index.php)
+
+## Tutorial
+
+http://www.ee.surrey.ac.uk/Teaching/Unix/ 

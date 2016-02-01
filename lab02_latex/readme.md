@@ -1,7 +1,15 @@
 # Lab 1: Intro to LaTeX
 
-Companion Slides are available at http://goo.gl/xJ3SBu
+## LaTeX Books
 
+http://en.wikibooks.org/wiki/LaTeX
+https://tobi.oetiker.ch/lshort/lshort.pdf
+
+Lab Slides are available at http://goo.gl/xJ3SBu
+
+## CVPR Style 
+
+http://www.pamitc.org/cvpr15/author_guidelines.php
 
 ## Required packages
 

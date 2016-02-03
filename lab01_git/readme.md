@@ -118,6 +118,8 @@ GitHub is a web service that provides git on the cloud.
 - Becomes part of your portfolio
 - Usually tech companies will see your gitHub profile
 
+GitHUB in IMAGINE presentation: https://goo.gl/xrSY6W
+
 ## Graphical Clients
 
 - GitHub for windows, mac

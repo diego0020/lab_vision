@@ -12,7 +12,7 @@
 1. Using the terminal create an empty directory 
 2. Enter it, and run  `git init`  
    What happened?
-3. Run `ls -l`, what do you notice?
+3. Run `ls -al`, what do you notice?
 
 ### Modifying a repository
 

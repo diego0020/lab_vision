@@ -1,17 +1,25 @@
-# Lab 1: Intro to LaTeX
+# Lab 2: Introduction to LaTeX
 
 ## LaTeX Books
 
 http://en.wikibooks.org/wiki/LaTeX
 https://tobi.oetiker.ch/lshort/lshort.pdf
 
-Lab Slides are available at http://goo.gl/xJ3SBu
+## Installing LaTeX
 
-## CVPR Style 
+### Windows
 
-http://www.pamitc.org/cvpr15/author_guidelines.php
+- MikTex
+- TexLive
 
-## Required packages
+Tip: Use *sumatraPDF* instead of Adobe Acrobat to preview generated pdfs.
+
+### Linux
+
+Use the package manager, for example in Ubuntu 
+´apt-get install texlive´
+
+#### Additional packages
 
 - git-gui
 - gitg
@@ -29,43 +37,64 @@ http://www.pamitc.org/cvpr15/author_guidelines.php
 - texlive-latex-extra 
 - texlive-latex-recommended
 
-## Pre requisite
+### Osx
 
-1.	Clone the original copy this repository at https://github.com/diego0020/lab_vision; also clone your own fork.
-2.	Copy the folder lab1_latex from the original repository into your fork
-3.	Copy the .gitignore file from the original repositor into your fork (notice this is a *hidden* file)
-4.	Commit changes in your fork
-5.	Push your fork to github
+- MacTex 
 
-> If you like challenges, try *pulling* from the original repository into your fork
+## CVPR Style (Must be used on all lab reports) 
 
-## Introduction
+http://www.pamitc.org/cvpr15/author_guidelines.php
 
-Latex files behave very well with version control, however latex uses several intermediary files that we don't
+## LaTeX and git
+
+Latex files work very well with version control, however latex uses several intermediary files that we don't
 need in the version control system. The only files we trully want are the source files, including images and 
 other assets. 
 
 The ``.gitignore`` file tells git to ignore files whose name match a certain pattern. Take a look at it.
+
+## Compiling (rendering) LaTeX files
+
+LaTeX files are written as plain text, and must be compiled into PDF or DVI to produce publication ready documents. 
+
+From the commandline you can use the ´pdflatex´ (recommended) or ´latex´ commands. Some modern alternatives are ´xelatex´
+and ´luatex´, which have better handing of not ascii characters.
+
+Most LaTeX IDEs can call these command automatically and show the results. Moreover, they can link text in the rendered file to text in the source. 
   
 ## Style files  
   
-Latex style files control most of the stetic aspects from the document. When writing articles for magazines
+Latex style files control most of the stetic aspects from the document. When writing articles for a journal
 or congress, the will provide you with the style file and instructions on how to use it. Style files should
 be copied to the same directory as the rest of your latex source files. This repository already includes the 
 [cvpr](http://www.pamitc.org/cvpr15/author_guidelines.php) style. To look at it compile their example file
 ``egpaper_final.tex``.
-  
+
 ## Images
 
   - The file ``1-images.tex`` illustrates how to add images in LaTeX.
   - It contains the same image in several different formats
   	- Can you see the differences?
   	- Which format is more appropriate?
-  - Look at the slide about image formats for LaTeX
   - To edit vector graphics (svg or pdf) you may use [inkscape](https://inkscape.org)
   - To edit raster graphics (png or jpg) you may use [gimp](https://gimp.org)
+
+### Image Formats
   
-##  Code
+-Vectorial (svg -> pdf)
+ - Stores geometry information
+ - Can be scaled to any size
+ - Great for diagrams and plots
+- Raster lossless (png)
+ - Stores pixel information
+ - Limited resolution
+ - Great for renders, screenshots, photos
+- Raster lossy (jpg)
+ - The compression process discards information
+ - Optimized based on human perception of natural images
+ - Great for natural photos for humans (Frequencies that our eyes can't perceive are removed, but maybe computers could use this information)
+  
+##  Code Fragments
 
   - The file ``2-code.tex`` illustrates how to add code fragments in LaTeX.
   - It uses the [Minted](https://github.com/gpoore/minted) package
@@ -74,7 +103,6 @@ be copied to the same directory as the rest of your latex source files. This rep
   	- 	If you are using *kile* go to settings > build > pdflatex and add this flag to the command
   	- 	Be very careful with extra ading extra minus signs ``-``
       
-
 
 ##  Bibliography
 
@@ -88,10 +116,10 @@ The bibtex database format is very complex, and hard to maintain by hand. Fortun
 graphical applications that can do this for you.
     -   Local
     	-   JabRef
-    	-   Mendeley
+    	-   kbibtex
     -	Cloud
     	-   Zotero
-    	-   kbibtex
+    	-   Mendeley
 
 Be sure to check them out and start using them.
 

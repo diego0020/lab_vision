@@ -168,4 +168,5 @@ See a more complete list at https://git-scm.com/downloads/guis
 1. Fork the lab repository (https://github.com/diego0020/lab_vision)
 2. Open the *questions.md* file, and answer the questions
 3. Commit the changes (answers) to your copy of the lab repository
-4. Make sure that your answers are available at https://github.com/<USERNAME>/lab_vision/blob/master/lab01_git/questions.md 
+4. Make sure that your answers are available at 
+   `https://github.com/<USERNAME>/lab_vision/blob/master/lab01_git/questions.md` 

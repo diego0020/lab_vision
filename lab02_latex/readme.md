@@ -2,8 +2,8 @@
 
 ## LaTeX Books
 
-http://en.wikibooks.org/wiki/LaTeX
-https://tobi.oetiker.ch/lshort/lshort.pdf
+- http://en.wikibooks.org/wiki/LaTeX
+- https://tobi.oetiker.ch/lshort/lshort.pdf
 
 ## Installing LaTeX
 

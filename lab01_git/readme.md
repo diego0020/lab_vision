@@ -119,6 +119,8 @@ GitHub is a web service that provides git on the cloud.
 - Usually tech companies will see your gitHub profile
 
 GitHUB in IMAGINE presentation: https://goo.gl/xrSY6W
+
+### How to use git in this lab
 Git and GitHUB in this lab presentation: https://www.dropbox.com/s/y5byn1ypi2uuk5a/Repaso%20git.pptx?dl=0
 
 

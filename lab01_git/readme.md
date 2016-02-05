@@ -120,9 +120,14 @@ GitHub is a web service that provides git on the cloud.
 
 GitHUB in IMAGINE presentation: https://goo.gl/xrSY6W
 
-### How to use git in this lab
-Git and GitHUB in this lab presentation: https://www.dropbox.com/s/y5byn1ypi2uuk5a/Repaso%20git.pptx?dl=0
 
+## Alternatives
+
+- BitBucket
+- GitLab
+
+### How to use git in this lab
+https://goo.gl/t65Ja5
 
 ## Graphical Clients
 

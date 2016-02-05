@@ -81,7 +81,7 @@ be copied to the same directory as the rest of your latex source files. This rep
 
 ### Image Formats
   
--Vectorial (svg -> pdf)
+- Vectorial (svg -> pdf)
  - Stores geometry information
  - Can be scaled to any size
  - Great for diagrams and plots

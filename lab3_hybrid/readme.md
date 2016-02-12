@@ -15,7 +15,7 @@ This lab is based on
 
 ![Jaguar - Tiger](JaguarTigerHybrid.jpg)
 
-This images look different when viewed from far away (or in a small size), than when looking at them in front of the screen.
+These images look different when viewed from far (or zoomed out), than when looking at close range.
 
 ## Theory
 

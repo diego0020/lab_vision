@@ -3,10 +3,10 @@
 ## Data
 
 
-The data for this lab can be downloaded from the following mirrors in the university
+The data for this lab can be downloaded from the course server using http or ssh protocols
 
-- Guainia, http: http://guainia.uniandes.edu.co/seg_images.zip
-- Guitaca, ssh: ``scp vision@guitaca.uniandes.edu.co:/home/vision/seg_images.zip .``
+- `scp vision@<server>:/data1/.......`
+- http://
 
 For using ssh in windows you may use [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 
 or [filezilla](http://portableapps.com/apps/internet/filezilla_portable)  
@@ -24,7 +24,7 @@ Where
 - feature_space : 'rgb', 'lab', 'hsv', 'rgb+xy', 'lab+xy', 'hsv+xy'
 - clustering_method = k-means, gmm, hierarchical or watershed (code seen in class).
 
-The output of the function should be a image (or matrix) where each pixel has a cluster label.
+The output of the function should be an image (or matrix) where each pixel has a cluster label. In other words, pixels that belong to the same cluster should have the same integer label.
 
 ## Test your function
 

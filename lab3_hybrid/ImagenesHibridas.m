@@ -22,6 +22,8 @@ imshow(HI)
 figure
 imshow(HIC)
 
+
+
 function output = vis_hybrid_image(hybrid_image)
 %visualize a hybrid image by progressively downsampling the image and
 %concatenating all of the images together.
@@ -46,5 +48,4 @@ for i = 2:scales
     output = cat(2, output, tmp);    
 end
 
-
-%code by James Hays
+%code by James Hays extracted from http://cs.brown.edu/courses/cs143/proj1/

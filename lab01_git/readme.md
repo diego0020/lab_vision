@@ -23,7 +23,7 @@
 5. Run `git status` one more time.
 6. Modify the file, and run `git status`
 7. Run `git diff <filename>`, what is the output?
-8. Run `git commit -a -c "changes to the file"`, what happens? What does the `-a` do?
+8. Run `git commit -a -m "changes to the file"`, what happens? What does the `-a` do?
 9. Make more changes and commit them
 
 ### Review history

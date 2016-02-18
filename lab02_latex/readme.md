@@ -114,12 +114,13 @@ than the ones you are citing in the current document.
 
 The bibtex database format is very complex, and hard to maintain by hand. Fortunately there are several 
 graphical applications that can do this for you.
-    -   Local
-    	-   JabRef
-    	-   kbibtex
-    -	Cloud
-    	-   Zotero
-    	-   Mendeley
+
+-   Local
+	-   JabRef
+	-   kbibtex
+-	Cloud
+	-   Zotero
+	-   Mendeley
 
 Be sure to check them out and start using them.
 

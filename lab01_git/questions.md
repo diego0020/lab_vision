@@ -108,6 +108,8 @@ Answer = 17
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
 
+Script "find_duplicates.sh" in the lab_vision directory created.
+
 16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
     >   That is called a shebang, it tells the shell what program to interpret the script with, when executed. A shebang is the character sequence consisting of the characters number sign and exclamation mark (#!) at the beginning of a script. Under Unix-like operating systems, when a script with a shebang is run as a program, the program loader parses the rest of the script's initial line as an interpreter directive.
 In this case, the script is to be interpreted and run by the bash shell.

@@ -1,3 +1,4 @@
+#! /bin/bash
 % Script for finding duplicate images based on their content 
 % Taken from https://www.linux.com/learn/tutorials/774031-how-to-sort-and-remove-duplicate-photos-in-linux
 

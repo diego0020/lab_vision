@@ -72,7 +72,7 @@
     >   30 users
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   cut -d':' -f1,7 /etc/passwd | sort
+    >   cut -d':' -f1,7 /etc/passwd | sort | tr ':' '\t'
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
     >   grep '/sbin/nologin' /etc/passwd | cut -d':' -f1 | wc -l

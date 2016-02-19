@@ -52,7 +52,7 @@
     >   Links two files, and in consecuence any change in one of the files affects the other one. It link the files puting them in the same place of the disk.
 
 11.  How many users exist in the course server?
-    >   38
+    >  8
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
     >   answer

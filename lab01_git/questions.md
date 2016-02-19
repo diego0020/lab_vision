@@ -69,13 +69,13 @@
     >   Creates ``linked files``
 
 11.  How many users exist in the course server?
-    >   27
+    >   30 users
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   answer
+    >   cut -d':' -f1,7 /etc/passwd | sort
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
-    >   answer
+    >   grep '/sbin/nologin' /etc/passwd | cut -d':' -f1 | wc -l
 
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use

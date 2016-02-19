@@ -36,10 +36,10 @@
     >   On ubuntu exist 3 ubications: /etc/grub.d, /usr/lib/grub and /usr/share/grub. On MacOS don't exist.
 
 6.  How many files with ``gnu`` in its name are in ``/usr/src``
-    >   zero
+    >   zero (find /usr/src/ -name gnu | wc -l)
 
 7.  How many files contain the word ``gpl`` inside in ``/usr/src``
-    >   answer
+    >   52 files (grep -lr "gpl" /usr/src/ | wc -l)
 
 8.  What does the ``cut`` command do?
     >   

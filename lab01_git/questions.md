@@ -1,7 +1,7 @@
 # Warmup Questions
 
 1.  What is the clone url of this repository?
-    >   https://github.com/PardoAlejo/lab_vision/edit/master/lab01_git/questions.md
+    >   https://github.com/PardoAlejo/lab_vision
 
 2.  What is the output of the ``cal`` command?
 
@@ -24,10 +24,11 @@
     >   This is the default boot loader and launcher of ubuntu, and it is in /boot/grub/grub.cfg.
 
 6.  How many files with ``gnu`` in its name are in ``/usr/src``
-    >   0
+    >   0 files  using find /usr/src/ - gnu | wc -l.
 
 7.  How many files contain the word ``gpl`` inside in ``/usr/src``
-    >   -
+    >   844 files, by using: grep -irm 1 "gpl" /usr/src/ | wc -l
+
 
 8.  What does the ``cut`` command do?
     >   with the command cut, you can "cut" the number of characters to the number of characters that you want. 

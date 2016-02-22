@@ -5,8 +5,8 @@
 
 The data for this lab can be downloaded from the course server using http or ssh protocols
 
-- `scp vision@<server>:/data1/.......`
-- http://
+- `scp vision@<server>:/datos1/vision/images/images.tar.gz .`
+- http://157.253.63.7/images.tar.gz
 
 For using ssh in windows you may use [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 
 or [filezilla](http://portableapps.com/apps/internet/filezilla_portable)  
@@ -40,6 +40,12 @@ You should see an image similar to the following, where each color represents a 
 ![Example of segmentation](segmented.png)
 
 Try different parameters of your function, and see which ones work best. Next week we will perform a formal test of this function.
+
+## Notes
+
+- If you run into memory problems try downsampling the image
+- *xy* stands for the spatial x and y coordinates
+- You may need to scale the different channels to make them comparable, or to make some of them more important in the clustering process. For example *coords = (a\*r, a\*g, a\*b, b\*x, b\*y)*
 
 ## End
 

@@ -44,7 +44,7 @@ Try different parameters of your function, and see which ones work best. Next we
 ## Notes
 
 - If you run into memory problems try downsampling the image
-- *xy* stands for the spatial x and y coordinates
+- *xy* stands for the spatial _x_ and _y_ coordinates
 - You may need to scale the different channels to make them comparable, or to make some of them more important in the clustering process. For example _coords = ( α\*r, α\*g, α\*b, β\*x, β\*y)_
 
 ## End

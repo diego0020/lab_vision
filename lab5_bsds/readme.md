@@ -8,12 +8,12 @@ please look at their website.
 
 ## Download data
 
-The data for this lab can be downloaded from the following mirrors in the university
+The data for this lab can be downloaded from the course server using the following protocols
 
-- Guainia, http: http://guainia.uniandes.edu.co/BSR_full.tgz
-- Guitaca, ssh: ``scp vision@guitaca.uniandes.edu.co:/home/vision/BSR_full.tgz .``
+- ssh or rsync : ``vision@157.253.63.7:/datos1/vision/images/BSR_full.tgz``
+- http: http://157.253.63.7/BSR_full.tgz
 
-The original source can be found in the Berkley group page.
+The original sources can be found in the Berkley group page.
 
 **Note**: Don't add any of these files to your repository, they are too large.
 
@@ -72,7 +72,7 @@ Use only the ``train`` and ``eval`` datasets to calibrate your function. See htt
 
 ## Test your function
 
-Run a contour benchmark on two cases of your function, and compare it to the state of the art. Use the ``test`` data set of the BSDS500. The final plot should contain at least three lines (two instances of your function and the UCM algorithm). You can also use the figure updated to sicua as base. Look at the code of the ``plot_eval`` function for more information on how to create these plots.
+Run a contour benchmark on two cases of your function, and compare it to the state of the art. Use the ``test`` data set of the BSDS500. The final plot should contain at least three lines (two instances of your function and the UCM algorithm). You can also use the plot found [in this repository](summary.mat) as a base. Look at the code of the ``plot_eval`` function for more information on how to create these plots.
 
 See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example otuput.
 
@@ -87,19 +87,18 @@ A summary of the steps required is:
 
 ## Report
 
-Write a report describing your chosen segmentation methods, the testing methodology, the results from the tests, and a discussion about the results and potential improvements to the function. Use te LaTeX template from the second lab. Upload to your repository the report and the code for your segmentation function.
+Write a report describing your chosen segmentation methods, the testing methodology, the results from the tests, and a discussion about the results and potential improvements to the function. Use te LaTeX template from the second lab. Upload to your repository the report and the code for your segmentation function. A rubric of how this report will be graded can be found [here](rubric.md).  You may work in pairs.
 
 
-**Due:** March 17, 2015
+**Due:** March 17, 2016
 
 ## Running the benchmark remotely
 
-The benchmark on the 200 test images can take a several hours. If you prefer, you may run them on the *guitaca* server. 
+The benchmark on the 200 test images can take a several hours. If you prefer, you may run them on the course server. 
 
 However, all of you would be using the same account so please take into account the following
 
 - Be careful not to mess with other people's data or processes
-- Work inside the ``Documentos`` directory
 - Create a new directory and work only there, don't go into other people's directories
 
 In order to be able to disconnect from the server and let it keep working you can use [sceen](http://linux.die.net/man/1/screen).

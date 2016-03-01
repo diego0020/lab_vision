@@ -1,5 +1,5 @@
 ## Originals Images
-The Old Chapel's photo belongs to Oficina de Administración Documental (OAD) of Univerisdad de los Andes, it was made in 1969 by Gemán Téllez. The original photo can be at this [link](https://www.facebook.com/155723537956531/photos/a.240801929448691.1073741833.155723537956531/240801939448690/?type=3&theater).
+The Old Chapel's photo belongs to Oficina de Administración Documental (OAD) of Univerisdad de los Andes, it was taken at 1969 by Gemán Téllez. The original photo can be at this [link](https://www.facebook.com/155723537956531/photos/a.240801929448691.1073741833.155723537956531/240801939448690/?type=3&theater).
 The photo show was modificated (watermark) to protect the author rigths.
 
 For more information go to [OAD's facebook page](https://www.facebook.com/Oficina-de-Administración-Documental-155723537956531/) or [OAD's page](oad.uniandes.edu.co).

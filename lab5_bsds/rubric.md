@@ -16,4 +16,4 @@ El informe debe contener todos los items, cada uno tiene un valor de una únidad
  ¿Cómo se comparan los algoritmos? ¿A qué creen que se deben las diferencias? ¿Cuáles son las implicaciones prácticas de los resultados? ¿Qué método recomiendan? ¿Cuáles son las limitaciones de los métodos?
 5. Mejoras: 
 
- ¿Cómo se podrían obtener mejores resultados en la segmentación? (acá podían ser muy creativos)
+ ¿Cómo se podrían obtener mejores resultados en la segmentación? (acá pueden ser muy creativos)

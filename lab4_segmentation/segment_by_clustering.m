@@ -59,32 +59,13 @@ elseif strcmp(clustering_method,'hierarchical');
     h_labels = reshape(T,nrows,ncols);
     imshow(label2rgb(h_labels),[]);
 elseif strcmp(clustering_method,'watershed');
-    im = rgb2gray(im);
-    gradmag = imgradient(im);
-    se = strel('disk', 20);
-    Io = imopen(im, se);
-    Ie = imerode(im, se);
-    Iobr = imreconstruct(Ie, im);
-    Ioc = imclose(Io, se);
-    Iobrd = imdilate(Iobr, se);
-    Iobrcbr = imreconstruct(imcomplement(Iobrd), imcomplement(Iobr));
-    Iobrcbr = imcomplement(Iobrcbr);
-    fgm = imregionalmax(Iobrcbr);
-    se2 = strel(ones(5,5));
-    fgm2 = imclose(fgm, se2);
-    fgm3 = imerode(fgm2, se2);
-    fgm4 = bwareaopen(fgm3, 20);
-    I3 = im;
-    I3(fgm4) = 255;
-    bw = im2bw(Iobrcbr, graythresh(Iobrcbr));
-    D = bwdist(bw);
-    DL = watershed(D);
-    bgm = DL == 0;
-    gradmag2 = imimposemin(gradmag, bgm | fgm4);
-    L = watershed(gradmag2);
-    I4 = im;
-    I4(imdilate(L == 0, ones(3, 3)) | bgm | fgm4) = 255;
-    figure
-    imshow(I4)
+    grad = imgradient(rgb2gray(im));
+    for h=0:10:50
+        marker = imextendedmin(grad,h);
+        new_grad = imimposemin(grad,marker);
+        ws = watershed(new_grad);
+        figure;
+        imshow(ws==0);
+    end
 end
 end

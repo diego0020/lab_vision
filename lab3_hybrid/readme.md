@@ -8,9 +8,9 @@ The choosen images were *submarine.bmp* and *fish.bmp* as they look like to have
 
 ### Filtering
 
-[imfilter](http://www.mathworks.com/help/images/ref/imfilter.html) was applied to *submarine.bmp* as a low pass filter as this image was more constant of two used.
+[imfilter](http://www.mathworks.com/help/images/ref/imfilter.html) was applied to *submarine.bmp* as a low pass filter since this image was more constant than the other one used.
 
-For creating the high-pass filtered image *fish.bmp* was used (this image contained more linear geometric features), applying on it a low pass filter to it, and then subtracting it from the original imagesing the Mathematical given expression: *Y = X - f(X)*. As this image could contain negative values, this was stretched using imadjust Matlab function in order to be able to understand it on the screen. For both low and high filtering was used a gaussian filter with size 20 and sigma 6. 
+For creating the high-pass filtered image was used *fish.bmp* (this image contained more linear geometric features). On it was applied a low pass filter,and then it was subtracted from the original image by using the given mathematical expression: *Y = X - f(X)*. As this image could contain negative values, this was stretched using *imadjust* Matlab function in order to be able to understand it on the screen. For both low and high filtering was used a gaussian filter with size 20 and sigma 6. 
 
 The [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](http://www.mathworks.com/help/images/ref/dct2.html) transforms where applied on
 
@@ -24,8 +24,8 @@ in order to observ their frequency and energy variability.
 
 The hybrid image was composed by adding the two filtered images using the given formula *H = f1(X1) + (X2 - f2(X2) )*
 
-- The full matlab script *MyHybridImageScript.m* used to generate the image was upload to the repository in the data folder
-- Upload the final image to the repository
+- The full matlab script *MyHybridImageScript.m* used to generate the image was upload to the repository in the *data* folder.
+- the final image *HybridImage.bmp* was also uploaded to the repository in the same folder.
 
 ### Visualization
 
@@ -36,7 +36,7 @@ In order to simulate how the image will look from different distances a pyramid 
 
 ## Homework
 
-A hybrid image based on own images was created. The best attempt was made in order to be original. The images was cropped and aligned to get a good effect using *gimp* linux software. Finally, the following was uploaded to the folder repository *MyPhotos*:
+A hybrid image based on own images was created. The best attempt was made in order to be original. The images was cropped and aligned to get a good effect using *gimp* linux software. Finally, the following files were uploaded to the folder repository *MyPhotos*:
 
 - The original used images *IMG_20141225_004002.jpg* (a young relative) and *IMG_20141225_003853.jpg* (his grandma).
 - The processed images (bmp converted, cropped and aligned) *GrandmaFace.bmp* and *YoungRelativeFace.bmp* showing only their faces.

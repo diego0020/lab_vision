@@ -1,5 +1,10 @@
 function my_segmentation = segment_by_clustering(rgb_image,feature_space,clustering_method,clusters)
 
+if strcmp(clustering_method,'hierarchical');
+     im = imresize(im,0.1);
+end
+
+
 im = imread(rgb_image);
 addpath(genpath('/home/milongo/Documents/Vision'));
 tmp = zeros(size(im,1),size(im,2),5);
@@ -50,9 +55,36 @@ elseif strcmp(clustering_method,'gaussian')
     idx_labels = reshape(idx,nrows,ncols);
     imshow(label2rgb(idx_labels),[]);
 elseif strcmp(clustering_method,'hierarchical');
-    im = imresize(im,0.1);
     T = clusterdata(ft_space,'maxclust',clusters,'linkage','ward','savememory','on');
     h_labels = reshape(T,nrows,ncols);
-    imshow(label2rgb(h_labels),[]); 
+    imshow(label2rgb(h_labels),[]);
+elseif strcmp(clustering_method,'watershed');
+    im = rgb2gray(im);
+    gradmag = imgradient(im);
+    se = strel('disk', 20);
+    Io = imopen(im, se);
+    Ie = imerode(im, se);
+    Iobr = imreconstruct(Ie, im);
+    Ioc = imclose(Io, se);
+    Iobrd = imdilate(Iobr, se);
+    Iobrcbr = imreconstruct(imcomplement(Iobrd), imcomplement(Iobr));
+    Iobrcbr = imcomplement(Iobrcbr);
+    fgm = imregionalmax(Iobrcbr);
+    se2 = strel(ones(5,5));
+    fgm2 = imclose(fgm, se2);
+    fgm3 = imerode(fgm2, se2);
+    fgm4 = bwareaopen(fgm3, 20);
+    I3 = im;
+    I3(fgm4) = 255;
+    bw = im2bw(Iobrcbr, graythresh(Iobrcbr));
+    D = bwdist(bw);
+    DL = watershed(D);
+    bgm = DL == 0;
+    gradmag2 = imimposemin(gradmag, bgm | fgm4);
+    L = watershed(gradmag2);
+    I4 = im;
+    I4(imdilate(L == 0, ones(3, 3)) | bgm | fgm4) = 255;
+    figure
+    imshow(I4)
 end
 end

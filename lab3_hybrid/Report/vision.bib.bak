@@ -1,0 +1,41 @@
+% This file was created with JabRef 2.11.1.
+% Encoding: UTF-8
+
+
+@Article{journals/corr/abs-1304-5168,
+  Title                    = {{Image Retrieval based on Bag-of-Words model}},
+  Author                   = {Liu, Jialu},
+  Journal                  = {CoRR},
+  Year                     = {2013},
+  Volume                   = {abs/1304.5168},
+  Added-at                 = {2013-05-02T00:00:00.000+0200},
+  Biburl                   = {http://www.bibsonomy.org/bibtex/2a48942c0b3a78399ae672a73bbc720fc/dblp},
+  Ee                       = {http://arxiv.org/abs/1304.5168},
+  Interhash                = {ffe4785f51f9a56b3566064c708dcf20},
+  Intrahash                = {a48942c0b3a78399ae672a73bbc720fc},
+  Keywords                 = {dblp},
+  Url                      = {http://dblp.uni-trier.de/db/journals/corr/corr1304.html#abs-1304-5168},
+  X-fetchedfrom            = {Bibsonomy}
+}
+
+@Article{Oliva2006,
+  Title                    = {Hybrid Images},
+  Author                   = {Oliva, Aude and Torralba, Antonio and Schyns, Philippe G.},
+  Journal                  = {ACM Trans. Graph.},
+  Year                     = {2006},
+  Month                    = jul,
+  Number                   = {3},
+  Pages                    = {527--532},
+  Volume                   = {25},
+  __markedentry            = {[jvalero:6]},
+  Acmid                    = {1141919},
+  Address                  = {New York, NY, USA},
+  Doi                      = {10.1145/1141911.1141919},
+  ISSN                     = {0730-0301},
+  Issue_date               = {July 2006},
+  Keywords                 = {human perception, hybrid images, scale space},
+  Numpages                 = {6},
+  Publisher                = {ACM},
+  Url                      = {http://doi.acm.org/10.1145/1141911.1141919}
+}
+

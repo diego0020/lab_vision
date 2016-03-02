@@ -1,81 +1,47 @@
-# Hybrid images
-
-## Source
-
-This lab is based on
-
-- http://cs.brown.edu/courses/cs143/proj1/
-- https://courses.engr.illinois.edu/cs498dh3/fa2014/projects/hybrid/ComputationalPhotography_ProjectHybrid.html
-- http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf
-- http://cvcl.mit.edu/hybridimage.htm (Link down)
-
-## Examples
-
-![Dolphin - Car](DolphinCarHybrid.jpg)
-
-![Jaguar - Tiger](JaguarTigerHybrid.jpg)
-
-These images look different when viewed from far (or zoomed out), than when looking at close range.
-
-## Theory
-
-*Hybrid images* are composed from two images. A low pass filter is applied to the first one and a high pass filter is applied to the other. From a close distance the high pass filtered imaged dominates, while from a far away the low pass filtered one does. The effect works best when images are aligned.
+# Hybrid images Report
 
 ## Exercise
 
-### Choose images
+### Choosen images
 
-The data folder (originally downloaded from [here](http://cs.brown.edu/courses/cs143/proj1/) ) contains several pairs of aligned images. Choose one pair, and read both images into matlab.
+The choosen images were *submarine.bmp* and *fish.bmp* as they look like to have been previously aligned.
 
 ### Filtering
 
-Use [imfilter](http://www.mathworks.com/help/images/ref/imfilter.html) to apply a low pass filter to one image.
-For creating the high-pass filtered image, apply a low pass filter to it, and then subtract it from the original image. Mathematically: *Y = X - f(X)* , where *X* is the input image and *f* is the low pass filter. Note that this image will contain negative values.
+[imfilter](http://www.mathworks.com/help/images/ref/imfilter.html) was applied to *submarine.bmp* as a low pass filter as this image was more constant of two used.
 
-Look at the [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](http://www.mathworks.com/help/images/ref/dct2.html) transforms of
+For creating the high-pass filtered image *fish.bmp* was used (this image contained more linear geometric features), applying on it a low pass filter to it, and then subtracting it from the original imagesing the Mathematical given expression: *Y = X - f(X)*. As this image could contain negative values, this was stretched using imadjust Matlab function in order to be able to understand it on the screen. For both low and high filtering was used a gaussian filter with size 20 and sigma 6. 
+
+The [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](http://www.mathworks.com/help/images/ref/dct2.html) transforms where applied on
 
 - The original images
 - The filter
 - The filtered images
 
+in order to observ their frequency and energy variability.
+
 ### Summing the images
 
-The hybrid image is composed by adding the two filtered images. The full formula would be
+The hybrid image was composed by adding the two filtered images using the given formula *H = f1(X1) + (X2 - f2(X2) )*
 
-*H = f1(X1) + (X2 - f2(X2) )*
-
-Where *f1* and *f2* are low pass filters, and *X1* and *X2* are the input images. Notice that the effect depends on the cut-off frequencies of both filters (see figure 5 of the [Hybrid Images paper](http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf)). Additionally, you may scale the amplitude of one of the images to reduce or increase its impact. Play with this parameters to get a good Hybrid Image.
-
-- Upload the full matlab script used to generate the image to the repository
+- The full matlab script *MyHybridImageScript.m* used to generate the image was upload to the repository in the data folder
 - Upload the final image to the repository
 
 ### Visualization
 
-In order to simulate how the image will look from different distances we can use a pyramid (see figure at the bottom of http://cs.brown.edu/courses/cs143/proj1/ ).
+In order to simulate how the image will look from different distances a pyramid was built using the *vis_hybrid_image.m* customized matlab function available in [proj1.zip](http://cs.brown.edu/courses/cs143/proj1/proj1.zip):
 
-- Create such a visualization for your image
-- Upload it to the repository
+- first Creating such a visualization for the hybrid image built.
+- and then, uploading it to the repository as *PyramidImage.bmp* imagefile in *data* folder.
 
 ## Homework
 
-Create a hybrid image based on images from your own collections. The more original the better. Some ideas are
+A hybrid image based on own images was created. The best attempt was made in order to be original. The images was cropped and aligned to get a good effect using *gimp* linux software. Finally, the following was uploaded to the folder repository *MyPhotos*:
 
-- You or people you know
-- Pets
-- Pictures of the university or the city
-- Pictures of places you have visited (preferably in Colombia)
-- Be creative
-- Avoid images downloaded from internet
-
-Notice that you will have to *align and crop* the images to get a good effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect. Also consider how to deal with color on the images.
-
-Finally, upload to the repository
-
-- The original images
-- The processed images (cropped, aligned, color adjusted)
-- A short description of each image (one paragraph)
-- The final hybrid image
-- The pyramid
-- The code you used (with comments)
-
-**DUE**: 3 /3 /2016 ; 10:00 a.m.
+- The original used images *IMG_20141225_004002.jpg* (a young relative) and *IMG_20141225_003853.jpg* (his grandma).
+- The processed images (bmp converted, cropped and aligned) *GrandmaFace.bmp* and *YoungRelativeFace.bmp* showing only their faces.
+- *GrandmaFace.bmp* was used to be high-pass filtered as she is an old woman with some wrinkles and a fairly constant background. *YoungRelativeFace.bmp* was used to be low-pass filtered as his face looks more constant and the background less.
+- The final hybrid image *TransGenerationHybridImage.bmp* on which the oldwome can be seen from a very close distance while the young one from far away.
+- The pyramid image file *PyramidFacesImage.bmp* showing the efect.
+- The customied matlab function *MyHybridImageScriptForFaces.m* used to process the images parameterized in oreder to be able to run it several times. The final version of invocation was:
+      *MyHybridImageScriptForFaces(29,7,'YoungRelativeFace.bmp',29,4,'GrandmaFace.bmp',0.8,1);*

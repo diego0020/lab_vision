@@ -15,7 +15,7 @@ The data for this lab can be downloaded from the course server using the followi
 
 The original sources can be found in the Berkley group page.
 
-**Note**: Don't add any of these files to your repository, they are too large.
+**Note**: Don't add any of these files to your repository, they are too big.
 
 ## Data description
 
@@ -54,9 +54,9 @@ Look at the ground truth data for the different human participants, and differen
 
 **Warning:** The mex files required are not available for windows
 
-The file ``bench/test_benchs.m`` contains several examples of how to use the benchmark functions for different types of *results* images. Look at it and run the examples.
+The file ``bench/test_benchs.m`` contains several examples of how to use the benchmark functions for different types of *result* images. Look at it and run the examples.
 
-Look at the file that defines the function ``boundaryBench`` and read the description of inputs.
+Look at the file that defines the function ``boundaryBench`` and read the description of its inputs.
 
 # Homework
 
@@ -87,14 +87,14 @@ A summary of the steps required is:
 
 ## Report
 
-Write a report describing your chosen segmentation methods, the testing methodology, the results from the tests, and a discussion about the results and potential improvements to the function. Use te LaTeX template from the second lab. Upload to your repository the report and the code for your segmentation function. A rubric of how this report will be graded can be found [here](rubric.md).  You may work in pairs.
+Write a report describing your chosen segmentation methods, the testing methodology, the results from the tests, and a discussion about the results and potential improvements to the function. Use the CVPR LaTeX template. Upload to your repository the report (tex and pdf) and the code for your segmentation function. A rubric of how this report will be graded can be found [here](rubric.md).  You may work in pairs.
 
 
-**Due:** March 17, 2016
+**Due:** March 17, 2016; 8:00 a.m.
 
 ## Running the benchmark remotely
 
-The benchmark on the 200 test images can take a several hours. If you prefer, you may run them on the course server. 
+The full benchmark on the 200 test images can take a several hours. If you prefer, you may run it on the course server. 
 
 However, all of you would be using the same account so please take into account the following
 
@@ -102,7 +102,7 @@ However, all of you would be using the same account so please take into account 
 - Create a new directory and work only there, don't go into other people's directories
 
 In order to be able to disconnect from the server and let it keep working you can use [sceen](http://linux.die.net/man/1/screen).
-Connect to guitaca using ``ssh`` and afterwards type
+Connect using ``ssh`` and afterwards type
 
 ```bash
 screen -S <session_name>

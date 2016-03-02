@@ -39,9 +39,10 @@ In order to simulate how the image will look from different distances a pyramid 
 A hybrid image based on own images was created. The best attempt was made in order to be original. The images was cropped and aligned to get a good effect using *gimp* linux software. Finally, the following files were uploaded to the folder repository *MyPhotos*:
 
 - The original used images *IMG_20141225_004002.jpg* (a young relative) and *IMG_20141225_003853.jpg* (his grandma).
-- The processed images (bmp converted, cropped and aligned) *GrandmaFace.bmp* and *YoungRelativeFace.bmp* showing only their faces.
+- The processed images (bmp converted, cropped and aligned) *GrandmaFace.bmp* and *YoungRelativeFace.bmp* showing only their faces, were finally used.
 - *GrandmaFace.bmp* was used to be high-pass filtered as she is an old woman with some wrinkles and a fairly constant background. *YoungRelativeFace.bmp* was used to be low-pass filtered as his face looks more constant and the background less.
-- The final hybrid image *TransGenerationHybridImage.bmp* on which the oldwome can be seen from a very close distance while the young one from far away.
-- The pyramid image file *PyramidFacesImage.bmp* showing the efect.
-- The customied matlab function *MyHybridImageScriptForFaces.m* used to process the images parameterized in oreder to be able to run it several times. The final version of invocation was:
-      *MyHybridImageScriptForFaces(29,7,'YoungRelativeFace.bmp',29,4,'GrandmaFace.bmp',0.8,1);*
+- The final hybrid image *TransGenerationHybridImage.bmp*, on which the old women can be seen from a very close distance while the young one from far away, was produced.
+- The pyramid image file *PyramidFacesImage.bmp* showing the efect was created using the *vis_hybrid_image.m* customized matlab function available in [proj1.zip](http://cs.brown.edu/courses/cs143/proj1/proj1.zip).
+- The customied matlab function *MyHybridImageScriptForFaces.m* was built to process the images. It was parameterized in oreder to be able to run it several times. The final version of invocation was:
+      *MyHybridImageScriptForFaces(29,7,'YoungRelativeFace.bmp',29,4,'GrandmaFace.bmp',0.8,1);* 
+      the cutoff frequency was choosen following the advice given in *proj1_test_filtering.m* script of the given [project](http://cs.brown.edu/courses/cs143/proj1/proj1.zip).

@@ -76,7 +76,7 @@ Run a **Boundary** benchmark on two cases of your function, and compare it to th
 
 See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example otuput.
 
-Use different thresholds numbers to generate a curve.
+Use different thresholds values to generate a curve.
 
 A summary of the steps required is:
 

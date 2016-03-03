@@ -14,8 +14,12 @@ The past picture is the original image of my sister. It was taken in my house. T
 
 ![MamaMofificada](IMG_0538copy.jpg)
 
-The picture above is the modified picture of my mother used in order to obtein the final hibrid image.
+The picture above is the modified picture of my mother used in order to obtein the final hibrid image. It was shiffted to the left in comparison with the original.
 
 ![MamaMofificada](ImagenHibridaPropia.jpg)
 
 The past picture was the hibrid result obtein after execute the next command on MATLAB: ``ImagenesHibridas('IMG_0538.JPG','IMG_0538 copy.jpg')``.
+
+![Piramide](Piramide.jpg)
+
+The previous picture was the piramid representation of the hibird image obtein. In the high frecuency region it is observed my mother and in the low frecuency region it is observed my sister.

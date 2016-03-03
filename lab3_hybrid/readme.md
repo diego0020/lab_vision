@@ -77,18 +77,18 @@ These are my results:
 
 - The original images
   ![originales](originals.jpg)
-My girlfriend and me.
+- My girlfriend and me.
 - The processed images (cropped, aligned, color adjusted)
   ![Processed images](modified.jpg)
 -  For my girlfriend image I enhaced the contrast of the image, multiplying it by a constant >1 to give it more importance because it was going to be the image with the high frequencies and I realized that in this two photos the low frequency dominated. On the other hand, for my image I multiplied it by a constant <1 to reduce the contast and increase the effect of the hybrid image.
 
 - The final hybrid image
  ![Processed images](result.jpg)
-this is the result after take both , high and low frequencies and mixed up the images.
+- This is the result after take both , high and low frequencies and mixed up the images.
 
 - The pyramid
  ![Processed images](pyramid.jpg)
-Pyramid to see the effect of low and high frequencies.
+- Pyramid to see the effect of low and high frequencies.
 - The code you used (with comments)
 
 CODE:

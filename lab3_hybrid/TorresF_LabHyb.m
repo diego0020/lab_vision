@@ -20,6 +20,8 @@ figure
 imshow(Hyb),
 title('Hybrid image between the bottle and the boot');
 
+pause
+
 %% Creation of the Piramid
 
 Vec = [256,200,175,150,125,100,75,50,25];
@@ -34,6 +36,11 @@ end
 figure
 montage(Ims);
 title('Image Pyramid');
+
+%Storing the Pyramid
+im = getimage(gca);
+imwrite(im,'Pyramid.png');
+
 
 
 

@@ -23,3 +23,4 @@ The past picture was the hibrid result obtein after execute the next command on 
 ![Piramide](Piramide.jpg)
 
 The previous picture was the piramid representation of the hibird image obtein. In the high frecuency region it is observed my mother and in the low frecuency region it is observed my sister.
+Because of the size of the images matlab rotate 90 degrees all the images in order to visualize them.

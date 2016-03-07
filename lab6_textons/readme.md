@@ -9,8 +9,8 @@ The database for this lab comes from the [ponce group](http://www-cvr.ai.uiuc.ed
 
 You can download it from the following mirrors in the university
 
--   http: http://157.253.63.7/textures.zip
--   ssh: ``vision@157.253.63.7:/home/vision/images/textures.zip``
+-   http: http://157.253.63.7/textures.tar.gz
+-   ssh: ``vision@157.253.63.7:/home/vision/images/textures.tar.gz``
 
     
 ## Representation

@@ -9,8 +9,8 @@ The database for this lab comes from the [ponce group](http://www-cvr.ai.uiuc.ed
 
 You can download it from the following mirrors in the university
 
--   http: http://guainia.uniandes.edu.co/textures.zip
--   ssh: ``scp vision@guitaca.uniandes.edu.co:/home/vision/textures.zip .``
+-   http: http://157.253.63.7/textures.zip
+-   ssh: ``vision@157.253.63.7:/home/vision/images/textures.zip``
 
     
 ## Representation
@@ -60,10 +60,4 @@ The report for this laboratory should include
 
 The functions created during this lab will be used again, so try your best to make them reusable.         
 
-**Due date:** March 24, 2015
-
-## Extra Credit
-
--   Add circular gaussian filters to the bank
--   Add another spatial layer to the bank
--   Try a SVM classifier (as in the phow lab)
+**Due date:** March 24, 2015; 8:00 a.m.

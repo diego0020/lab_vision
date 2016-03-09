@@ -1,71 +1,76 @@
 # Warmup Questions
 
 1.  What is the clone url of this repository?
-    >   answer
+    >   https://github.com/diego0020/lab_vision
 
 2.  What is the output of the ``cal`` command?
 
-        multi
-        line
-        answer
+   febrero de 2016  
+lu ma mi ju vi sá do
+ 1  2  3  4  5  6  7 
+ 8  9 10 11 12 13 14 
+15 16 17 18 19 20 21 
+22 23 24 25 26 27 28 
+29                   
 
 # Homework Questions
 
 1.  What is the ``grep``command?
-    >   answer
+    >   Searches for a pattern inside a file or on the standard input. This command has so much options
 
 2.  What is a *makefile*?
-    >   answer
+    >   It is a file with several shell commands inside that the command "make" will execute while in a directory containing it.
 
 4.  What does the ``-prune`` option of ``find`` do? Give an example
-    >   answer
+    >   It prevents find command from recursive into matching directories.
+    > e.g. find lab_vision -prune will show listed only the lab_vision directory, if any, due to it was prevented to in there.
 
 5.  Where is the ``grub.cfg``  file
-    >   answer
+    >   That file does not exist.
 
 6.  How many files with ``gnu`` in its name are in ``/usr/src``
-    >   answer
+    >   no one in my linux
 
 7.  How many files contain the word ``gpl`` inside in ``/usr/src``
-    >   answer
+    >   no one in my linux
 
 8.  What does the ``cut`` command do?
-    >   answer
+    >   Print selected parts of lines from each FILE to standard output.
 
 9.  What does the ``wget`` command do?
-    >   answer
+    >   it is a non iteractive network downloader
 
 9.  What does the ``rsync`` command do?
-    >   answer
+    >   It is a remote file copying tool.
 
 10.  What does the ``diff`` command do?
-    >   answer
+    >   It compares to files lene by line.
 
 10.  What does the ``tail`` command do?
-    >   answer
+    >   It shows the last 10 lines of a file.
 
 10.  What does the ``tail -f`` command do?
-    >   answer
+    >   It continues showing each new final
 
 10.  What does the ``link`` command do?
-    >   answer
+    >   It creates a link to a file
 
 11.  How many users exist in the course server?
-    >   answer
+    >   more /etc/passwd|wc -l
 
 12. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
-    >   answer
+    >   cut -d : -f 1,7 /etc/passwd|sort -t : -k 2
 
 13. What command will produce the number of users with shell ``/sbin/nologin`` (tip: using ``grep`` and ``wc``)
-    >   answer
+    >   cut -d : -f 1,7 /etc/passwd|sort -t : -k 2
 
 15. Create a script for finding duplicate images based on their content (tip: hash or checksum)
     You may look in the internet for ideas, but please indicate the source of any code you use
     Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
 
 16. What is the meaning of ``#! /bin/bash`` at the start of scripts?
-    >   answer
+    >   It is to comunicate which interpreter must be used
 
 17. How many unique images are in the ``sipi_images`` database?
-    >   answer
+    >   Excuse me but I did not understand this question.
     

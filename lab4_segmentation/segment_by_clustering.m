@@ -1,12 +1,11 @@
 function my_segmentation = segment_by_clustering(rgb_image,feature_space,clustering_method,clusters)
 
+
+addpath(genpath('/home/milongo/Documents/Vision/'));
+im = imread(rgb_image);
 if strcmp(clustering_method,'hierarchical');
      im = imresize(im,0.1);
 end
-
-
-im = imread(rgb_image);
-addpath(genpath('/home/milongo/Documents/Vision'));
 tmp = zeros(size(im,1),size(im,2),5);
 tmps = zeros(size(im,1),size(im,2),2);
 
@@ -46,18 +45,18 @@ end
 ft_space = double(ft_space);
 
 if strcmp(clustering_method,'kmeans')
-    [cluster_idx, cluster_center] = kmeans(ft_space,clusters);
+    [cluster_idx, cluster_center] = kmeans(ft_space,clusters,'Replicates',3,'MaxIter',500);
     pixel_labels = reshape(cluster_idx,nrows,ncols);
-    imshow(label2rgb(pixel_labels),[]), title('image labeled by cluster index');
+    %imshow(label2rgb(pixel_labels),[]), title('image labeled by cluster index');
 elseif strcmp(clustering_method,'gaussian')
-    gm = fitgmdist(ft_space,clusters);
+    gm = fitgmdist(ft_space,clusters,'Replicates',3,'MaxIter',500);
     idx = cluster(gm,ft_space);
     idx_labels = reshape(idx,nrows,ncols);
-    imshow(label2rgb(idx_labels),[]);
+    %imshow(label2rgb(idx_labels),[]);
 elseif strcmp(clustering_method,'hierarchical');
     T = clusterdata(ft_space,'maxclust',clusters,'linkage','ward','savememory','on');
     h_labels = reshape(T,nrows,ncols);
-    imshow(label2rgb(h_labels),[]);
+    %imshow(label2rgb(h_labels),[]);
 elseif strcmp(clustering_method,'watershed');
     grad = imgradient(rgb2gray(im));
     for h=0:10:50

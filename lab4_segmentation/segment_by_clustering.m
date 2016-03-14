@@ -1,5 +1,5 @@
 function Out = segment_by_clustering(rgb_image,feature_space,...
-                clustering_method,number_of_clusters)
+               clustering_method,number_of_clusters)
 %      FUNCTION SEGMENT_BY_ClUSTERING
 %      OUT = SEGMENT_BY_CLUSTERING(RGB_IMAGE,FEATURE_SPACE,...
 %      CLUSTERING_METHOD,NUMBER_OF_CLUSTERS)
@@ -12,7 +12,7 @@ function Out = segment_by_clustering(rgb_image,feature_space,...
 %      ClUSTERING_METHOD. Clustering method adjusts the way the clusters
 %      will be selected. It can either be 'K-Means','GMM','Watershed'. If
 %      watershed is selected, the number of clusters selecetd as an input
-%      won't matter.
+%      will need to be a value from the range [0,255].
 %      NUMBER_OF_CLUSTERS. Number of Clusters adjusts the 'K' for each
 %      clustering method that requires it, if no argument for 
 %      Number_of_clusters is input, the default will be 3.
@@ -102,39 +102,17 @@ elseif(strcmpi(clustering_method,'GMM')==1)
     Out = reshape(idx,[sr,sc]);
     
 elseif(strcmpi(clustering_method,'WATERSHED')==1)
-    %Adjust to the colorchannels of the image
-    Aux  = im2uint8(rgb2gray(Im(:,:,1:3)));
-    figure(1),
-    imshow(Aux,[]);
-    %Imposition of the markers
-    R = imfreehand(gca,'Closed',0);G = imfreehand(gca,'Closed',0);    
-    %Retrieveing the positions
-    P1 = round(R.getPosition);
-    P2 = round(G.getPosition);
-    %Creating masks for dilation
-    s1 = [1,1];s2 = s1';
-    bw = im2bw(zeros(size(Aux)));
-    %Assigning the coordinates to a BW-image
-    for x = 1:length(P1)
-        bw(P1(x,2),P1(x,1)) = 1;
-    end
-    for x = 1:length(P2)
-        bw(P2(x,2),P2(x,1)) = 1;        
-    end
-    %Dilation of the mask
-    bw = imdilate(bw,s1);bw = imdilate(bw,s2);
-    %Obtaining the gradient of the Image to be submitted to watersheds
+    h = number_of_clusters;
+    Im2 = Im(:,:,1:3);
+    Im2 = im2uint8(rgb2gray(Im2));
     str = strel('disk',1);
-    dil = imdilate(Aux,str);
-    ero = imerode(Aux,str);        
+    dil = imdilate(Im2,str);
+    ero = imerode(Im2,str);  
     grad = dil-ero;
-    %Minimum imposition
-    grad_rec = imimposemin(grad,bw);
-    %Application of watersheds transform
-    ws_mk = watershed(grad_rec);    
-    ws_mk = label2rgb(ws_mk);
-    Out = ws_mk;
-    close all
+    marker = imextendedmin(grad, h);
+    new_grad = imimposemin(grad, marker);
+    ws = watershed(new_grad);
+    Out = (ws);
 else
     %Error message to be displayed if the clustering methods does not exist
     %in the parameters.

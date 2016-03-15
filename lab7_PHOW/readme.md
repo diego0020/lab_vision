@@ -4,9 +4,9 @@
 
 For this lab you will use the [vl_feat](http://www.vlfeat.org/index.html) library. We provide a download for the libray including the example dataset from
 
-http://guainia.uniandes.edu.co/caltech101.zip
+http://157.253.63.7/vlfeat-0.9.20.zip
 
-After downloading and uncompressing the folde, open matlab and change and run the following command
+After downloading and uncompressing the folder, open matlab and run the following command
 
 ```matlab
 run('VLFEATROOT/toolbox/vl_setup')
@@ -24,9 +24,10 @@ Analyze the script and understand very well what it does. Run it using checkpoin
 
 Use the techniques illustrated in the example to train and test a classifier in a subset of the [image-net](www.image-net.org) database. 
 
-http://guainia.uniandes.edu.co/imagenet_train_tiny.tar
+http://157.253.63.7/imagenet_small.tgz
+ssh: vision@157.253.63.7:datos1/vision/images/imagenet_small.tgz
 
-Notice this is a large file (~1.2GB), so it would be best to use ``wget`` or some download manager. You may also experience problems extracting the data with graphical tools. 
+Notice this is a large file (~11GB), so it would be best to download it using ``wget`` or using ``rsync`` with the ``-P``switch. You may also experience problems extracting the data with graphical tools. 
 
 Adapt the script from the example to work on this new dataset. What performance do you get? How does it compare to the results from caltech-101? Can you guess what causes the differences?
 
@@ -77,22 +78,11 @@ After uploading the labels to sicual, we will compare it to the ground truth for
 The *three* submission with more correct labels will win a surprise bonus!
 
 Notice we will need to reproduce your results by running your code again (you can upload the code after the contest ends):
-- Make sure to seet the seed for the random generator
+- Make sure to set the seed for the random generator
 - Don't use any external data
 
 You may improve the classifier using the techniques seen in class.
 
-## Extra Credit
-
-- Repeat the lab using *Color-PHOW* and compare the results
-
-## Extra Challenge
-
-You can find versions of the database with 950 categories in
-
-http://guainia.uniandes.edu.co/imagenet_train_small.tar
-
-http://guainia.uniandes.edu.co/imagenet_test_small.tar
 
 ##Due date
 April 5, 2016; 8:00 a.m.

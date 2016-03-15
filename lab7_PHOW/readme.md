@@ -24,8 +24,8 @@ Analyze the script and understand very well what it does. Run it using checkpoin
 
 Use the techniques illustrated in the example to train and test a classifier in a subset of the [image-net](www.image-net.org) database. 
 
-http://157.253.63.7/imagenet_small.tgz
-ssh: vision@157.253.63.7:datos1/vision/images/imagenet_small.tgz
+- http://157.253.63.7/imagenet_small.tgz 
+- ssh: ``vision@157.253.63.7:datos1/vision/images/imagenet_small.tgz``
 
 Notice this is a large file (~11GB), so it would be best to download it using ``wget`` or using ``rsync`` with the ``-P``switch. You may also experience problems extracting the data with graphical tools. 
 

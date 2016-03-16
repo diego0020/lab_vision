@@ -22,7 +22,7 @@ Analyze the script and understand very well what it does. Run it using checkpoin
 
 ## Exercise
 
-Use the techniques illustrated in the example to train and test a classifier in a subset of the [image-net](www.image-net.org) database. 
+Use the techniques illustrated in the example to train and test a classifier in a subset of the [image-net](http://www.image-net.org) database. 
 
 - http://157.253.63.7/imagenet_small.tgz 
 - ssh: ``vision@157.253.63.7:datos1/vision/images/imagenet_small.tgz``

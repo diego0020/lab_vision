@@ -1,0 +1,234 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{upgreek} % para poner letras griegas sin cursiva
+\usepackage{cancel} % para tachar
+\usepackage{mathdots} % para el comando \iddots
+\usepackage{mathrsfs} % para formato de letra
+\usepackage{stackrel} % para el comando \stackbin
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+\setcounter{page}{1}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{BSDS by clustering  }
+
+\author{Carlos Andres Reyes Rivera\\
+Universidad de los Andes\\
+{\tt\small ca.reyes1787@uniandes.edu.co}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+\and
+Lina Maria Fierro Zambrano\\
+Universidad de los Andes\\
+{\tt\small lm.fierro1340@uniandes.edu.co}
+}
+
+\maketitle
+%\thispagestyle{empty}
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+
+The present lab is about clustering methods and its used Berkeley Segmentation Data and Benchmarks 500 (BSDS500). This data set contain 500 natural images. The principal objective of this lab is to select model with the best parameters to cluster images and finally evaluate results and compare models. The best models are K-means and GMM in space Labxy, so with these methods was made the test stage. 
+
+
+\end{abstract}
+
+%%%%%%%%% BODY TEXT
+\section{Clustering Methods}
+
+\subsection{K-means}
+k-means is one of the simplest unsupervised learning algorithms in order to cluster a whole of pixels. The procedure follows a simple and easy way to classify a given data set through a certain number of clusters (assume k clusters) fixed a priori.The method starts with the assign of each data to a centroid and these are replaced until it finds the centroids and clusters to minimize squared distances between elements and centroids.\cite{Arbelaez}\\
+\begin{equation} argmin\sum_{i=1}^{k} \left \| x_{j}-\mu _{i} \right \|^{^{2}}
+\end{equation}
+In general, K-means use the Euclidean distance to find how far are the data pixels from the centroids. The number of dimension of these distances depends on the number of features per pixel\cite{Guestrin2007}. In this way,  the ruggedness of the classification depends on the number of feature that it has each pixel.\\
+ 
+For this lab we use 6 cases, 3 of them with 3 features and the others with 5 features. In the 3 feature cases, we use as feature the value of each pixel in each channel of RGB, LAB and HSV respectively. In the 5 feature cases, we use the same channel values but this time we add the position X and Y of each pixel. \\
+
+Initially, when we were in the training state, we realized that the results were biased towards position. In other words, the results only depends of the position, so it doesn't take into account the value of the channels. In order to solve this situation, we decide to normalize the value and the range (0 to 1) of the feature.For reach this goal, we divide the process in two sub-process. The first part was  make the minimum value of the channels equal to 0. Which meaning subtract the minimum pixel value to the others and itself. Once we made that we could normalize the value of the channels. For this process we find the maximum value of each feature and divide all the value for this. In this way all the features were in the range of 0 - 1 (all have the same weight) and conserved the differences between them. 
+
+
+\subsection{Gaussian Mixture Model}
+
+GMM is one of the simplest unsupervised learning algorithms in order to cluster a whole of pixels. This is the generalization of k-means but the idea of this algorithm is to represent each group with a Gaussian distribution or a parametric distribution \cite{Arbelaez}. As k-means the procedure follows a simple and easy way to classify a given data set through a certain number of clusters (assume k clusters) fixed a priori.The method starts with the formation of cluster by representing the probability density function of observed variables as a mixture of multivariate normal densities. The goal of this method is to estimate the optimal parameters of a mixture of Gaussians in order to explain the observed data. For reach this goal, the algorithm estimate the responsibilities:
+\begin{equation} Z_{ik}= \frac{1}{Z_{i}}\pi _{k}N\left ( x|\mu _{k}, \sum _{k}\right ) 
+\end{equation}
+and the parameters:
+\begin{equation} \mu _{k}=\frac{1}{N_{k}}\sum _{i}z_{ik}x_{i}
+\end{equation}
+\begin{equation}
+\sum _{k}=\frac{1}{N_{k}}\sum _{i}z_{ik}\left (  x_{i}-\mu _{k}\right )\left (  x_{i}-\mu _{k}\right )^{T}
+\end{equation}
+\begin{equation}
+\sum _{k}=\frac{N_{k}}{N}
+\end{equation}
+Where
+\begin{equation}
+N_{k}=\sum _{i}Z_{ik}
+\end{equation}
+Finally the algorithm iterate this responsibilities until reach the optimal. \\
+GMM use the Mahalanobis metric to find how far are the data pixels from the centroid of the fixed distribution. 
+\begin{equation}
+d\left ( x_{i},\mu _{k} ,\epsilon _{k}\right) =\left \| x_{i}-\mu _{k} \right \|_{\sum _{k}^{-1}}=\left (  x_{i}-\mu _{k}\right )^{T}\sum _{k}^{-1}\left (  x_{i}-\mu _{k}\right )
+\end{equation}
+As k-means the number of dimension of these distances depends on the number of features per pixel. In this way,  the ruggedness of the classification depends on the number of feature that it has each pixel.\\
+ 
+For this lab (as in the case of k-means) we use 6 cases, 3 of them with 3 features and the others 3 with 5 features. In the 3 feature cases, we use as feature the value of each pixel in each channel of RGB, LAB and HSV respectively. In the 5 feature cases, we use the same channel values but this time we add the position X and Y of each pixel. 
+
+
+\subsection{Watershed}
+
+
+Watershed is an unsupervised classification method, this method also called watershed transform. The idea is to consider image in gray level as a topographic relief and it is put through to immersion process. In other words, each pixel of an image represents the elevation at this point \cite{Bicego}.The idea is imagine that the image is immersed in a lake with holes that are local minima. So, gradually submerge the surface into water and water coming from the holes form lakes; when two lakes meet, a dam is constructed.Finally when de surface is submerged all dams are watersheds lines \cite{ArbelaezP}. 
+
+
+This method is different to K-means and GMM because the parameter k do not exist, the parameter is h-minima transform, is like a threshold used to prevent the problem of over-fitting, this variant called watersheds markers-based where impose extended Regional Minima as markers. In this lab was used this variant but in this case was considered only RGB space because As mentioned already watershed transform use the image in gray scale. 
+
+
+\section{Test Methodology}
+
+The data set contain 500 natural images. There are different size of images, some are 321x481 and others are 481x321. The data set are divided in three parts: 200 train images, 100 validation images and 200 test images. Furthermore, there are human annotations that are used like ground-truth.In other hand, benchmark evaluated segmentation, this by measuring Precision/Recall curve.  
+
+In the present lab was used first the train images to select the best two clustering models with the corresponding feature space. This selection was based the larger area under curve. After that, validation images was used to confirm the results of training subset phase Finally with the test subset of data and evaluated performance with Precision/Recall curve. 
+
+
+
+\section{Results}
+
+
+Initially we implemented the three methods mentioned ( K-means, GMM and Watersheds) to cluster the train images. Some examples are presented below:
+
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/ImagenOriginal}\caption{Train Image }\label{Comp}\end{figure}
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/Train_30_kmeans_2}\caption{Train Image. K-means, k =2}\label{Comp}\end{figure}
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/Train_30_kmeans_10}\caption{Train Image. K-means, k =10}\label{Comp}\end{figure}
+
+The figure 1 show an example of train image and the figure 2-3 are clustering image with K-means k=2 and k=10 respectively. This clustering was made in feature space RGB-XY. 
+
+The next example show the difference in clustering between K-means (Figure 5) and GMM (Figure 6) with K=3.
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/Ejemplo2}\caption{Train Image }\label{Comp}\end{figure}
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/Kmeans_3}\caption{Train Image. K-means, k =3}\label{Comp}\end{figure}
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/GMM_3}\caption{Train Image. GMM, k =3}\label{Comp}\end{figure}
+
+
+Finally, the figure 7-9 show a watersheds example with different h.  
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/Ejemplo3}\caption{Train Image}\label{Comp}\end{figure}
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/Watersheds_30}\caption{Train Image. Watersheds h=30}\label{Comp}\end{figure}
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/Watersheds_50}\caption{Train Image. Watersheds h=50}\label{Comp}\end{figure}
+
+
+In the other hand, the selection of the best two clusters, as we explained above, was made based the larger area under curve. This area was found with the help of code provided by the professor Pablo Arbelaez. Some results of this area are presented then:
+
+\begin{figure}[H]
+\centering
+  \subfloat[RGB]{%
+  \begin{minipage}{\linewidth}
+  \includegraphics[width=.5\linewidth, height=4cm\linewidth]{images/PRrgb}\hfill
+  \includegraphics[width=.5\linewidth, height=4cm\linewidth]{images/PRrgbxy}%
+  \end{minipage}%
+  }\par
+  \subfloat[HSV]{%
+  \begin{minipage}{\linewidth}
+  \includegraphics[width=.5\linewidth, height=4cm\linewidth] {images/PRLab}\hfill
+  \includegraphics[width=.5\linewidth, height=4cm\linewidth] {images/PRLabxy}%
+  \end{minipage}%
+  }\par
+  \subfloat[LAB]{%
+  \begin{minipage}{\linewidth}
+  \includegraphics[width=.5\linewidth, height=4cm\linewidth]{images/PRhsv}\hfill
+  \includegraphics[width=.5\linewidth, height=4cm\linewidth]{images/PRhsvxy}%
+  \end{minipage}%
+  }
+  \caption{Precision-Recall curves}
+\end{figure}
+
+The figure 10 represents the results obtained for Kmeans in each one of the spaces. The first row correspond to the RGB space. The first Image, with a cover area of 0.11,  correspond to the case with 3 feature. On the other hand, the second image, with a cover area of 0.14, correspond to a case with 5 features. The second row correspond to the lab space. The first Image, with a cover area of 0.20,  correspond to the case with 3 feature. As the RGB space, the second image, with a cover area of 0.22, correspond to a case with 5. Finally the last row correspond to the HSV space. As the others spaces the first image correspond to the case with 3 feature and the second to the case with 5 features.\\
+
+Once we obtained these image, we realized that the case with 5 features, as expected, is better than the case with 3 features. For this reasoned we decided to evaluate this case only in GMM. The results of that are presented  bellow (figure 11):\\
+
+
+\begin{figure}[H]
+
+  \subfloat[RGB]{%
+  \begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=.5\linewidth]{images/PRrgbxy}%
+  \end{minipage}%
+  }\par
+  \subfloat[HSV]{%
+  \begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=.5\linewidth]{images/PRGMMhsvxy}%
+  \end{minipage}%
+  }\par
+  \subfloat[LAB]{%
+  \begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=.5\linewidth]{images/PRGMMlab}%
+  \end{minipage}%
+  }
+  \caption{Precision-Recall curves}
+\end{figure}
+
+As we said the figure 11 represents the results obtained for GMM in each one of the spaces with the position xy. The first row correspond to the RGB space, with a cover area of 0.11,   The second image correspond to HSV space, with a cover area of 0.14. Finally the last row correspond to the Lab space , with a cover area of 0.15.\\
+
+Following these results, we chosen Kmeans in labxy and GMM in labxy methods. The results obtained in the test files are presented bellow:
+
+Figure 12 show the performance of Gaussian Mixture Model in feature space Labxy. In this case the cover area 0.14. 
+
+\begin{figure}[H] \centering \includegraphics[width=5cm]{images/Resultado_GMM_LABXY}\caption{Precision/Recall Curve. Method: GMM in feature space Labxy}\label{Comp}\end{figure}
+
+
+
+\section{Discussion}
+These algorithms, especially k-means and GMM, have a strong dependence of the number of dimension for each pixel. In this way, the three channels of spaces or the position of the pixel on the image are not enough to achieve a good segmentation. As we can see, the segmentation is only good to images with a uniform background and an object that is clearly separated from the rest of the image. In other case, some patterns like texture or shape can influence the result and reduce the effectively of our method. A space like lab or hsv which take into account other features different to the color like luminosity are more effective and allow obtain a nearer distance to the human segmentation.
+Other important aspect is that watersheds is not a good method to cluster because much depends on h, so the results vary greatly between images. 
+Is evident in train results that this methods do not have the best performance compared with humans, but visually you would think that are good methods. 
+
+\section{Improvements}
+The influence of amount of dimension in this method is evident. For this reason we considered that the best way to improve our algorithm is evaluate more feature like texture. Similarly we should consider the problem of segmentation as a problem of contour. If we find the contour and use the gradient to find and eliminated the weak contour we could find a good approximation of the segmentation. Now well, if we use this contour like a feature of k-means is possible to improve the method with a simple process like apply canny and take the maximum of the gradient.
+
+% INICIO BIBLIOGRAFIA
+%----------------------------------------------------------------------------
+\phantomsection % To make hyperref link in TOC work correctly
+\addcontentsline{toc}{chapter}{\bibname} % puts entry
+\nocite{*}
+\bibliographystyle{abbrv}
+\bibliography{References}
+
+\end{document}

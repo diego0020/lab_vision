@@ -62,28 +62,6 @@ In addition to the source code used in the above exercise, you should upload a r
 - Possible improvements
 
 
-## Bonus
-
-You will apply the method illustrated in the script mentioned above to a new data-set. You will be given an additional set of test images without labels. You should upload your estimation of the labels for the test images to sicua. 
-http://guainia.uniandes.edu.co/imagenet_test_tiny.tar
-
-You should upload a ``csv`` file where each line contains the name of the image, a comma, and the name of the label. The names of the labels should match those in the training data-set. For example one line could look like this
-
- ```csv
- fu5dZ5X3py25685ydvJZ9tMtY08=,hot_pot
- ```
-
-After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and give you the confussion matrix. Notice that you will only be able to submit results once.
-
-The *three* submission with more correct labels will win a surprise bonus!
-
-Notice we will need to reproduce your results by running your code again (you can upload the code after the contest ends):
-- Make sure to set the seed for the random generator
-- Don't use any external data
-
-You may improve the classifier using the techniques seen in class.
-
-
 ##Due date
 April 5, 2016; 8:00 a.m.
 

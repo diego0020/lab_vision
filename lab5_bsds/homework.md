@@ -8,8 +8,13 @@
   3. Recalcular el centroide de las k celdas como el promedio de los puntos pertenecientes a la celda de Voronoi
   4. Si los centroides cambian, vuelva a paso ii; de lo contrario termino.
  Al finalizar el algoritmo, el punto pertenece al cluster correspondiente al centroide mas cercano.
- ### Método GMM
-Al igual que en el método de K-means, se recibe como parametro el numero de clusters deseados.  
+ 
+### Método GMM
+Al igual que en el método de K-means, se recibe como parametro el numero de clusters deseados. En este caso no se asigna la pertenencia de un punto a un cluster durante la ejecución del método sino que se le asigna la probabilidad de pertenecer a un cluster y al finalizar se le asigna la etiqueta correspondiente al cluster más probable.
+
+###Método Watershed
+En este método se convierte la imagen con un sólo descriptor a un relieve del cual se encuentra las líneas de división de aguas. Para este método se convierte en escala de grises y el relieve es la magnitud del gradiente de la imagen en escaladegrises
+
 2. Metodología de pruebas: 
 
  Descripción de la base de datos: ¿Cuántas imágenes son? ¿De qué tamaño? ¿De qué tipo ? ¿Cómo estaba organizada? ¿Cuál era la verdad terreno?; ¿Qué era lo que se medía en el benchmark? También rectificar que hubieran usado adecuadamente los conjuntos de train y test; especialmente que no hubieran iterado sobre "test".

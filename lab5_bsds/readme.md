@@ -72,11 +72,11 @@ Use only the ``train`` and ``eval`` datasets to calibrate your function. See htt
 
 ## Test your function
 
-Run a contour benchmark on two cases of your function, and compare it to the state of the art. Use the ``test`` data set of the BSDS500. The final plot should contain at least three lines (two instances of your function and the UCM algorithm). You can also use the plot found [in this repository](Figure02.fig) as a base. Look at the code of the ``plot_eval`` function for more information on how to create these plots.
+Run a **Boundary** benchmark on two cases of your function, and compare it to the state of the art. Use the ``test`` data set of the BSDS500. The final plot should contain at least three lines (two instances of your function and the UCM algorithm). You can also use the plot found [in this repository](Figure02.fig) as a base. Look at the code of the ``plot_eval`` function for more information on how to create these plots.
 
 See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example otuput.
 
-Use different thresholds numbers to generate a curve.
+Use different thresholds values to generate a curve.
 
 A summary of the steps required is:
 

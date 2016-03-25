@@ -73,8 +73,8 @@ Apply the method illustrated in the script mentioned above to a new data-set. Yo
 
 You should upload a ``text`` file where each line contains the name of the image, a colomn, and the name of the possible labels separated by commas . The names of the labels should match those in the training data-set. For example two lines could look like this
 
- ```robotframework
- YzkzYTlmMmY2ODY2MDFkOGJkYTI4ZmQwZjlhYjUzMDAwYzliYThiOQ==.JPEG:harvester,malinois,drumstick,quilt,consomme,Siberian_husky,Band_Aid,otterhound,cicada,espress
+ ```
+YzkzYTlmMmY2ODY2MDFkOGJkYTI4ZmQwZjlhYjUzMDAwYzliYThiOQ==.JPEG:harvester,malinois,drumstick,quilt,consomme,Siberian_husky,Band_Aid,otterhound,cicada,espress
 OWQ5OGRlYTE5MTEwNDA2MzQ4MWVmZTVmZjA4MWJhNDAyOTJlOTdhOQ==.JPEG:valley,centipede,stinkhorn,lacewing,web_site,perfume,ringlet,Model_T,steel_arch_bridge,white_wolf
  ```
 

@@ -62,7 +62,7 @@ In addition to the source code used in the above exercise, you should upload a r
 - Possible improvements
 
 ##Due date
-April 14, 2016; 8:00 a.m.
+April 7, 2016; 8:00 a.m.
 
 ## Bonus
 
@@ -82,7 +82,7 @@ Notice each filename should appear only once. You may enter less than 10 cathego
 
 After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and calculate the percentage of correct guesses. Notice that we will only consider your last submission. This bonus is **individual**.
 
-The *five* submission with more correct labels will win 4 additional points for the lab! The final grade of the lab is calculated as the sum of all labs, plus any bonuses, all divided by the total number of labs.
+The *five* submission with more correct labels will win 5 additional points for the lab! The final grade of the lab is calculated as the sum of all labs, plus any bonuses, all divided by the total number of labs.
 
 Notice we will need to reproduce your results by running your code again (you can upload the code after the contest ends):
 - Make sure to set the seed for the random generator
@@ -91,5 +91,5 @@ Notice we will need to reproduce your results by running your code again (you ca
 You may improve the classifier using the techniques seen in class.
 
 ##Bonus date
-April 5, 2016; 8:00 a.m.
+April 21, 2016; 8:00 a.m.
 

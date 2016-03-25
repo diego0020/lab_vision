@@ -57,7 +57,7 @@ You will need to **upload to Sicua**:
   function res=train_net(net ,test_data)
   ```
   where ``net`` is your trained network, ``testdata`` is a *128x128xK* matrix containing the test data, and ``res`` is a vector of length *K* that contains the numerical labels of the predicted classes.
-- The results of your own tests on the network 
+- The results of your own tests on the network (upload a markdown or text file with this to github, together with some representative images)
 - A brief (one or two paragraph) description of your network, and the intuition behind each layer. Why are you proposing this architecture? (upload a markdown or text file with this to github)
 
 We will train and test your network. You will be assigned a maximum of 4 hours of machine time to train. After this time we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. 

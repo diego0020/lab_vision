@@ -78,6 +78,8 @@ YzkzYTlmMmY2ODY2MDFkOGJkYTI4ZmQwZjlhYjUzMDAwYzliYThiOQ==.JPEG:harvester,malinois
 OWQ5OGRlYTE5MTEwNDA2MzQ4MWVmZTVmZjA4MWJhNDAyOTJlOTdhOQ==.JPEG:valley,centipede,stinkhorn,lacewing,web_site,perfume,ringlet,Model_T,steel_arch_bridge,white_wolf
  ```
 
+Notice each filename should appear only once. You may enter less than 10 cathegories, but if you enter more we will only consider the first ten.
+
 After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and calculate the percentage of correct guesses. Notice that we will only consider your last submission. This bonus is **individual**.
 
 The *five* submission with more correct labels will win 4 additional points for the lab! The final grade of the lab is calculated as the sum of all labs, plus any bonuses, all divided by the total number of labs.

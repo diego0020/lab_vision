@@ -46,7 +46,7 @@ also available in sicua, contains a database based on the textures from [lab6](h
 
 Based on the fonts classification CNN ([Part 4](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part-4-learning-a-character-cnn) of the practical), design a network appropriate for classifying this new dataset. 
 
-You will need to **upload to Sicua**:
+You will need to **upload to git-hub**:
 
 - A matlab source file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input.
 - A function for sampling the images with jitter during training.
@@ -57,23 +57,25 @@ You will need to **upload to Sicua**:
   function res=train_net(net ,test_data)
   ```
   where ``net`` is your trained network, ``testdata`` is a *128x128xK* matrix containing the test data, and ``res`` is a vector of length *K* that contains the numerical labels of the predicted classes.
-- The results of your own tests on the network (upload a markdown or text file with this to github, together with some representative images)
-- A brief (one or two paragraph) description of your network, and the intuition behind each layer. Why are you proposing this architecture? (upload a markdown or text file with this to github)
 
-We will train and test your network. You will be assigned a maximum of 4 hours of machine time to train. After this time we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. 
+- A markdown file with:
+  - A brief (one or two paragraph) description of your network, and the intuition behind each layer. Why are you proposing this architecture? 
+  - The results of your own tests on the network, indicate the time it took to train, and the results you got on the training and validation sets
 
-If everything runs smoothly, and the justification of your network is sound, you will get a five.
+We will also train and test your network on one of our computers. You will be assigned a maximum of 1 hour of machine time to train. After this time we will kill the process, so be sure your training function saves intermediate results at each step. If your network is too complex it will not be succesfully trained in the allowed time. 
+
+If everything runs smoothly, and the description of your network is sound, you will get a five.
 
 ## Bonus
 
-The 4 networks that achieve the best performance will receive 5 extra points to the lab grade. The final grade of the lab will be the sum of the grades of each lab, plus bonus points, all divided by the number of labs.
+The 4 networks that achieve the best performance will receive 5 extra points for the lab grade. The final grade of the lab will be the sum of the grades of each lab, plus bonus points, all divided by the number of labs.
 
 ## Due Date:
 Tuesday 14 of April, 2015 at 11:00 a.m.
 
 ## Note
 
-If you think you can apply these techniques to your final project, you should do the full practical.
+If you think you can apply CNN to your final project, you should do the full practical.
 
 ## Additional Resources
 

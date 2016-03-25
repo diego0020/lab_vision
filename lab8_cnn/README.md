@@ -82,3 +82,4 @@ If you think you can apply these techniques to your final project, you should do
 - https://www.udacity.com/course/deep-learning--ud730
   - https://www.udacity.com/course/viewer#!/c-ud730/l-6377263405/m-6406301756
 - https://developer.nvidia.com/deep-learning-courses
+- http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/

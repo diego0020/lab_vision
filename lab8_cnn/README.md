@@ -66,7 +66,7 @@ If everything runs smoothly, and the justification of your network is sound, you
 
 ## Bonus
 
-The 4 networks that achieve the best performance will receive 4 extra points to the lab grade. The final grade of the lab will be the sum of the grades of each lab, plus bonus points, all divided by the number of labs.
+The 4 networks that achieve the best performance will receive 5 extra points to the lab grade. The final grade of the lab will be the sum of the grades of each lab, plus bonus points, all divided by the number of labs.
 
 ## Due Date:
 Tuesday 14 of April, 2015 at 11:00 a.m.

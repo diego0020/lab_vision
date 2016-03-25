@@ -61,7 +61,32 @@ In addition to the source code used in the above exercise, you should upload a r
 - Limitations of the method
 - Possible improvements
 
-
 ##Due date
+April 14, 2016; 8:00 a.m.
+
+## Bonus
+
+Apply the method illustrated in the script mentioned above to a new data-set. You will be given an additional set of test images without labels. You should predict the label for each image and upload your estimation to sicua. 
+
+- http://157.253.63.7/imagenet_small_bonus.tgz 
+- ssh: ``vision@157.253.63.7:datos1/vision/images/imagenet_small_bonus.tgz``
+
+You should upload a ``csv`` file where each line contains the name of the image, a comma, and the name of the label. Please use unix line terminators ``\n``. The names of the labels should match those in the training data-set. For example one line could look like this
+
+ ```csv
+ fu5dZ5X3py25685ydvJZ9tMtY08=,hot_pot
+ ```
+
+After uploading the labels to sicual, we will compare it to the ground truth for the test dataset and give you the confussion matrix. Notice that we will only consider your last submission. This bonus is **individual**.
+
+The *five* submission with more correct labels will win 4 additional points for the lab! The final grade of the lab is calculated as the sum of all labs, plus any bonuses, all divided by the total number of labs.
+
+Notice we will need to reproduce your results by running your code again (you can upload the code after the contest ends):
+- Make sure to set the seed for the random generator
+- Don't use any external data
+
+You may improve the classifier using the techniques seen in class.
+
+##Bonus date
 April 5, 2016; 8:00 a.m.
 

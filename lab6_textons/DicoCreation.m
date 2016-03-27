@@ -54,7 +54,7 @@ for x = 1:250
             %Computation of textons
             [map,textons] = computeTextons(fbRun(fb,im),k);
             TXT(x).map = map;
-            TXT.textons = textons;  
+            TXT(x).textons = textons;  
             disp(strcat('Succesfully created Textons dictionary for image'...
             ,{' '},imnom));
         end

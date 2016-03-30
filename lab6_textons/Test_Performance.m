@@ -12,7 +12,7 @@ Labels = {'bark1','bark2','bark3','wool1','wool2','wool3',...
     'carpet2','upholstery','wallpaper','fur','knit','corduory',...
     'plaid'};
 
-%% Features extraction
+%% Features extraction 
 Lg = length(TXT_Trained);
 %Texture Histograms
 Hist = TXT_Trained(1).Hist;
@@ -23,15 +23,22 @@ for x = 1:Lg
 end
 %For Test
 H2 = TXT_Test(1).Hist;
-H2data = zeros(length(TXT_Trained,length(H2)));
-for x = 1:length(TXT_Trained)
-    H2data(x,:) = TXT_Test(x).Test;
+H2data = zeros(length(TXT_Test),length(H2));
+for x = 1:length(TXT_Test)
+    H2data(x,:) = TXT_Test(x).Hist;
 end
 
 %% Checking the values
 for x = 1:length(H2data)
-    Predicted_Chi{x} = Find_Nearest_Neighborh(Hdata,H2data(:,x),'Chi-square',...
-        Labels);
-    Predicted_Inter{x} = Find_Nearest_Neighborh(Hdata,H2data(:,x),'Intersection',...
-        Labels);
+    Lblchi = Find_Nearest_Neighborh(Hdata,...
+        H2data(x,:),'Chi-square',Labels);
+    Predicted_Chi(x).Prediction = char(Lblchi);
+    Predicted_Chi(x).Groundtruth = TXT_Test(x).name;
+    Lblinter = Find_Nearest_Neighborh(Hdata,...
+        H2data(x,:),'Intersection',Labels);
+    Predicted_Inter(x).Prediction = char(Lblinter);
+    Predicted_Inter(x).Groundtruth = TXT_Test(x).name;
 end
+
+save('Predicted_Chi.mat','Predicted_Chi');
+save('Predicted_Intersection.mat','Predicted_Inter');

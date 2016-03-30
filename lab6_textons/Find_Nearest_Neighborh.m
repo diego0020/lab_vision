@@ -4,7 +4,7 @@ function Label = Find_Nearest_Neighborh(Histdata,Histo,Method,Labels)
 %                                  
 %                                  Function that finds the nearest
 %                                  HISTOGRAM neighborh to the one ingressed
-%                                  as an imput. This is done by having a
+%                                  as an input. This is done by having a
 %                                  set of descriptors which are then
 %                                  checked according to method and the one
 %                                  with the lowest distance to the input
@@ -54,28 +54,26 @@ end
 %Check for number of classes and the bins taken by each
 nbins = nR/numel(Labels);
 %Vector containing the separation data
-Vec = 1:nbins:NR;
-D = zeros(1:nR);
+Vec = 0:nbins:nR;
+D = 0*(1:nR);
 %Check method implementation
 if(strcmpi(Method,'Chi-Square')==1)
-    for x = 1:NR
+    for x = 1:nR
         H1 = ((Histdata(x,:)-Histo).^2)/Histdata(x,:);
         D(x) = sum(H1);
     end
 end
-if(stcmpi(Method,'Intersection')==1)
-    for x = 1:NR
+if(strcmpi(Method,'Intersection')==1)
+    for x = 1:nR
         D(x) = sum(min(Histdata(x,:),Histo));
     end
 end
 %Rescuing label name from possible labels.
 lemin = min(D);
 index = find(D==lemin);
-for x = 2:length(Vec(x))
+for x = 2:length(Vec)
     if(index>=Vec(x-1)&&index<Vec(x))
-        Label = char(Labels(x));
-    else
-        Label = char(Labels(length(Labels)));
+        Label = Labels(x-1);
     end
 end
 end

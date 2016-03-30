@@ -60,4 +60,4 @@ for x = 1:25*30
         end
     end               
 end
-save('TextureDico_Train.mat','TXT');
+save('TextureDico_Train.mat','TXT','-v7.3');

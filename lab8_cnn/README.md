@@ -6,7 +6,7 @@ This lab makes use of [vl-feat](http://www.vlfeat.org/matlab/matlab.html) and [M
 
 ## 0. Setup
 
-The data and code for this lab can be downloaded from [the course server](http://157.253.63.7/practical-cnn-2015a.tar.gz)
+The data and code for this lab can be downloaded from [the course server](http://157.253.63.7/practical-cnn-2015a2.tgz)
 or from the practical site indicated above.
 
 ## 1. Creating CNN

@@ -7,13 +7,13 @@ Based on
 - [Covariant feature detectors](http://www.vlfeat.org/overview/covdet.html)
 - [Local feature frames](http://www.vlfeat.org/overview/frame.html)
 
-There are NO homeworks or deliverables. However try to answer to yourself all the quetions. Some of them will require browsing further through vl_feat documentation and other sources.
+There is NO homeworks. However try to answer to all the quetions. Some of them will require browsing further through vl_feat documentation and other sources.
 
 ## 1. Sift Detector and Descriptor
 
 Go through the tutorial [SIFT detector and description](http://www.vlfeat.org/overview/sift.html) . 
 
-- What is a Frame in vl_feat ? ¿ What do they represent ?
+- What are *Frames* in vl_feat ?  What do they represent ?
 - How is the location and shape of frames determined ?
 - What is a SIFT descripor ?
 - How is scale invariance achieved ?
@@ -26,7 +26,7 @@ Go through the tutorial [SIFT detector and description](http://www.vlfeat.org/ov
 
 Go through the [MSER Feature Detector](http://www.vlfeat.org/overview/mser.html) tutorial. 
 
-- What are MSER ? ¿ What is their purpose ?
+- What are MSER ?  What is their purpose ?
 - How are they compared to SIFT ?
 - To what operations are MSER invariant ?
 - What is the purpose of the *delta* parameter ?
@@ -45,6 +45,3 @@ Go through the [Covariant feature detectors](http://www.vlfeat.org/overview/covd
 ## 4 (Optional) Local Feature Frames
 
 Go through the [Local feature frames](http://www.vlfeat.org/overview/frame.html) tutorial.
-
-
-

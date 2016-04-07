@@ -7,7 +7,9 @@ Based on
 - [Covariant feature detectors](http://www.vlfeat.org/overview/covdet.html)
 - [Local feature frames](http://www.vlfeat.org/overview/frame.html)
 
-There is NO homeworks. However try to answer to all the quetions. Some of them will require browsing further through vl_feat documentation and other sources.
+There is NO homeworks. However try to answer to all the quetions. Some of them will require browsing further through [vl_feat documentation](http://www.vlfeat.org/matlab/matlab.html) and other sources. 
+
+You will also find useful code in the [demo directory](https://github.com/vlfeat/vlfeat/tree/master/toolbox/demo)
 
 ## 1. Sift Detector and Descriptor
 

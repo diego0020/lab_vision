@@ -9,7 +9,7 @@ http://guainia.uniandes.edu.co/cv_lab.zip
 The compressed folder contains a [winpython](http://winpython.sourceforge.net/) python distribution (sorry, only for windows) with the OpenCV library installed; and the [opencv python2 samples](https://github.com/Itseez/opencv/tree/master/samples).
 
 We will use the [Spyder IDE](https://pythonhosted.org/spyder/), which provides an interface very similar to matlab.
-Uncompress the folder, and launch the *Spyder* executable, located at *cv_lab\WinPython-64bit-2.7.9.4\Spyder.exe*. 
+Uncompress the folder, and launch the *Spyder* executable.
 
 <img src="http://wiki.spyderlib.googlecode.com/hg/Screenshots/spyder-windows.png" alt="Spyder IDE">
 
@@ -37,6 +37,8 @@ Now let's analyze the code
 At the top of the file we have
 
 ```python
+from __future__ import print_function
+
 import numpy as np
 import cv2
 import video
@@ -52,7 +54,7 @@ Afterwards we have 3 functions: ``draw_flow``, ``draw_hsv`` and ``warp_flow``. F
 ```python
 if __name__ == '__main__':
   import sys
-  print help_message
+  print(__doc__)
   #Read command line arguments
   try:
       fn = sys.argv[1]
@@ -107,13 +109,13 @@ The ``if __name__ == "__main__"`` is a standard python construct. Python scripts
         #if '1' was pressed toggle the hsv visualization
         if ch == ord('1'):
             show_hsv = not show_hsv
-            print 'HSV flow visualization is', ['off', 'on'][show_hsv]
+            print('HSV flow visualization is', ['off', 'on'][show_hsv])
         # if '2' was pressed toggle the glitch image
         if ch == ord('2'):
             show_glitch = not show_glitch
             if show_glitch:
                 cur_glitch = img.copy()
-            print 'glitch is', ['off', 'on'][show_glitch]
+            print('glitch is', ['off', 'on'][show_glitch])
     
     # After leaving the loop, close all windows
     cv2.destroyAllWindows()

@@ -22,12 +22,11 @@ sys.path.append(r"open_cv_samples")
 import numpy as np
 import cv2
 import video
-from common import anorm2, draw_str
+from common import  draw_str
 from collections import deque
 from time import clock
-from PIL import ImageFilter, ImageOps, Image
-from skimage import data, io, segmentation, color
-from skimage.future import graph
+from PIL import ImageFilter, Image
+from skimage import segmentation, color
 
 lk_params = dict( winSize  = (15, 15),
                   maxLevel = 2,

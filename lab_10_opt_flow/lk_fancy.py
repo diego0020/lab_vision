@@ -18,12 +18,11 @@ Keys
 ESC - exit
 '''
 import sys
-sys.path.append(r"D:\cv_lab\python2_samples")
+sys.path.append(r"open_cv_samples")
 import numpy as np
 import cv2
 import video
 from common import anorm2, draw_str
-from itertools import izip
 from collections import deque
 from time import clock
 from PIL import ImageFilter, ImageOps, Image
@@ -86,13 +85,13 @@ class App:
             return
         #print xy_mean
         if xy_mean < -20:
-            print "left"
+            print("left")
             self.last_event=c
             self.filter = (self.filter - 1)%5
             self.slow_frame=self.frame_idx
             return
         if xy_mean > 20:
-            print "right"
+            print("right")
             self.last_event=c
             self.filter = (self.filter + 1)%5
             self.slow_frame=self.frame_idx
@@ -113,7 +112,7 @@ class App:
                 d = abs(p0-p0r).reshape(-1, 2).max(-1)
                 good = d < 1
                 new_tracks = []
-                for tr, (x, y), good_flag in izip(self.tracks, p1.reshape(-1, 2), good):
+                for tr, (x, y), good_flag in zip(self.tracks, p1.reshape(-1, 2), good):
                     if not good_flag:
                         continue
                     tr.append((x, y))
@@ -150,7 +149,7 @@ def main():
     except:
         video_src = 0
 
-    print __doc__
+    print(__doc__)
     App(video_src).run()
     cv2.destroyAllWindows()
 

@@ -61,3 +61,10 @@ The report for this laboratory should include
 The functions created during this lab will be used again, so try your best to make them reusable.         
 
 **Due date:** March 31, 2015; 8:00 a.m.
+
+## Extra Credit
+
+- Add circular gaussian filters to the bank
+- Add another spatial scale to the bank
+- Try a SVM classifier
+

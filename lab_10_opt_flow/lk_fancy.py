@@ -25,7 +25,9 @@ import video
 from common import  draw_str
 from collections import deque
 from time import clock
+# Python Image Library
 from PIL import ImageFilter, Image
+# Scikit Image
 from skimage import transform
 
 lk_params = dict( winSize  = (15, 15),
@@ -45,10 +47,9 @@ class App:
         self.cam = video.create_capture(video_src)
         self.frame_idx = 0
         self.last_event = clock()
-        self.filter = 4
+        self.filter = 1
         self.min_interval = 5
         self.slow_frame=0
-        self.last_frame = None
         self.sin_transform=None
 
     def apply_filter(self,img):

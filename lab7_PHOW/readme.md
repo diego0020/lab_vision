@@ -93,3 +93,9 @@ You may improve the classifier using the techniques seen in class.
 ##Bonus date
 April 21, 2016; 8:00 a.m.
 
+## Extra Credit
+
+- Try using *Color-PHOW* as a descriptor and compare the results with standard PHOW
+
+
+

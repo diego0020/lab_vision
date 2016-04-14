@@ -4,9 +4,11 @@
 
 The files for this lab can be downloaded from 
 
-http://guainia.uniandes.edu.co/cv_lab.zip
+http://157.253.63.7/win_python_vision_3.zip
 
 The compressed folder contains a [winpython](http://winpython.sourceforge.net/) python distribution (sorry, only for windows) with the OpenCV library installed; and the [opencv python samples](https://github.com/Itseez/opencv/tree/master/samples).
+
+If you are working on mac you can use [anaconda python](https://www.continuum.io/downloads). For linux just install via the package manager.
 
 We will use the [Spyder IDE](https://pythonhosted.org/spyder/), which provides an interface very similar to matlab.
 Uncompress the folder, and launch the *Spyder* executable.

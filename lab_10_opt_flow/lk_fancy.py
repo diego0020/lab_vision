@@ -25,8 +25,10 @@ import video
 from common import  draw_str
 from collections import deque
 from time import clock
+# Python Image Library
 from PIL import ImageFilter, Image
-from skimage import segmentation, color
+# Scikit Image
+from skimage import transform
 
 lk_params = dict( winSize  = (15, 15),
                   maxLevel = 2,
@@ -45,10 +47,9 @@ class App:
         self.cam = video.create_capture(video_src)
         self.frame_idx = 0
         self.last_event = clock()
-        self.filter = 0
+        self.filter = 1
         self.min_interval = 5
         self.slow_frame=0
-        self.last_frame = None
         self.sin_transform=None
 
     def apply_filter(self,img):
@@ -70,11 +71,9 @@ class App:
             res = cv2.remap(img, self.sin_transform, None, cv2.INTER_LINEAR)
             return res
         else:
-            if self.last_frame is None or (self.frame_idx - self.slow_frame) % 20 == 0:
-                labels1 = segmentation.slic(img, compactness=30, n_segments=50)
-                out1 = color.label2rgb(labels1, img, kind='avg')
-                self.last_frame = out1
-            return self.last_frame
+            out1 = transform.swirl(img, rotation=0, strength=5, radius=200)
+            return out1
+            
 
     def detect_direction(self,tracks):
         xy_mov=np.array([t[-1][0]-t[0][0] for t in tracks])
@@ -137,8 +136,12 @@ class App:
             self.prev_gray = frame_gray
             cv2.imshow('lk_track', vis)
 
-            ch = 0xFF & cv2.waitKey(1)
-            if ch == 27:
+            ch =  cv2.waitKey(1)
+            if (ch == 2424832):            
+                self.filter = (self.filter - 1)%5
+            elif (ch == 2555904):
+                self.filter = (self.filter + 1)%5
+            elif ch == 27:
                 break
 
 def main():

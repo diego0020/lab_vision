@@ -113,3 +113,11 @@ Use your name as session name, so that you don't get confused with other people 
 ```bash
 screen -r <session_name>
 ```
+
+## Extra Credit
+
+- Run the benchmark with at least *three* segmentation methods from 
+  - k-means
+  - gmm
+  - hierarchical
+  - watershed

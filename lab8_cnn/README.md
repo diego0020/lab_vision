@@ -54,7 +54,7 @@ You will need to **upload to git-hub**:
 - A function for testing your network. This function should have the following signature
   
   ```matlab
-  function res=train_net(net ,test_data)
+  function res=test_net(net ,test_data)
   ```
   where ``net`` is your trained network, ``testdata`` is a *128x128xK* matrix containing the test data, and ``res`` is a vector of length *K* that contains the numerical labels of the predicted classes.
 

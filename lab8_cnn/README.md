@@ -93,7 +93,41 @@ Additional restrictions
 - You may choose to do data augmentation online, or offline before starting to train the net. However time starts as soon as the ``train_net`` functions is called, and no functions can be called before. Therefore if you prefer to do data augmentation offline, you have to do it in the first part of the ``train_net`` function.
 - The test function should read the last trained version of the net and use it to predict the labels for the test data.
 - The ``vl_setup`` and ``vl_setupnn`` will be called before calling your function. The ``matconvnet\examples`` directory will also be in the path before calling your functions. Don't call *setup* nor any of the *vl_setup* functions.
-- The library version will be the one included in the practical (downloadable from this file).
+- The library version will be the one included in the practical (downloadable from [here](http://157.253.63.7/practical-cnn-2015a2.tgz)).
+- Matlab version is 2014b.
+- Output of ``gpuDevice()``:
+
+  ```matlab
+    >> gpuDevice()
+    
+    ans = 
+    
+      CUDADevice with properties:
+    
+                          Name: 'Tesla K20c'
+                         Index: 1
+             ComputeCapability: '3.5'
+                SupportsDouble: 1
+                 DriverVersion: 6.5000
+                ToolkitVersion: 6
+            MaxThreadsPerBlock: 1024
+              MaxShmemPerBlock: 49152
+            MaxThreadBlockSize: [1024 1024 64]
+                   MaxGridSize: [2.1475e+09 65535 65535]
+                     SIMDWidth: 32
+                   TotalMemory: 5.0327e+09
+               AvailableMemory: 4.9167e+09
+           MultiprocessorCount: 13
+                  ClockRateKHz: 705500
+                   ComputeMode: 'Default'
+          GPUOverlapsTransfers: 1
+        KernelExecutionTimeout: 0
+              CanMapHostMemory: 1
+               DeviceSupported: 1
+                DeviceSelected: 1
+
+  ```
+  
 - The *train_net* function will be called using a script similar to
 
   ```matlab

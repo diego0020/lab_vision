@@ -70,7 +70,7 @@ Tuesday 14 of April, 2015 at 11:00 a.m.
 
 ## Bonus
 
-The 4 networks that achieve the best performance will receive 5 extra points for the lab grade. The final grade of the lab will be the sum of the grades of each lab, plus bonus points, all divided by the number of labs.
+The 4 networks that achieve the best performance will receive 5 extra points for the lab grade. The final grade of the lab will be the sum of the grades of each lab, plus bonus points, all divided by the number of labs. If you submit in pairs, each member of the group will get 2.5 extra points.
 
 You should submit at least two functions, in order to normalize the contest there will be some additional specifications:
 

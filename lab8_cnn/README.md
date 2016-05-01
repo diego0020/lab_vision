@@ -52,11 +52,9 @@ You will need to **upload to git-hub**:
 - A function for sampling the images with jitter during training.
 - A function for training your network.
 - A function for testing your network. This function should have the following signature
-  
   ```matlab
-  function res=test_net(net ,test_data)
-  ```
-  where ``net`` is your trained network, ``testdata`` is a *128x128xK* matrix containing the test data, and ``res`` is a vector of length *K* that contains the numerical labels of the predicted classes.
+  function res=test_net(test_data)
+  ```
 
 - A markdown file with:
   - A brief (one or two paragraph) description of your network, and the intuition behind each layer. Why are you proposing this architecture? 
@@ -66,12 +64,60 @@ We will also train and test your network on one of our computers. You will be as
 
 If everything runs smoothly, and the description of your network is sound, you will get a five.
 
+
+## Due Date:
+Tuesday 14 of April, 2015 at 11:00 a.m.
+
 ## Bonus
 
 The 4 networks that achieve the best performance will receive 5 extra points for the lab grade. The final grade of the lab will be the sum of the grades of each lab, plus bonus points, all divided by the number of labs.
 
-## Due Date:
-Tuesday 14 of April, 2015 at 11:00 a.m.
+You should submit at least two functions, in order to normalize the contest there will be some additional specifications:
+
+- A function for training your network. This function should have the following signature
+  ```matlab
+  function train_net(textonsdb, use_gpu)
+  ```
+  ``textonsdb`` is the structure containing the database used for training and validation. ``use_gpu`` is a boolean, if true the net should be trained using the gpu. Notice this functions does not return anything. It should save the results of training to test (more information below).
+- A function for testing your network. This function should have the following signature
+  ```matlab
+  function res=test_net(test_data)
+  ```
+  ``testdata`` is a *128x128xK* matrix containing the test data, and ``res`` is a vector of length *K* that contains the numerical labels of the predicted classes.
+  
+Additional restrictions
+
+- All functions should be in a single directory. They will be executed from this directory.
+- Save all intermediate results in this directory. **Don't use absolute paths**. 
+- The training function will be run for an hour, afterwards it will be killed with SIGKILL. Therefore the function should save intermediate results to disk.
+- You may choose to do data augmentation online, or offline before starting to train the net. However time starts as soon as the ``train_net`` functions is called, and no functions can be called before. Therefore if you prefer to do data augmentation offline, you have to do it in the first part of the ``train_net`` function.
+- The test function should read the last trained version of the net and use it to predict the labels for the test data.
+- The ``vl_setup`` and ``vl_setupnn`` will be called before calling your function. The ``matconvnet\examples`` directory will also be in the path before calling your functions. Don't call *setup* nor any of the *vl_setup* functions.
+- The library version will be the one included in the practical (downloadable from this file).
+- The *train_net* function will be called using a script similar to
+
+  ```matlab
+  % setup vl_feat and matconvnet
+  setup;
+  textonsdb = load('textonsdb2.mat');
+  cd(working_dir);
+  train_net(textonsdb, true);
+  ```
+- The *test_net* function will be called using a script similar to
+
+  ```matlab
+  % setup vl_feat and matconvnet
+  setup;
+  testdata = load('testdata.mat');
+  cd(working_dir);
+  res=test_net(testdata.images);
+  score = sum(res == testdata.labels)/size(testdata.labels,1);
+  display(score)
+  ```
+
+
+## Bonus Due Date:
+Monday 9 of May, 2016 at 11:00 a.m.
 
 ## Note
 

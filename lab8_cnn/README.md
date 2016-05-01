@@ -54,7 +54,7 @@ You will need to **upload to git-hub**:
 - A function for testing your network. This function should have the following signature
   ```matlab
   function res=test_net(test_data)
-  ```
+  ```
 
 - A markdown file with:
   - A brief (one or two paragraph) description of your network, and the intuition behind each layer. Why are you proposing this architecture? 
@@ -98,10 +98,6 @@ Additional restrictions
 - Output of ``gpuDevice()``:
 
   ```matlab
-    >> gpuDevice()
-    
-    ans = 
-    
       CUDADevice with properties:
     
                           Name: 'Tesla K20c'

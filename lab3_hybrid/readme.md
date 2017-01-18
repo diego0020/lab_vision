@@ -69,13 +69,76 @@ Create a hybrid image based on images from your own collections. The more origin
 
 Notice that you will have to *align and crop* the images to get a good effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect. Also consider how to deal with color on the images.
 
+
+
 Finally, upload to the repository
 
+These are my results:
+
 - The original images
+  ![originales](originals.jpg)
+- My girlfriend and me.
 - The processed images (cropped, aligned, color adjusted)
-- A short description of each image (one paragraph)
+  ![Processed images](modified.jpg)
+-  For my girlfriend image I enhaced the contrast of the image, multiplying it by a constant >1 to give it more importance because it was going to be the image with the high frequencies and I realized that in this two photos the low frequency dominated. On the other hand, for my image I multiplied it by a constant <1 to reduce the contast and increase the effect of the hybrid image.
+
 - The final hybrid image
+ ![Processed images](result.jpg)
+- This is the result after take both , high and low frequencies and mixed up the images.
+
 - The pyramid
+ ![Processed images](pyramid.jpg)
+- Pyramid to see the effect of low and high frequencies.
 - The code you used (with comments)
+
+CODE:
+
+% this is the code for make hybrid images by Alejandro Pardo
+clc;clear all; close all;
+%Add path of the functions
+addpath(genpath('proj1'));
+
+%Read the images
+original_down=im2double(imread('IMG_1671.jpg'));
+original_up=im2double(imread('IMG_1669.jpg'));
+
+%Process the images before the transformation
+down=0.4*original_down;
+up=1.2*original_up;
+
+%Cutoff frequencies, parameters of the filter
+cutoff=7;
+cutoff1=7;
+
+%Filter masks, tipe gaussian, with variance as a function of the cutoff
+%frequencies, resulting by the analysis of the convolution. the scale
+%factor that multiplies the cutoff frequency is the one that set the
+%overlaping of the frequencies of the images, this factor basically
+%determines how the images are combined each other. The window size was 9x9
+h=fspecial('gaussian',cutoff*3+1,9);
+h1=fspecial('gaussian',cutoff1*3+1,9);
+
+%Get the low frequencies of the image 1
+god=imfilter(down,h);
+
+%Get the high frequencies of the image 2
+tac=imfilter(up,h1);
+tac=(up-tac);
+
+%Combine the images to generate the hybrid result
+result=god+tac;
+
+%Results visualization
+figure;
+subplot(1,2,1);imshow(original_down);title('Original Image low frequencies');
+subplot(1,2,2);imshow(original_up);title('Original Image high frequencies');
+figure;
+subplot(1,2,1);imshow(down);title('Adjusted Image low frequencies');
+subplot(1,2,2);imshow(up);title('Adjusted Image high frequencies');
+figure
+imshow(vis_hybrid_image(result));title('Pyramid')
+figure 
+imshow(result);title('Result');
+
 
 **DUE**: 3 /3 /2016 ; 10:00 a.m.
